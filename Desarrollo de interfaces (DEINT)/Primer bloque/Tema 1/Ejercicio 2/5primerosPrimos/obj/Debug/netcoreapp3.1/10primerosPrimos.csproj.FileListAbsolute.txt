@@ -1,0 +1,28 @@
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.exe
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.deps.json
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.runtimeconfig.json
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.runtimeconfig.dev.json
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.dll
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.pdb
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.AssemblyInfoInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.AssemblyInfo.cs
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.dll
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.pdb
+C:\Users\Alejandro\Desktop\Estudios\Programación\VisualStudioProjects\10primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.genruntimeconfig.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.exe
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.deps.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.runtimeconfig.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.runtimeconfig.dev.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\bin\Debug\netcoreapp3.1\10primerosPrimos.pdb
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.csproj.AssemblyReference.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.AssemblyInfoInputs.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.AssemblyInfo.cs
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.pdb
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 2\5primerosPrimos\obj\Debug\netcoreapp3.1\10primerosPrimos.genruntimeconfig.cache

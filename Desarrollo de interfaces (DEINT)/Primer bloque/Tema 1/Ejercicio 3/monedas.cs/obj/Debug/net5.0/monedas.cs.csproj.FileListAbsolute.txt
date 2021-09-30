@@ -1,0 +1,16 @@
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\bin\Debug\net5.0\monedas.cs.exe
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\bin\Debug\net5.0\monedas.cs.deps.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\bin\Debug\net5.0\monedas.cs.runtimeconfig.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\bin\Debug\net5.0\monedas.cs.runtimeconfig.dev.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\bin\Debug\net5.0\monedas.cs.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\bin\Debug\net5.0\ref\monedas.cs.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\bin\Debug\net5.0\monedas.cs.pdb
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\obj\Debug\net5.0\monedas.cs.csproj.AssemblyReference.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\obj\Debug\net5.0\monedas.cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\obj\Debug\net5.0\monedas.cs.AssemblyInfoInputs.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\obj\Debug\net5.0\monedas.cs.AssemblyInfo.cs
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\obj\Debug\net5.0\monedas.cs.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\obj\Debug\net5.0\monedas.cs.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\obj\Debug\net5.0\ref\monedas.cs.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\obj\Debug\net5.0\monedas.cs.pdb
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\monedas.cs\obj\Debug\net5.0\monedas.cs.genruntimeconfig.cache
