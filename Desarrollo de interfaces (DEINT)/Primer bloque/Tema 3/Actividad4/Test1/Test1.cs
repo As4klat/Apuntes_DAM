@@ -16,7 +16,7 @@ namespace Test1
         [TestMethod]
         public void comprobarMinValorArrayVacio()
         {
-            int result = Arrays.minValorArray(new int[] { });
+            int result = Arrays.minValorArrayVacio(new int[] { });
             Assert.AreEqual(0, result);
         }
 
