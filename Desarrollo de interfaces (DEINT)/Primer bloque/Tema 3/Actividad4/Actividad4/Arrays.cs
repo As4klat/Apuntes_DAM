@@ -6,6 +6,7 @@ namespace Actividad4
     {
         static void Main(string[] args)
         {
+
         }
 
         public static int minValorArray(int[] array)
