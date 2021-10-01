@@ -1,0 +1,31 @@
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.exe
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.deps.json
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.runtimeconfig.json
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.runtimeconfig.dev.json
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.dll
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\bin\Debug\net5.0\ref\Calculadora.dll
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.pdb
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.AssemblyInfoInputs.cache
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.AssemblyInfo.cs
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.dll
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\obj\Debug\net5.0\ref\Calculadora.dll
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.pdb
+C:\Users\AntoniaRubio\source\repos\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.genruntimeconfig.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.exe
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.deps.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.runtimeconfig.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.runtimeconfig.dev.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\bin\Debug\net5.0\ref\Calculadora.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\bin\Debug\net5.0\Calculadora.pdb
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.AssemblyInfoInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.AssemblyInfo.cs
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\obj\Debug\net5.0\ref\Calculadora.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.pdb
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\PruebaTest\PruebaTest\obj\Debug\net5.0\Calculadora.genruntimeconfig.cache

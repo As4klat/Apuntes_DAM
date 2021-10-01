@@ -24,6 +24,7 @@ public class Ventana extends JFrame {
         this.setSize(400,400);
         this.setLocation(200,200);
         this.setVisible(true);
+        
         this.setLayout(new FlowLayout());
         
         JPanel panel = new JPanel();

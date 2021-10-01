@@ -1,0 +1,16 @@
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\bin\Debug\net5.0\par.exe
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\bin\Debug\net5.0\par.deps.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\bin\Debug\net5.0\par.runtimeconfig.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\bin\Debug\net5.0\par.runtimeconfig.dev.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\bin\Debug\net5.0\par.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\bin\Debug\net5.0\ref\par.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\bin\Debug\net5.0\par.pdb
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\obj\Debug\net5.0\par.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\obj\Debug\net5.0\par.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\obj\Debug\net5.0\par.AssemblyInfoInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\obj\Debug\net5.0\par.AssemblyInfo.cs
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\obj\Debug\net5.0\par.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\obj\Debug\net5.0\par.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\obj\Debug\net5.0\ref\par.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\obj\Debug\net5.0\par.pdb
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 3\par\obj\Debug\net5.0\par.genruntimeconfig.cache

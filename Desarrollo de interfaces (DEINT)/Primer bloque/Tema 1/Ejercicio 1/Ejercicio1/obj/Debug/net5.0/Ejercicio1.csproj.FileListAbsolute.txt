@@ -1,0 +1,16 @@
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\bin\Debug\net5.0\Ejercicio1.exe
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\bin\Debug\net5.0\Ejercicio1.deps.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\bin\Debug\net5.0\Ejercicio1.runtimeconfig.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\bin\Debug\net5.0\Ejercicio1.runtimeconfig.dev.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\bin\Debug\net5.0\Ejercicio1.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\bin\Debug\net5.0\ref\Ejercicio1.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\bin\Debug\net5.0\Ejercicio1.pdb
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\obj\Debug\net5.0\Ejercicio1.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\obj\Debug\net5.0\Ejercicio1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\obj\Debug\net5.0\Ejercicio1.AssemblyInfoInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\obj\Debug\net5.0\Ejercicio1.AssemblyInfo.cs
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\obj\Debug\net5.0\Ejercicio1.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\obj\Debug\net5.0\Ejercicio1.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\obj\Debug\net5.0\ref\Ejercicio1.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\obj\Debug\net5.0\Ejercicio1.pdb
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 1\Ejercicio 1\Ejercicio1\obj\Debug\net5.0\Ejercicio1.genruntimeconfig.cache
