@@ -9,36 +9,56 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
  * @author Alejandro
  */
 
-public class Ventana extends JFrame {
+public class Ventana extends JFrame implements ActionListener{  
+    private JTextField texto;
+    JButton btnSaludo, btnDespedida;
     
     public Ventana(){
         super();
         this.setSize(400,400);
         this.setLocation(200,200);
-        this.setVisible(true);
         
         this.setLayout(new FlowLayout());
         
         JPanel panel = new JPanel();
         this.getContentPane().add(panel);
         
-        JButton botonSaludo = new JButton("Saludar");
-        panel.add(botonSaludo);
+        btnSaludo = new JButton("Saludar");
+        panel.add(btnSaludo);
+        btnSaludo.addActionListener(this);
         
-        botonSaludo.addActionListener( new ActionListener () {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null,"Hola mundo");
-            }
-        });
-        pack();
+        btnDespedida = new JButton("Despedida");
+        panel.add(btnDespedida);
+        btnDespedida.addActionListener(this);
+        
+        texto = new JTextField(20);
+        panel.add(texto);
+        
+        //pack();
+        
+        setVisible(true);
+    }
+
+    /**
+     *
+     * @param e
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
+        if(e.getSource() == btnSaludo){
+            texto.setText("holaaaa");
+        }
+        else if(e.getSource() == btnDespedida){
+            texto.setText("Adioooo");
+        } 
     }
 }
