@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {JokeComponent} from './components/JokeComponent/joke.component';
-import { JokeList } from './components/JokeListComponent/jokeList.component';
+import { JokeListComponent } from './components/JokeListComponent/jokeList.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JokeComponent,
-    JokeList
+    JokeListComponent
   ],
   imports: [
     BrowserModule

@@ -7,13 +7,15 @@ import { Joke } from "../JokeComponent/joke.component";
     templateUrl: './jokeList.component.html'
 })
 
-export class JokeList {
+export class JokeListComponent {
 
     jokes: Joke[];
 
     constructor() {
         this.jokes = [
-            new Joke("What did the cheese say when it looked in the mirror?", "Hello-me(helloumi)")
+            new Joke("What did the cheese say when it looked in the mirror?", "Hello-me(Halloumi)"),
+            new Joke("What kind of cheese do you use to disguise a small horse?", "Mask-apony(Mascarpone)"),
+            new Joke("A kid threw a lump of cheddar at me", "I thought ‘That’s not verymature’"),
         ];
     }
 }
