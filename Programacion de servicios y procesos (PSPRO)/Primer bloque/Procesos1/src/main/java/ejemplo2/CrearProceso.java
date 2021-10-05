@@ -2,22 +2,31 @@ package ejemplo2;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
  * @author Alejandro
  */
 public class CrearProceso {
-    public void creaProceso(int num1, int num2){
-        try {
+    public void creaProceso(Integer num1, Integer num2){
+        
             File ruta = new File(".\\bin");
-            ProcessBuilder pb = new ProcessBuilder("JAVA", "ejemplo2.Sumatorio");
+            ProcessBuilder pb = new ProcessBuilder("java", "ejemplo2.Sumatorio", num1.toString(), num2.toString());
+            
             pb.directory(ruta);
-            pb.start();
-        } catch (IOException ex) {
-            Logger.getLogger(CrearProceso.class.getName()).log(Level.SEVERE, null, ex);
+            pb.redirectError(new File("error.txt"));
+            pb.redirectOutput(new File("salida.txt"));
+            
+            
+        try {    
+            Process p = pb.start();
+                try {
+                    System.out.println(p.waitFor());
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
