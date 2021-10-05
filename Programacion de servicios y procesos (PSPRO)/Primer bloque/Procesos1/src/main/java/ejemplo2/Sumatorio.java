@@ -11,7 +11,7 @@ public class Sumatorio {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println(sumatorio(2,4));
+        System.exit(sumatorio(Integer.parseInt( args[0] ),Integer.parseInt( args[1] )));
     }
     
     public static int sumatorio(int num1, int num2){

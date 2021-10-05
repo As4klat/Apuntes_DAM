@@ -19,6 +19,7 @@ import javax.swing.JTextField;
 
 public class Ventana extends JFrame implements ActionListener{  
     private JTextField texto;
+    public JPanel panel, panel2;
     JButton btnSaludo, btnDespedida;
     
     public Ventana(){
