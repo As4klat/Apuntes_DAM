@@ -6,12 +6,13 @@ namespace Actividad4
     {
         static void Main(string[] args)
         {
+            /*
             int[] array = new int[] { 3,4,5,6,1,3 };
             int[] array1 = menorMayorArray(array);
             for (int i = 0; i < array1.Length; i++)
             {
                 Console.Write(array1[i] + " ");
-            }
+            }*/
         }
 
         public static int minValorArray(int[] array)
@@ -83,7 +84,51 @@ namespace Actividad4
 
         public static int calcularModa(int[] array)
         {
-            
+            Array.Sort(array);
+            int cont = 1;
+            int contAux = 0;
+            int moda=0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (i > 0)
+                {
+                    if (array[i] == array[i - 1])
+                    {
+                        cont++;
+                        if (i == array.Length-1)
+                        {
+                            if (cont > contAux)
+                            {
+                                if (cont == 1)
+                                {
+                                    moda = array[i];
+                                }
+                                else
+                                {
+                                    moda = array[i - 1];
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (cont > contAux)
+                        {
+                            if (cont==1)
+                            {
+                                moda = array[0];
+                            }
+                            else
+                            {
+                                moda = array[i - 1];
+                            }
+                            contAux = cont;
+                        }
+                        cont = 1;
+                    }
+                }
+            }
+            return moda;
             throw new NotImplementedException();
         }
 
