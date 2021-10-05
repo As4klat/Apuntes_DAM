@@ -6,7 +6,12 @@ namespace Actividad4
     {
         static void Main(string[] args)
         {
-
+            int[] array = new int[] { 3,4,5,6,1,3 };
+            int[] array1 = menorMayorArray(array);
+            for (int i = 0; i < array1.Length; i++)
+            {
+                Console.Write(array1[i] + " ");
+            }
         }
 
         public static int minValorArray(int[] array)
@@ -52,14 +57,52 @@ namespace Actividad4
 
         public static int comprobarValorEnArray(int[] array, int valor)
         {
-            //TODO
+            int resultado=-1;
+            if (array.Length == 0)
+            {
+                resultado = -1;
+            }
+            else
+            {
+                for (int i = 0; i < array.Length; i++)
+                {
+                    if (array[i] == valor)
+                    {
+                        resultado = i;
+                        i = array.Length;
+                    }
+                    else
+                    {
+                        resultado = -1;
+                    }
+                }
+            }
+            return resultado;
             throw new NotImplementedException();
         }
 
-        public static int calcularModa(int[] entrada)
+        public static int calcularModa(int[] array)
         {
-            //TODO
+            
             throw new NotImplementedException();
+        }
+
+        public static int[] menorMayorArray(int[] array)
+        {
+            int aux;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array.Length-2 == i)
+                {
+                    if (array[i] > array[i + 1])
+                    {
+                        aux = array[i + 1];
+                        array[i + 1] = array[i];
+                        array[i] = aux;
+                    }
+                }
+            }
+            return array;
         }
     }
 }
