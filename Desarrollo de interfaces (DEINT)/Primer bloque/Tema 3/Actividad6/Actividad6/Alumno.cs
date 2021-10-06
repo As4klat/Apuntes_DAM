@@ -63,7 +63,8 @@ namespace Actividad6
 
         public static double getNotaMedia(List<Alumno> alumnos)
         {
-            return alumnos.Average(x=>x.Nota);
+            double n = Convert.ToDouble((from alumno in alumnos select alumno.Nota).Average());
+            return Math.Truncate(n * 100) / 100;
             throw new NotImplementedException();
         }
     }
