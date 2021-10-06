@@ -73,7 +73,7 @@ namespace Actividad5
 
         public static bool isPalindromo(string entrada)
         {
-            entrada = entrada.Trim().ToLower().Replace(" ", "");
+            entrada = entrada.ToLower().Replace(" ", "");
             char[] stringArray = entrada.ToCharArray();
             Array.Reverse(stringArray);
             string entradaInvertida = String.Join("", stringArray);
@@ -107,15 +107,8 @@ namespace Actividad5
 
         public static int contarCaracteres(string entrada)
         {
-            int cont=0;
-            char[] charArray = entrada.ToCharArray();
-            for (int i = 0; i< charArray.Length; i++){
-                if (!charArray[i].Equals(" "))
-                {
-                    cont++;
-                }
-            }
-            return cont;
+            entrada = entrada.Replace(" ", "");
+            return entrada.Length;
             throw new NotImplementedException();
         }
     }

@@ -46,3 +46,19 @@ C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces 
 C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\ref\Actividad5.dll
 C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\Actividad5.pdb
 C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\Actividad5.genruntimeconfig.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\bin\Debug\net5.0\Actividad5.exe
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\bin\Debug\net5.0\Actividad5.deps.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\bin\Debug\net5.0\Actividad5.runtimeconfig.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\bin\Debug\net5.0\Actividad5.runtimeconfig.dev.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\bin\Debug\net5.0\Actividad5.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\bin\Debug\net5.0\ref\Actividad5.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\bin\Debug\net5.0\Actividad5.pdb
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\Actividad5.csproj.AssemblyReference.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\Actividad5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\Actividad5.AssemblyInfoInputs.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\Actividad5.AssemblyInfo.cs
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\Actividad5.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\Actividad5.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\ref\Actividad5.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\Actividad5.pdb
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad5\Actividad5\obj\Debug\net5.0\Actividad5.genruntimeconfig.cache
