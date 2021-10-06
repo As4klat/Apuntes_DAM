@@ -15,7 +15,7 @@ import java.io.IOException;
 public class Proceso {
     public void creaProceso(int num1, int num2){
         
-            File ruta = new File(".\\bin");
+            File ruta = new File(".\\target\\classes");
             ProcessBuilder pb = new ProcessBuilder("java", "Sumatorio", String.valueOf(num1), String.valueOf(num2));
             
             pb.directory(ruta);

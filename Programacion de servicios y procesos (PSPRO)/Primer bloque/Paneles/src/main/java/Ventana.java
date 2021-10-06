@@ -13,9 +13,17 @@ import javax.swing.JPanel;
  * @author Alejandro
  */
 public class Ventana extends JFrame {
-    JPanel panelA, panelB;
     
-    Ventana(){
+    public JPanel panelActivo;
+    
+    public Ventana(){
+        super();
+        
+        setSize(400,400);
+        setLocation(200,200);
+        panelActivo = new PanelA(this);
+        getContentPane().add(panelActivo);
+        setVisible(true);
         
     }
 }

@@ -4,9 +4,8 @@ import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.plaf.basic.BasicSliderUI;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,8 +18,13 @@ import javax.swing.plaf.basic.BasicSliderUI;
  */
 public class PanelA extends JPanel{
 
-    public PanelA() {
+    private JFrame ventana;
+    
+    public PanelA(Ventana ventana) {
         super();
+
+        this.ventana = ventana;
+        
         this.setLayout(new FlowLayout());
         
         JButton btnIraPanelB = new JButton("Ir a panel B");
@@ -29,7 +33,9 @@ public class PanelA extends JPanel{
         btnIraPanelB.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                
+                ventana.panelActivo.setVisible(false);
+                ventana.panelActivo = new PanelB(ventana);
+                ventana.getContentPane().add(ventana.panelActivo);
             }
             
         });
