@@ -20,7 +20,7 @@ namespace Actividad7.Dados
          */
         public string Jugar()
         {
-            string cadena = "Has sacado:\n";
+            string cadena = "\nHas sacado:\n";
             for (int i=0; i < dados.Length; i++)
             {
                 dados[i] = new Dado();

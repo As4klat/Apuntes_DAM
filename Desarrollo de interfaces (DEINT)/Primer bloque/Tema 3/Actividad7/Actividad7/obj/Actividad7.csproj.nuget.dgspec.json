@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad7\\Actividad7\\Actividad7.csproj": {}
+    "C:\\Users\\Alejandro\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de Interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad7\\Actividad7\\Actividad7.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad7\\Actividad7\\Actividad7.csproj": {
+    "C:\\Users\\Alejandro\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de Interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad7\\Actividad7\\Actividad7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad7\\Actividad7\\Actividad7.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de Interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad7\\Actividad7\\Actividad7.csproj",
         "projectName": "Actividad7",
-        "projectPath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad7\\Actividad7\\Actividad7.csproj",
-        "packagesPath": "C:\\Users\\Alejandro Gamaza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad7\\Actividad7\\obj\\",
+        "projectPath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de Interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad7\\Actividad7\\Actividad7.csproj",
+        "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de Interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad7\\Actividad7\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alejandro Gamaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -14,9 +14,9 @@ namespace Actividad7
 
         public Triangulo(double ladosIguales, double ladoDiferente, double altura)
         {
-            this.ladosIguales = decimales2(ladosIguales);
-            this.ladoDiferente = decimales2(ladoDiferente);
-            this.altura = decimales2(altura);
+            this.ladosIguales = Helper.decimales2(ladosIguales);
+            this.ladoDiferente = Helper.decimales2(ladoDiferente);
+            this.altura = Helper.decimales2(altura);
         }
 
         /*
@@ -40,19 +40,11 @@ namespace Actividad7
          */
         public double perimetro()
         {
-            return decimales2(ladosIguales*2 + ladoDiferente);
+            return Helper.decimales2(ladosIguales*2 + ladoDiferente);
         }
         public double area()
         {
-            return decimales2((ladoDiferente * altura) / 2);
-        }
-
-        /*
-         * Helppers
-         */
-        private double decimales2(double n)
-        {
-            return Math.Truncate(n * 100) / 100;
+            return Helper.decimales2((ladoDiferente * altura) / 2);
         }
     }
 }

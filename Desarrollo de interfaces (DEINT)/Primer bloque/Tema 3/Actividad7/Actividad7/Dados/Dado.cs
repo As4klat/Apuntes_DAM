@@ -20,7 +20,7 @@ namespace Actividad7.Dados
         public void Tirar()
         {
             Random rn = new();
-            valor = rn.Next(1, 6);
+            valor = rn.Next(1, 7);
         }
         public string ToCadena()
         {
