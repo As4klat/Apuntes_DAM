@@ -10,6 +10,15 @@ namespace Actividad7.Persona
     {
         private double sueldo;
 
+        public Empresario(string nombre, int edad, double sueldo) : base(nombre, edad)
+        {
+            this.sueldo = sueldo;
+        }
 
+        override
+        public string ToString()
+        {
+            return base.ToString() + "\nSueldo: " + sueldo;
+        }
     }
 }
