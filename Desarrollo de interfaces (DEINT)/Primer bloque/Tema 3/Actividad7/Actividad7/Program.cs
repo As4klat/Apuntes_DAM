@@ -1,12 +1,7 @@
 ﻿using Actividad7.Personas;
 using Actividad7.Clientes;
 using Actividad7.Dados;
-using Actividad7.Persona;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Actividad7
 {
@@ -25,25 +20,23 @@ namespace Actividad7
             {
                 case ConsoleKey.A:
                     Console.WriteLine("Es un triangulo isóceles por lo cual tiene dos lados iguales y uno diferente.");
-
                     Console.Write("Lados iguales(cm) " + "\n-> ");
                     double ladosIguales = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Lado desigual(cm) " + "\n-> ");
                     double ladoDesigual = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Altura(cm) " + "\n-> ");
                     double altura = Convert.ToDouble(Console.ReadLine());
-
                     Triangulo t = new(ladosIguales, ladoDesigual, altura);
-
                     Console.WriteLine("Lado 1 -> " + t.getLadosIguales() / 2 + " Lado 2 -> " + t.getLadosIguales() / 2 + " Lado 3 -> " + t.getLadoDiferente());
                     Console.WriteLine("Area de tu triangulo: " + t.area());
                     Console.WriteLine("Perímetro de tu triangulo: " + t.perimetro());
-
                     break;
+
                 case ConsoleKey.B:
                     Juego j = new();
                     Console.WriteLine(j.Jugar());
                     break;
+
                 case ConsoleKey.C:
                     Banco b = new();
                     b.GenerarDatos();
@@ -55,7 +48,7 @@ namespace Actividad7
                     ConsoleKeyInfo gestion = Console.ReadKey(true);
                     int opcion;
                     switch (gestion.Key)
-                    {  
+                    {
                         case ConsoleKey.A:
                             opcion = 1;
                             break;
@@ -75,18 +68,12 @@ namespace Actividad7
                     Console.WriteLine("");
                     Console.WriteLine(b.MostrarOpetacion(dni));
                     break;
-<<<<<<< HEAD
+
                 case ConsoleKey.D:
                     Persona p = new("Luis Ganaza", 25);
                     Empresario e = new("Alejandro Gamaza Martínez", 23, 3123.23);
-
                     Console.WriteLine(p.ToString());
-                    Console.WriteLine("-----------------------------");
-=======
-
-                case ConsoleKey.D:
-                    Empresario e = new Empresario("alejandro",23,124.23);
->>>>>>> 7f2bd652078dd4ec4e5d05e753b7ffdd9dfbb248
+                    Console.WriteLine("----------------------------------------");
                     Console.WriteLine(e.ToString());
                     break;
 

@@ -29,7 +29,7 @@ namespace Actividad7.Personas
         override
         public string ToString()
         {
-            return "El sueldo es de: " + this.sueldo;
+            return base.ToString() + "\nEl sueldo es de: " + this.sueldo+ " €";
         }
     }
 }
