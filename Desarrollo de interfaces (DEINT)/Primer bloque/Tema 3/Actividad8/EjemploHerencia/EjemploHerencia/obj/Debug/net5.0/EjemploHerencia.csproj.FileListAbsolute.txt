@@ -1,0 +1,16 @@
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\bin\Debug\net5.0\EjemploHerencia.exe
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\bin\Debug\net5.0\EjemploHerencia.deps.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\bin\Debug\net5.0\EjemploHerencia.runtimeconfig.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\bin\Debug\net5.0\EjemploHerencia.runtimeconfig.dev.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\bin\Debug\net5.0\EjemploHerencia.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\bin\Debug\net5.0\ref\EjemploHerencia.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\bin\Debug\net5.0\EjemploHerencia.pdb
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\obj\Debug\net5.0\EjemploHerencia.csproj.AssemblyReference.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\obj\Debug\net5.0\EjemploHerencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\obj\Debug\net5.0\EjemploHerencia.AssemblyInfoInputs.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\obj\Debug\net5.0\EjemploHerencia.AssemblyInfo.cs
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\obj\Debug\net5.0\EjemploHerencia.csproj.CoreCompileInputs.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\obj\Debug\net5.0\EjemploHerencia.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\obj\Debug\net5.0\ref\EjemploHerencia.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\obj\Debug\net5.0\EjemploHerencia.pdb
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploHerencia\EjemploHerencia\EjemploHerencia\obj\Debug\net5.0\EjemploHerencia.genruntimeconfig.cache

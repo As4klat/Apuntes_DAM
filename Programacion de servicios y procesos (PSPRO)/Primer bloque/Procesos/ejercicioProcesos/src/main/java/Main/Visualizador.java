@@ -27,7 +27,7 @@ public class Visualizador {
                 cadena += i;
             }
         }
-        cadena += args[1];
+        cadena += " = " + args[1];
         
         
         String par = "no";
@@ -39,6 +39,7 @@ public class Visualizador {
         
         System.out.println(cadena);
     }
+    
     public static boolean intToBoolean(int n){
         boolean bool = false;
         if(n==1){

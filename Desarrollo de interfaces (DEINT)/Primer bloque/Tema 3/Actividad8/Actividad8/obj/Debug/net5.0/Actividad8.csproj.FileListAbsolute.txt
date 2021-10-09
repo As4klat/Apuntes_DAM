@@ -1,0 +1,16 @@
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\bin\Debug\net5.0\Actividad8.exe
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\bin\Debug\net5.0\Actividad8.deps.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\bin\Debug\net5.0\Actividad8.runtimeconfig.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\bin\Debug\net5.0\Actividad8.runtimeconfig.dev.json
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\bin\Debug\net5.0\Actividad8.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\bin\Debug\net5.0\ref\Actividad8.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\bin\Debug\net5.0\Actividad8.pdb
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\obj\Debug\net5.0\Actividad8.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\obj\Debug\net5.0\Actividad8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\obj\Debug\net5.0\Actividad8.AssemblyInfoInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\obj\Debug\net5.0\Actividad8.AssemblyInfo.cs
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\obj\Debug\net5.0\Actividad8.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\obj\Debug\net5.0\Actividad8.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\obj\Debug\net5.0\ref\Actividad8.dll
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\obj\Debug\net5.0\Actividad8.pdb
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 3\Actividad8\Actividad8\obj\Debug\net5.0\Actividad8.genruntimeconfig.cache
