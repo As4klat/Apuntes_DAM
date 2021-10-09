@@ -1,4 +1,5 @@
-﻿using Actividad7.Clientes;
+﻿using Actividad7.Personas;
+using Actividad7.Clientes;
 using Actividad7.Dados;
 using System;
 using System.Collections.Generic;
@@ -75,7 +76,12 @@ namespace Actividad7
                     Console.WriteLine(b.MostrarOpetacion(dni));
                     break;
                 case ConsoleKey.D:
+                    Persona p = new("Luis Ganaza", 25);
+                    Empresario e = new("Alejandro Gamaza Martínez", 23, 3123.23);
 
+                    Console.WriteLine(p.ToString());
+                    Console.WriteLine("-----------------------------");
+                    Console.WriteLine(e.ToString());
                     break;
                 default:
                     Console.WriteLine("Tu opcion no es valida");

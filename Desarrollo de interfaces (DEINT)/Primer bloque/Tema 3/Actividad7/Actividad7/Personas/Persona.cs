@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Actividad7.Persona
+namespace Actividad7.Personas
 {
     class Persona
     {
@@ -29,14 +29,15 @@ namespace Actividad7.Persona
         {
             return this.nombre;
         }
+
         public int GetEdad()
         {
             return this.edad;
         }
+
         /*
          *  Métodos
          */
-
         override
         public string ToString()
         {
