@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Actividad8.Part2
 {
-    class Lavadora
+    class Lavadora : Electrodomestico
     {
         private double carga;
 

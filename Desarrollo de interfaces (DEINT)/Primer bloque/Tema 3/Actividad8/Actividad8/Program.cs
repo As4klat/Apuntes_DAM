@@ -19,6 +19,8 @@ namespace Actividad8
 
             Electrodomestico ele = new Electrodomestico();
             Console.Write(ele.PrecioFinal());
+            Lavadora lavadora1 = new();
+            Lavadora lavadora2 = new();
         }
     }
 }
