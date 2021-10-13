@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Actividad8.Part2
 {
@@ -66,11 +62,11 @@ namespace Actividad8.Part2
             }
         }
 
-        public string PrecioFinal()
+        public double PrecioFinal()
         {
             this.precio_base = this.precio_base + ((double)this.consumo);
             CalcularPeso();
-            return Convert.ToString(this.precio_base);
+            return this.precio_base;
         }
 
         /*

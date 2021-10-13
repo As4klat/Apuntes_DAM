@@ -17,10 +17,15 @@ namespace Actividad8
             Console.WriteLine(e.ToString() + o.ToString() + d.ToString() + of.ToString() + t.ToString());
             Console.WriteLine("");
 
-            Electrodomestico ele = new Electrodomestico();
-            Console.Write(ele.PrecioFinal());
-            Lavadora lavadora1 = new();
-            Lavadora lavadora2 = new();
+            Console.WriteLine("Electrodomésticos");
+            Electrodomestico[] listaElec =
+            {
+                new Electrodomestico(),
+                new Lavadora(),
+                new Television(),
+                new Electrodomestico(245, 32),
+                new Electrodomestico(245, 90),
+            }
         }
     }
 }

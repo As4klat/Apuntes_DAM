@@ -1,0 +1,16 @@
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\bin\Debug\net5.0\Expresiones.exe
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\bin\Debug\net5.0\Expresiones.deps.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\bin\Debug\net5.0\Expresiones.runtimeconfig.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\bin\Debug\net5.0\Expresiones.runtimeconfig.dev.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\bin\Debug\net5.0\Expresiones.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\bin\Debug\net5.0\ref\Expresiones.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\bin\Debug\net5.0\Expresiones.pdb
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\obj\Debug\net5.0\Expresiones.csproj.AssemblyReference.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\obj\Debug\net5.0\Expresiones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\obj\Debug\net5.0\Expresiones.AssemblyInfoInputs.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\obj\Debug\net5.0\Expresiones.AssemblyInfo.cs
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\obj\Debug\net5.0\Expresiones.csproj.CoreCompileInputs.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\obj\Debug\net5.0\Expresiones.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\obj\Debug\net5.0\ref\Expresiones.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\obj\Debug\net5.0\Expresiones.pdb
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\EjemploExpresion\Expresiones\Expresiones\obj\Debug\net5.0\Expresiones.genruntimeconfig.cache
