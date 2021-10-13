@@ -18,14 +18,25 @@ namespace Actividad8
             Console.WriteLine("");
 
             Console.WriteLine("Electrodomésticos");
-            Electrodomestico[] listaElec =
-            {
+            Electrodomestico[] listaElec = {
                 new Electrodomestico(),
                 new Lavadora(),
                 new Television(),
                 new Electrodomestico(245, 32),
                 new Electrodomestico(245, 90),
+                new Lavadora(400, 15),
+                new Lavadora(40),
+                new Television(120, 20),
+                new Television(130, true)
+                };
+
+            for (int i = 0; i < listaElec.Length; i++)
+            {
+                Console.WriteLine(listaElec[i].PrecioFinal());
             }
+
+
+            
         }
     }
 }

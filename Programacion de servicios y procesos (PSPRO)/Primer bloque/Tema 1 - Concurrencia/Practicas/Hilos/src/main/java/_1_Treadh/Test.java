@@ -21,6 +21,14 @@ public class Test {
         
         Thread hr = new Thread(new HiloRunnable(), "2º Hilo");
         hr.start();
+        
+        Hilo hilo2 = new Hilo("3º Hilo");
+        hilo2.start();
+        
+        for(int cont=1; cont <100; cont++){
+            System.out.println(cont);
+        }
+        
     }
     
 }
