@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { Joke } from "../JokeComponent/joke.component";
+import { Joke } from "src/app/Clases/joke";
 
 
 @Component ({
@@ -17,5 +17,9 @@ export class JokeListComponent {
             new Joke("What kind of cheese do you use to disguise a small horse?", "Mask-apony(Mascarpone)"),
             new Joke("A kid threw a lump of cheddar at me", "I thought ‘That’s not verymature’"),
         ];
+    }
+
+    addJoke(joke: Joke){
+        this.jokes.unshift(joke);
     }
 }
