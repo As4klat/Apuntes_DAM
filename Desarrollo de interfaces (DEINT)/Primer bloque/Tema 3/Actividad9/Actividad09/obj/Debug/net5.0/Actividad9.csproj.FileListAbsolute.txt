@@ -1,0 +1,32 @@
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.exe
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.deps.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.runtimeconfig.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.runtimeconfig.dev.json
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\ref\Actividad9.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\bin\Debug\net5.0\Actividad9.pdb
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.csproj.AssemblyReference.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.AssemblyInfoInputs.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.AssemblyInfo.cs
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.csproj.CoreCompileInputs.cache
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\ref\Actividad9.dll
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.pdb
+C:\Users\AntoniaRubio\Desktop\Almunia\DAM DI\Primer trimestre\Actividades\Actividad9\Actividad09\Actividad09\obj\Debug\net5.0\Actividad9.genruntimeconfig.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\bin\Debug\net5.0\Actividad9.exe
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\bin\Debug\net5.0\Actividad9.deps.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\bin\Debug\net5.0\Actividad9.runtimeconfig.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\bin\Debug\net5.0\Actividad9.runtimeconfig.dev.json
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\bin\Debug\net5.0\Actividad9.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\bin\Debug\net5.0\ref\Actividad9.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\bin\Debug\net5.0\Actividad9.pdb
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\obj\Debug\net5.0\Actividad9.csproj.AssemblyReference.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\obj\Debug\net5.0\Actividad9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\obj\Debug\net5.0\Actividad9.AssemblyInfoInputs.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\obj\Debug\net5.0\Actividad9.AssemblyInfo.cs
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\obj\Debug\net5.0\Actividad9.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\obj\Debug\net5.0\Actividad9.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\obj\Debug\net5.0\ref\Actividad9.dll
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\obj\Debug\net5.0\Actividad9.pdb
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 3\Actividad9\Actividad09\obj\Debug\net5.0\Actividad9.genruntimeconfig.cache
