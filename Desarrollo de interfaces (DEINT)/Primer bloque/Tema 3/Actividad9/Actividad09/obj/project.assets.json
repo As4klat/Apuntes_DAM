@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Alejandro Gamaza\\.nuget\\packages\\": {}
+    "C:\\Users\\Alejandro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad9\\Actividad09\\Actividad9.csproj",
+      "projectUniqueName": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de Interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad9\\Actividad09\\Actividad9.csproj",
       "projectName": "Actividad9",
-      "projectPath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad9\\Actividad09\\Actividad9.csproj",
-      "packagesPath": "C:\\Users\\Alejandro Gamaza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad9\\Actividad09\\obj\\",
+      "projectPath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de Interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad9\\Actividad09\\Actividad9.csproj",
+      "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de Interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad9\\Actividad09\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alejandro Gamaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

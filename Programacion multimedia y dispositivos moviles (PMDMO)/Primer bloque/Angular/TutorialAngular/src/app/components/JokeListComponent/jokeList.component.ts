@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
 import { Joke } from "src/app/Clases/joke";
 
-
 @Component ({
     selector: 'joke-list',
     templateUrl: './jokeList.component.html'
@@ -21,5 +20,8 @@ export class JokeListComponent {
 
     addJoke(joke: Joke){
         this.jokes.unshift(joke);
+    }
+    deleteJoke(joke: Joke){
+        this.jokes.splice(this.jokes.indexOf(joke), 1);
     }
 }

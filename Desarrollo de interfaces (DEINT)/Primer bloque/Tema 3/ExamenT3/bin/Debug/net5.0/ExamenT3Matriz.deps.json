@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ExamenT3Matriz/1.0.0": {
+        "runtime": {
+          "ExamenT3Matriz.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExamenT3Matriz/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
