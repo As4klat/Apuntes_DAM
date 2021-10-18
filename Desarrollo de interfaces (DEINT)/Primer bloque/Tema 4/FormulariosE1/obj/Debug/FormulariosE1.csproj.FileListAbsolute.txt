@@ -1,0 +1,10 @@
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\FormulariosE1\bin\Debug\FormulariosE1.exe.config
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\FormulariosE1\bin\Debug\FormulariosE1.exe
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\FormulariosE1\bin\Debug\FormulariosE1.pdb
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\FormulariosE1\obj\Debug\FormulariosE1.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\FormulariosE1\obj\Debug\FormulariosE1.Form1.resources
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\FormulariosE1\obj\Debug\FormulariosE1.Properties.Resources.resources
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\FormulariosE1\obj\Debug\FormulariosE1.csproj.GenerateResource.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\FormulariosE1\obj\Debug\FormulariosE1.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\FormulariosE1\obj\Debug\FormulariosE1.exe
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\FormulariosE1\obj\Debug\FormulariosE1.pdb

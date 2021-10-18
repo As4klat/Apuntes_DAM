@@ -5,9 +5,8 @@
  */
 package com.mycompany.testv;
 
+import Clases.DAOPreguntas;
 import Clases.Pregunta;
-import Clases.Respuesta;
-import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -22,6 +21,8 @@ public class NewMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         /*      Codigo de pruba de una sola pregunta y por terminal
         Scanner sc = new Scanner(System.in);
         String pregunta = "¿Cuanto es 2+2?";
@@ -50,6 +51,27 @@ public class NewMain {
         {
             System.out.println("Mal");
         }*/
+        DAOPreguntas daoPreguntas = new DAOPreguntas();
+        List<Pregunta> listaPreguntas = daoPreguntas.getListPreguntas();
+        for(int i = 0; i < listaPreguntas.size(); i++){
+            System.out.println(listaPreguntas.get(i).toString());
+            String sol = sc.next();
+            List<String> letras = new ArrayList<>();
+            letras.add("A");
+            letras.add("B");
+            letras.add("C");
+            letras.add("D");
+            int posicion = letras.indexOf(sol);
+        
+            if(listaPreguntas.get(i).esValida(posicion)){
+                System.out.println("Acertada");
+            }
+            else
+            {
+                System.out.println("Mal");
+            }
+        }
+        
     }
     
 }
