@@ -16,5 +16,37 @@ namespace FormulariosE3
         {
             InitializeComponent();
         }
+
+        private void numero_ValueChanged(object sender, EventArgs e)
+        {
+            if (rbAscent.Checked)
+            {
+                TablaMultiplicar t = new TablaMultiplicar();
+                areaTexto.Text = t.Tabla(Convert.ToInt32(numero.Value), 1);
+            }
+            if (rbDescent.Checked)
+            {
+                TablaMultiplicar t = new TablaMultiplicar();
+                areaTexto.Text = t.Tabla(Convert.ToInt32(numero.Value), 2);
+            }
+        }
+
+        private void rbAscent_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbAscent.Checked)
+            {
+                TablaMultiplicar t = new TablaMultiplicar();
+                areaTexto.Text = t.Tabla(Convert.ToInt32(numero.Value), 1);
+            }
+        }
+
+        private void rbDescent_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbDescent.Checked)
+            {
+                TablaMultiplicar t = new TablaMultiplicar();
+                areaTexto.Text = t.Tabla(Convert.ToInt32(numero.Value), 2);
+            }
+        }
     }
 }

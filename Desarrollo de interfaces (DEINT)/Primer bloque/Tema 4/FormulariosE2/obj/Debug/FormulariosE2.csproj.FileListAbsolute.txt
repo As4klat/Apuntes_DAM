@@ -1,0 +1,9 @@
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\FormularioE2\bin\Debug\FormularioE2.exe.config
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\FormularioE2\bin\Debug\FormularioE2.exe
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\FormularioE2\bin\Debug\FormularioE2.pdb
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\FormularioE2\obj\Debug\FormularioE2.Form1.resources
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\FormularioE2\obj\Debug\FormularioE2.Properties.Resources.resources
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\FormularioE2\obj\Debug\FormulariosE2.csproj.GenerateResource.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\FormularioE2\obj\Debug\FormulariosE2.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\FormularioE2\obj\Debug\FormularioE2.exe
+C:\Users\Alejandro Gamaza\Desktop\Estudios\Grado Superior DAM\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\FormularioE2\obj\Debug\FormularioE2.pdb

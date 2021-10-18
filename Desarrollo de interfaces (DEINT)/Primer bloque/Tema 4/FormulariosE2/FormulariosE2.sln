@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormularioE2", "FormularioE2.csproj", "{6831EE4C-5A24-4133-85D0-765F9E11094F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormulariosE2", "FormulariosE2.csproj", "{6831EE4C-5A24-4133-85D0-765F9E11094F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
