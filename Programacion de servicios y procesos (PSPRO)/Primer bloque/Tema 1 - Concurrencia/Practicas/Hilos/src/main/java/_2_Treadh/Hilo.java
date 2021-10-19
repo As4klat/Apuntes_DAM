@@ -10,21 +10,23 @@ package _2_Treadh;
  * @author Alejandro
  */
 public class Hilo extends Thread{
-    private static int contador=0;
+    private Contador contador;
            
-    public Hilo(String name) {
+    public Hilo(String name, Contador contador) {
         super(name);
-        
+        this.contador = contador;
     }
 
     
     @Override
     public void run() {
         super.run(); //To change body of generated methods, choose Tools | Templates.
-        for(; contador < 100;){
-            System.out.println(this.currentThread().getName() + " contador: " + contador);
-            contador++;
+        for(; contador.getContador()< 100;){
+            Thread.yield();
+            synchronized(contador){
+                System.out.println(this.currentThread().getName() + " contador: " + contador.getContador());
+                contador.incremento();
+            }
         }
-        
     }
 }
