@@ -21,32 +21,31 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="labelPregunta" max="32767" attributes="0"/>
-                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="radioRespuesta2" linkSize="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="radioRespuesta1" linkSize="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="radioRespuesta3" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="radioRespuesta4" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="radioRespuesta2" pref="413" max="32767" attributes="0"/>
+                          <Component id="radioRespuesta1" max="32767" attributes="0"/>
+                          <Component id="radioRespuesta3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="radioRespuesta4" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="labelPregunta" max="32767" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace min="-2" pref="274" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="labelPregunta" max="32767" attributes="0"/>
-              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+              <Component id="labelPregunta" pref="54" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="radioRespuesta1" linkSize="2" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
               <Component id="radioRespuesta2" linkSize="2" min="-2" max="-2" attributes="0"/>
@@ -75,6 +74,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="respuesta 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioRespuesta1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="radioRespuesta2">
       <Properties>
@@ -83,6 +85,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="respuesta 2"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioRespuesta2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="radioRespuesta3">
       <Properties>
@@ -91,6 +96,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="respuesta 3"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioRespuesta3ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="radioRespuesta4">
       <Properties>
@@ -99,6 +107,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="respuesta 4"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioRespuesta4ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

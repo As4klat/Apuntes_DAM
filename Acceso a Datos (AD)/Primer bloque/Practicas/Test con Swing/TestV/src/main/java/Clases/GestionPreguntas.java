@@ -5,6 +5,8 @@
  */
 package Clases;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -23,6 +25,13 @@ public class GestionPreguntas {
         DAOPreguntas dao = new DAOPreguntas();
         listPreguntas = dao.getListPreguntas();
         listPreguntasJuego = new LinkedList<Pregunta>();
+    }
+    
+    public int getPuntuacion(){
+        return puntiacion;
+    }
+    public void resetearPuntuacion(){
+        puntiacion=0;
     }
     
     public void addPregunta(Pregunta p){
@@ -44,22 +53,32 @@ public class GestionPreguntas {
         for (int i = 0; i < nPreguntas; i++){
             listPreguntasJuego.add(listPreguntas.get(i));
         }
+        Collections.shuffle(listPreguntasJuego);
         return listPreguntasJuego;
     }
     
-    public void comprobarPregunta(Pregunta p,int posicion ,int dificultad){
+    public boolean comprobarPregunta(Pregunta p,int posicion ,int dificultad){
+        boolean comp=false;
         if(dificultad == 0){
             if(p.esValida(posicion)){
                 this.puntiacion++;
+                comp = true;
+            }
+            else{
+                comp = false;
             }
         }
         else{
+            
             if(p.esValida(posicion)){
+                comp = true;
                 this.puntiacion++;
             }
             else{
+                comp = false;
                 this.puntiacion-=2;
             }
         }
+        return comp;
     }
 }

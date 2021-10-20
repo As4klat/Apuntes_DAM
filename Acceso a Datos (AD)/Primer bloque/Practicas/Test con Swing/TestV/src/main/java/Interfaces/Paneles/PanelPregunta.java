@@ -6,17 +6,27 @@
 package Interfaces.Paneles;
 
 import Clases.Pregunta;
+import javax.swing.JButton;
 
 /**
  *
  * @author Alejandro
  */
-public class PanelPregunta extends javax.swing.JPanel {
+public class PanelPregunta extends javax.swing.JPanel{
 
     /**
      * Creates new form PanelPregunta
      */
+    public int respuesta;
     public PanelPregunta(Pregunta p) {
+        initComponents();
+        labelPregunta.setText(p.getPregunta());
+        radioRespuesta1.setText(p.getListRespuestas().get(0).getRespuesta());
+        radioRespuesta2.setText(p.getListRespuestas().get(1).getRespuesta());
+        radioRespuesta3.setText(p.getListRespuestas().get(2).getRespuesta());
+        radioRespuesta4.setText(p.getListRespuestas().get(3).getRespuesta());
+    }
+    public PanelPregunta(Pregunta p, int posicion) {
         initComponents();
         labelPregunta.setText(p.getPregunta());
         radioRespuesta1.setText(p.getListRespuestas().get(0).getRespuesta());
@@ -46,43 +56,59 @@ public class PanelPregunta extends javax.swing.JPanel {
 
         grupoRespuestas.add(radioRespuesta1);
         radioRespuesta1.setText("respuesta 1");
+        radioRespuesta1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioRespuesta1ActionPerformed(evt);
+            }
+        });
 
         grupoRespuestas.add(radioRespuesta2);
         radioRespuesta2.setText("respuesta 2");
+        radioRespuesta2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioRespuesta2ActionPerformed(evt);
+            }
+        });
 
         grupoRespuestas.add(radioRespuesta3);
         radioRespuesta3.setText("respuesta 3");
+        radioRespuesta3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioRespuesta3ActionPerformed(evt);
+            }
+        });
 
         grupoRespuestas.add(radioRespuesta4);
         radioRespuesta4.setText("respuesta 4");
+        radioRespuesta4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioRespuesta4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(labelPregunta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(35, 35, 35))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
+                        .addGap(46, 46, 46)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(radioRespuesta2)
-                            .addComponent(radioRespuesta1)
-                            .addComponent(radioRespuesta3)
-                            .addComponent(radioRespuesta4))))
-                .addGap(274, 274, 274))
+                            .addComponent(radioRespuesta2, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE)
+                            .addComponent(radioRespuesta1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(radioRespuesta3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(radioRespuesta4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(labelPregunta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {radioRespuesta1, radioRespuesta2, radioRespuesta3, radioRespuesta4});
-
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(labelPregunta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(6, 6, 6)
+                .addComponent(labelPregunta, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(radioRespuesta1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -97,6 +123,22 @@ public class PanelPregunta extends javax.swing.JPanel {
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {radioRespuesta1, radioRespuesta2, radioRespuesta3, radioRespuesta4});
 
     }// </editor-fold>//GEN-END:initComponents
+
+    private void radioRespuesta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioRespuesta1ActionPerformed
+        respuesta = 0;
+    }//GEN-LAST:event_radioRespuesta1ActionPerformed
+
+    private void radioRespuesta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioRespuesta2ActionPerformed
+        respuesta = 1;
+    }//GEN-LAST:event_radioRespuesta2ActionPerformed
+
+    private void radioRespuesta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioRespuesta3ActionPerformed
+        respuesta = 2;
+    }//GEN-LAST:event_radioRespuesta3ActionPerformed
+
+    private void radioRespuesta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioRespuesta4ActionPerformed
+        respuesta = 3;
+    }//GEN-LAST:event_radioRespuesta4ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

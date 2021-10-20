@@ -5,39 +5,43 @@
  */
 package Practica_CambioJpanel.JpanelMultiple.folder;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 /**
  *
- * @author Dam
+ * @author Alejandro Gamaza
  */
-public class Principal extends javax.swing.JFrame{
+public class Panel_Principal extends javax.swing.JFrame {
 
     /**
-     * Creates new form Principal
+     * Creates new form Panel_Principal
      */
     Panel1 panel1 = new Panel1();
     Panel2 panel2 = new Panel2();
     
-    public Principal() {
+    public Panel_Principal() {
         initComponents();
+        Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+        int height = pantalla.height;
+        int width = pantalla.width;
+        setSize(width/2, height/2);
+        setLocationRelativeTo(null);
         
         contenedor.add(panel1);
-        deshabilitarBoton();
-    }
-    
-    private void deshabilitarBoton(){
-        if(panel1.isVisible()){
-           btn_siguiente.setEnabled(true);
-           btn_atras.setEnabled(false);
-        }
-        else if(panel2.isVisible()){
-           btn_siguiente.setEnabled(false);
-           btn_atras.setEnabled(true);
-        }
+        deshabilitarBtn();
     }
 
+    private void deshabilitarBtn(){
+        if(panel1.isVisible()){
+            btn_siguiente.setEnabled(true);
+            btn_atras.setEnabled(false);
+        }
+        else if(panel2.isVisible()){
+            btn_siguiente.setEnabled(false);
+            btn_atras.setEnabled(true);
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -56,59 +60,53 @@ public class Principal extends javax.swing.JFrame{
 
         contenedor.setLayout(new java.awt.BorderLayout());
 
-        btn_atras.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btn_atras.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_atras.setText("Atras");
-        btn_atras.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_atrasMouseClicked(evt);
+        btn_atras.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_atrasActionPerformed(evt);
             }
         });
         jPanel1.add(btn_atras);
 
-        btn_siguiente.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btn_siguiente.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btn_siguiente.setText("Siguiente");
-        btn_siguiente.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_siguienteMouseClicked(evt);
+        btn_siguiente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_siguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_siguienteActionPerformed(evt);
             }
         });
         jPanel1.add(btn_siguiente);
 
-        contenedor.add(jPanel1, java.awt.BorderLayout.SOUTH);
+        contenedor.add(jPanel1, java.awt.BorderLayout.PAGE_END);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(contenedor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 318, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(contenedor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 276, Short.MAX_VALUE)
-        );
+        getContentPane().add(contenedor, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_atrasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_atrasMouseClicked
-        contenedor.add(panel1);
-        panel2.setVisible(false);
-        panel1.setVisible(true);
-        contenedor.validate();
-        deshabilitarBoton();
-    }//GEN-LAST:event_btn_atrasMouseClicked
-
-    private void btn_siguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_siguienteMouseClicked
-        contenedor.add(panel2);
+    private void btn_siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_siguienteActionPerformed
         panel1.setVisible(false);
         panel2.setVisible(true);
+        contenedor.add(panel2);
         contenedor.validate();
-        deshabilitarBoton();
-    }//GEN-LAST:event_btn_siguienteMouseClicked
+        deshabilitarBtn();
+    }//GEN-LAST:event_btn_siguienteActionPerformed
+
+    private void btn_atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_atrasActionPerformed
+        panel2.setVisible(false);
+        panel1.setVisible(true);
+        contenedor.add(panel1);
+        contenedor.validate();
+        deshabilitarBtn();
+    }//GEN-LAST:event_btn_atrasActionPerformed
 
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -123,20 +121,20 @@ public class Principal extends javax.swing.JFrame{
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Panel_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Panel_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Panel_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Panel_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Principal().setVisible(true);
+                new Panel_Principal().setVisible(true);
             }
         });
     }
@@ -147,5 +145,4 @@ public class Principal extends javax.swing.JFrame{
     private javax.swing.JPanel contenedor;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
-
 }

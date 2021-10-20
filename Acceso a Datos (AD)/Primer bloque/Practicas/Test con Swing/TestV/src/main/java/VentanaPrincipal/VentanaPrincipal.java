@@ -8,6 +8,10 @@ package VentanaPrincipal;
 import Clases.GestionPreguntas;
 import Clases.Pregunta;
 import Interfaces.Paneles.PanelPregunta;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -19,15 +23,33 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form VentanaPrincipal
      */
+    GestionPreguntas gp = new GestionPreguntas();
+    List<Pregunta> listaPreguntas = gp.iniciarJuego(5);
+    PanelPregunta pp = new PanelPregunta(listaPreguntas.get(0));
+    int cont=1;
+    List<Integer> respuesta = new ArrayList<Integer>();
     
     
     public VentanaPrincipal() {
         initComponents();
-        GestionPreguntas gp = new GestionPreguntas();
-        List<Pregunta> listaPreguntas = gp.iniciarJuego(10);
-        PanelPregunta pp = new PanelPregunta(listaPreguntas.get(0));
+        
+        Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+        int height = pantalla.height;
+        int width = pantalla.width;
+        setSize(width/2, height/2);
+        setLocationRelativeTo(null);
+        
         contenedor.add(pp);
     }
+    
+    public void finJuego(){
+        for(int i = 0; i < respuesta.size(); i++){
+            if(gp.comprobarPregunta(listaPreguntas.get(i),respuesta.get(i),0)){
+                System.out.println("Has acertado: " + listaPreguntas.get(i).getPregunta() + "\nPuntuación: "+gp.getPuntuacion() );
+            }
+        } 
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -37,35 +59,257 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
-        contenedorPincipal = new javax.swing.JPanel();
+        checkGroup_numeroPreguntas = new javax.swing.ButtonGroup();
+        checkGroup_dificltad = new javax.swing.ButtonGroup();
         contenedor = new javax.swing.JPanel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        contenedorBotones = new javax.swing.JPanel();
+        btn_atras = new javax.swing.JButton();
+        btn_siguiente = new javax.swing.JButton();
+        menu = new javax.swing.JMenuBar();
+        menu_opcion = new javax.swing.JMenu();
+        listaNumeroPreguntas = new javax.swing.JMenu();
+        _5_Preguntas = new javax.swing.JRadioButtonMenuItem();
+        _10_Preguntas = new javax.swing.JRadioButtonMenuItem();
+        _15_Preguntas = new javax.swing.JRadioButtonMenuItem();
+        listaDificultad = new javax.swing.JMenu();
+        _Normal = new javax.swing.JRadioButtonMenuItem();
+        _Dificil = new javax.swing.JRadioButtonMenuItem();
+        btn_salir = new javax.swing.JMenuItem();
+        menu_gestion = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        contenedorPincipal.setLayout(new java.awt.BorderLayout());
-        contenedorPincipal.add(contenedor, java.awt.BorderLayout.CENTER);
+        contenedor.addContainerListener(new java.awt.event.ContainerAdapter() {
+            public void componentAdded(java.awt.event.ContainerEvent evt) {
+                contenedorComponentAdded(evt);
+            }
+        });
+        contenedor.setLayout(new java.awt.GridBagLayout());
+        getContentPane().add(contenedor, java.awt.BorderLayout.CENTER);
 
-        jMenu1.setText("Opciones");
-        jMenuBar1.add(jMenu1);
+        contenedorBotones.setLayout(new java.awt.GridBagLayout());
 
-        setJMenuBar(jMenuBar1);
+        btn_atras.setText("Atras");
+        btn_atras.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_atrasActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(37, 122, 40, 0);
+        contenedorBotones.add(btn_atras, gridBagConstraints);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(contenedorPincipal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(contenedorPincipal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        btn_siguiente.setText("Siguiente");
+        btn_siguiente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_siguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_siguienteActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(37, 55, 40, 128);
+        contenedorBotones.add(btn_siguiente, gridBagConstraints);
+
+        getContentPane().add(contenedorBotones, java.awt.BorderLayout.SOUTH);
+
+        menu_opcion.setText("Opciones");
+
+        listaNumeroPreguntas.setText("Numero de preguntas");
+
+        checkGroup_numeroPreguntas.add(_5_Preguntas);
+        _5_Preguntas.setSelected(true);
+        _5_Preguntas.setText("5 Preguntas");
+        _5_Preguntas.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                _5_PreguntasStateChanged(evt);
+            }
+        });
+        _5_Preguntas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                _5_PreguntasActionPerformed(evt);
+            }
+        });
+        listaNumeroPreguntas.add(_5_Preguntas);
+
+        checkGroup_numeroPreguntas.add(_10_Preguntas);
+        _10_Preguntas.setText("10 Preguntas");
+        _10_Preguntas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                _10_PreguntasActionPerformed(evt);
+            }
+        });
+        listaNumeroPreguntas.add(_10_Preguntas);
+
+        checkGroup_numeroPreguntas.add(_15_Preguntas);
+        _15_Preguntas.setText("15 Preguntas");
+        _15_Preguntas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                _15_PreguntasActionPerformed(evt);
+            }
+        });
+        listaNumeroPreguntas.add(_15_Preguntas);
+
+        menu_opcion.add(listaNumeroPreguntas);
+
+        listaDificultad.setText("Dificultad");
+
+        checkGroup_dificltad.add(_Normal);
+        _Normal.setSelected(true);
+        _Normal.setText("Normal");
+        listaDificultad.add(_Normal);
+
+        checkGroup_dificltad.add(_Dificil);
+        _Dificil.setText("Dificil (Penalizaciones -2 pnts)");
+        listaDificultad.add(_Dificil);
+
+        menu_opcion.add(listaDificultad);
+
+        btn_salir.setText("Salir");
+        btn_salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_salirActionPerformed(evt);
+            }
+        });
+        menu_opcion.add(btn_salir);
+
+        menu.add(menu_opcion);
+
+        menu_gestion.setText("Gestion de preguntas");
+        menu.add(menu_gestion);
+
+        setJMenuBar(menu);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salirActionPerformed
+        dispose();
+    }//GEN-LAST:event_btn_salirActionPerformed
+
+    private void _5_PreguntasStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event__5_PreguntasStateChanged
+        
+    }//GEN-LAST:event__5_PreguntasStateChanged
+
+    private void _5_PreguntasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event__5_PreguntasActionPerformed
+        listaPreguntas.removeAll(listaPreguntas);
+        respuesta.removeAll(respuesta);
+        listaPreguntas = gp.iniciarJuego(5);
+        contenedor.removeAll();
+        btn_siguiente.setText("Siguiente");
+        pp = new PanelPregunta(listaPreguntas.get(0));
+        contenedor.add(pp);
+        contenedor.validate();
+        contenedorBotones.setVisible(true);
+        gp.resetearPuntuacion();
+        cont = 1;
+    }//GEN-LAST:event__5_PreguntasActionPerformed
+
+    private void _10_PreguntasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event__10_PreguntasActionPerformed
+        listaPreguntas.removeAll(listaPreguntas);
+        respuesta.removeAll(respuesta);
+        listaPreguntas = gp.iniciarJuego(10);
+        contenedor.removeAll();
+        btn_siguiente.setText("Siguiente");
+        pp = new PanelPregunta(listaPreguntas.get(0));
+        contenedor.add(pp);
+        contenedor.validate();
+        contenedorBotones.setVisible(true);
+        gp.resetearPuntuacion();
+        cont = 1;
+    }//GEN-LAST:event__10_PreguntasActionPerformed
+
+    private void _15_PreguntasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event__15_PreguntasActionPerformed
+        listaPreguntas.removeAll(listaPreguntas);
+        respuesta.removeAll(respuesta);
+        listaPreguntas = gp.iniciarJuego(15);
+        contenedor.removeAll();
+        btn_siguiente.setText("Siguiente");
+        pp = new PanelPregunta(listaPreguntas.get(0));
+        contenedor.add(pp);
+        contenedor.validate();
+        contenedorBotones.setVisible(true);
+        gp.resetearPuntuacion();
+        cont = 1;
+    }//GEN-LAST:event__15_PreguntasActionPerformed
+
+    private void contenedorComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_contenedorComponentAdded
+        
+    }//GEN-LAST:event_contenedorComponentAdded
+
+    private void btn_siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_siguienteActionPerformed
+        respuesta.add(pp.respuesta);
+        
+        if(cont < listaPreguntas.size()){
+            
+            if(cont < listaPreguntas.size()-1){
+                contenedor.removeAll();
+                pp = new PanelPregunta(listaPreguntas.get(cont));
+                contenedor.add(pp);
+                contenedor.repaint();
+                contenedor.validate();
+                cont++;
+            }
+            else{
+                btn_siguiente.setText("Terminar");
+                contenedor.removeAll();
+                pp = new PanelPregunta(listaPreguntas.get(cont));
+                contenedor.add(pp);
+                contenedor.repaint();
+                contenedor.validate();
+                cont++;
+            }
+        }
+        else{
+            finJuego();
+            contenedor.removeAll();
+            contenedor.repaint();
+            contenedor.validate();
+            contenedorBotones.setVisible(false);
+        }
+
+        
+        
+        
+    }//GEN-LAST:event_btn_siguienteActionPerformed
+
+    private void btn_atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_atrasActionPerformed
+       if(cont < listaPreguntas.size()){
+            
+            if(cont > 0){
+                contenedor.removeAll();
+                pp = new PanelPregunta(listaPreguntas.get(cont));
+                contenedor.add(pp);
+                contenedor.repaint();
+                contenedor.validate();
+                cont--;
+            }
+            else{
+                btn_atras.setEnabled(false);
+                contenedor.removeAll();
+                pp = new PanelPregunta(listaPreguntas.get(cont));
+                contenedor.add(pp);
+                contenedor.repaint();
+                contenedor.validate();
+                cont--;
+            }
+        }
+        else{
+            System.out.println(gp.getPuntuacion());
+            contenedor.removeAll();
+            contenedorBotones.removeAll();
+            contenedor.repaint();
+            contenedorBotones.repaint();
+            contenedor.validate();
+            contenedorBotones.validate();
+        }
+    }//GEN-LAST:event_btn_atrasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -93,7 +337,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -103,9 +346,22 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButtonMenuItem _10_Preguntas;
+    private javax.swing.JRadioButtonMenuItem _15_Preguntas;
+    private javax.swing.JRadioButtonMenuItem _5_Preguntas;
+    private javax.swing.JRadioButtonMenuItem _Dificil;
+    private javax.swing.JRadioButtonMenuItem _Normal;
+    private javax.swing.JButton btn_atras;
+    private javax.swing.JMenuItem btn_salir;
+    private javax.swing.JButton btn_siguiente;
+    private javax.swing.ButtonGroup checkGroup_dificltad;
+    private javax.swing.ButtonGroup checkGroup_numeroPreguntas;
     private javax.swing.JPanel contenedor;
-    private javax.swing.JPanel contenedorPincipal;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel contenedorBotones;
+    private javax.swing.JMenu listaDificultad;
+    private javax.swing.JMenu listaNumeroPreguntas;
+    private javax.swing.JMenuBar menu;
+    private javax.swing.JMenu menu_gestion;
+    private javax.swing.JMenu menu_opcion;
     // End of variables declaration//GEN-END:variables
 }
