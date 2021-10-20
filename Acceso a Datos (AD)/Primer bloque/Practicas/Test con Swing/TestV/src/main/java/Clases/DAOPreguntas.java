@@ -13,7 +13,7 @@ import java.util.List;
  * @author Alejandro
  */
 public class DAOPreguntas {
-    List<Pregunta> listPreguntas;
+    private List<Pregunta> listPreguntas;
     
     public DAOPreguntas(){
         crearLista();
@@ -133,54 +133,54 @@ public class DAOPreguntas {
         
         //Pregunta 11
         listRespuestas.clear();
-        pregunta = "¿?";
-        listRespuestas.add(new Respuesta("hola", true));
-        listRespuestas.add(new Respuesta("hola", false));
-        listRespuestas.add(new Respuesta("hola", false));
-        listRespuestas.add(new Respuesta("hola", false));
+        pregunta = "¿Quien fue el famoso escultor?";
+        listRespuestas.add(new Respuesta("Malchor", true));
+        listRespuestas.add(new Respuesta("Malcon", false));
+        listRespuestas.add(new Respuesta("Logan", false));
+        listRespuestas.add(new Respuesta("Hipnos", false));
         Collections.shuffle(listRespuestas);
         this.listPreguntas.add(new Pregunta(pregunta, listRespuestas));
         
         //Pregunta 12
         listRespuestas.clear();
-        pregunta = "¿?";
-        listRespuestas.add(new Respuesta("hola", true));
-        listRespuestas.add(new Respuesta("hola", false));
-        listRespuestas.add(new Respuesta("hola", false));
-        listRespuestas.add(new Respuesta("hola", false));
+        pregunta = "¿Que razas introducieron su poder en la hematites?";
+        listRespuestas.add(new Respuesta("Enanos, videntes, olvidados y jotuns", true));
+        listRespuestas.add(new Respuesta("Enanos, videntes, olvidados y mursats", false));
+        listRespuestas.add(new Respuesta("Enanos, videntes, chars y jotuns", false));
+        listRespuestas.add(new Respuesta("Enanos, videntes, olvidados y nors", false));
         Collections.shuffle(listRespuestas);
         this.listPreguntas.add(new Pregunta(pregunta, listRespuestas));
         
         //Pregunta 13
         listRespuestas.clear();
-        pregunta = "¿?";
-        listRespuestas.add(new Respuesta("hola", true));
-        listRespuestas.add(new Respuesta("hola", false));
-        listRespuestas.add(new Respuesta("hola", false));
-        listRespuestas.add(new Respuesta("hola", false));
+        pregunta = "¿Quien es realmente el lazaro que aparece por primera vez en el ls3?";
+        listRespuestas.add(new Respuesta("Balthazar", true));
+        listRespuestas.add(new Respuesta("Lazaro", false));
+        listRespuestas.add(new Respuesta("Kormir", false));
+        listRespuestas.add(new Respuesta("Caudecus", false));
         Collections.shuffle(listRespuestas);
         this.listPreguntas.add(new Pregunta(pregunta, listRespuestas));
         
         //Pregunta 14
         listRespuestas.clear();
-        pregunta = "¿?";
-        listRespuestas.add(new Respuesta("hola", true));
-        listRespuestas.add(new Respuesta("hola", false));
-        listRespuestas.add(new Respuesta("hola", false));
-        listRespuestas.add(new Respuesta("hola", false));
+        pregunta = "¿Cual fue el primer dragón en despertar despues de la hambruna de magia?";
+        listRespuestas.add(new Respuesta("Primordus", true));
+        listRespuestas.add(new Respuesta("Zhaitan", false));
+        listRespuestas.add(new Respuesta("Jormag", false));
+        listRespuestas.add(new Respuesta("Mordremoth", false));
         Collections.shuffle(listRespuestas);
         this.listPreguntas.add(new Pregunta(pregunta, listRespuestas));
         
         //Pregunta 15
         listRespuestas.clear();
-        pregunta = "¿?";
-        listRespuestas.add(new Respuesta("hola", true));
-        listRespuestas.add(new Respuesta("hola", false));
-        listRespuestas.add(new Respuesta("hola", false));
-        listRespuestas.add(new Respuesta("hola", false));
+        pregunta = "Excelsior es una expresión usada comúnmente por...";
+        listRespuestas.add(new Respuesta("Asuras", true));
+        listRespuestas.add(new Respuesta("Sylvaris", false));
+        listRespuestas.add(new Respuesta("Humanos", false));
+        listRespuestas.add(new Respuesta("Chars", false));
         Collections.shuffle(listRespuestas);
         this.listPreguntas.add(new Pregunta(pregunta, listRespuestas));
         
-        Collections.shuffle(listPreguntas);
+        Collections.shuffle(this.listPreguntas);
     }
 }
