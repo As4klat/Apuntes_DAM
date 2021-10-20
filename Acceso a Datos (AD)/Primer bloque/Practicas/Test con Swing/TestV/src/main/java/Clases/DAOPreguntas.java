@@ -23,8 +23,8 @@ public class DAOPreguntas {
         return this.listPreguntas;
     }
     
-    public void addPregunta(Pregunta p){
-        this.listPreguntas.add(p);
+    public void setListPreguntas(List<Pregunta> listPreguntas){
+        this.listPreguntas = listPreguntas;
     }
     
     private void crearLista(){
