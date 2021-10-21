@@ -5,9 +5,6 @@
  */
 package Interfaces.Paneles;
 
-import java.util.Collections;
-import java.util.List;
-
 /**
  *
  * @author Alejandro
@@ -17,11 +14,11 @@ public class PanelResultado extends javax.swing.JPanel {
     /**
      * Creates new form PanelResultado
      */
-    public PanelResultado(int nAciertos, List<String> listaAciertos) {
+    public PanelResultado(int nAciertos, String[] listaAciertos) {
         initComponents();
         
         contPreguntas.setText(String.valueOf(nAciertos));
-        listaV.setListData(Collections.(listaAciertos);
+        listaV.setListData(listaAciertos);
     }
 
     /**

@@ -17,18 +17,23 @@ public class GestionPreguntas {
     
     private List<Pregunta> listPreguntas;
     private List<Pregunta> listPreguntasJuego;
-    private DAOPreguntas dao;
+    private static DAOPreguntas dao;
     private int puntuacion;
     
     public GestionPreguntas(){
-        DAOPreguntas dao = new DAOPreguntas();
+        dao = new DAOPreguntas();
         listPreguntas = dao.getListPreguntas();
         listPreguntasJuego = new LinkedList<Pregunta>();
+    }
+    
+    public List<Pregunta> getListPreguntas(){
+        return listPreguntas;
     }
     
     public int getPuntuacion(){
         return puntuacion;
     }
+    
     public void resetearPuntuacion(){
         puntuacion=0;
     }

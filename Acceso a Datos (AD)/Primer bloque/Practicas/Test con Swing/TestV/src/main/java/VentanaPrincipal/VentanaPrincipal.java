@@ -7,13 +7,12 @@ package VentanaPrincipal;
 
 import Clases.GestionPreguntas;
 import Clases.Pregunta;
+import Interfaces.Paneles.PanelGestionPregunta;
 import Interfaces.Paneles.PanelPregunta;
 import Interfaces.Paneles.PanelResultado;
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -48,13 +47,18 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }
     
     private void finJuego(){
-        List<String> listaAcertadas = new ArrayList<String>();
+        String[] listaAcertadas = new String[Integer.parseInt(checkGroup_numeroPreguntas.getSelection().getActionCommand())];
         for(int i = 0; i < respuesta.length; i++){
             gp.modificarPuntos(listaPreguntas.get(i), respuesta[i], dificultad);
-            listaAcertadas.add(listaPreguntas.get(i).getPregunta());
+            if(gp.comprobarPregunta(listaPreguntas.get(i), respuesta[i])){
+                listaAcertadas[i] = listaPreguntas.get(i).getPregunta();
+            }
         }
         PanelResultado pr = new PanelResultado(gp.getPuntuacion(),listaAcertadas);
-        
+        contenedor.removeAll();
+        contenedor.add(pr);
+        contenedorBotones.setVisible(false);
+        this.setVisible(true);
     }
     
     private void resetJuego(int modo){
@@ -85,6 +89,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         checkGroup_numeroPreguntas = new javax.swing.ButtonGroup();
         checkGroup_dificltad = new javax.swing.ButtonGroup();
+        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
         contenedor = new javax.swing.JPanel();
         contenedorBotones = new javax.swing.JPanel();
         btn_atras = new javax.swing.JButton();
@@ -100,6 +105,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         _Dificil = new javax.swing.JRadioButtonMenuItem();
         btn_salir = new javax.swing.JMenuItem();
         menu_gestion = new javax.swing.JMenu();
+
+        jRadioButtonMenuItem1.setSelected(true);
+        jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -143,6 +151,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         checkGroup_numeroPreguntas.add(_5_Preguntas);
         _5_Preguntas.setSelected(true);
         _5_Preguntas.setText("5 Preguntas");
+        _5_Preguntas.setActionCommand("5");
         _5_Preguntas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 _5_PreguntasActionPerformed(evt);
@@ -152,6 +161,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         checkGroup_numeroPreguntas.add(_10_Preguntas);
         _10_Preguntas.setText("10 Preguntas");
+        _10_Preguntas.setActionCommand("10");
         _10_Preguntas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 _10_PreguntasActionPerformed(evt);
@@ -161,6 +171,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         checkGroup_numeroPreguntas.add(_15_Preguntas);
         _15_Preguntas.setText("15 Preguntas");
+        _15_Preguntas.setActionCommand("15");
         _15_Preguntas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 _15_PreguntasActionPerformed(evt);
@@ -196,6 +207,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         menu.add(menu_opcion);
 
         menu_gestion.setText("Gestion de preguntas");
+        menu_gestion.addMenuListener(new javax.swing.event.MenuListener() {
+            public void menuCanceled(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuDeselected(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuSelected(javax.swing.event.MenuEvent evt) {
+                menu_gestionMenuSelected(evt);
+            }
+        });
         menu.add(menu_gestion);
 
         setJMenuBar(menu);
@@ -244,11 +264,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         }
         else{
-            contenedor.removeAll();
             finJuego();
-            contenedor.repaint();
-            contenedor.validate();
-            contenedorBotones.setVisible(false);
+            
         }
     }//GEN-LAST:event_btn_siguienteActionPerformed
 
@@ -272,6 +289,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             contenedor.validate();
         }
     }//GEN-LAST:event_btn_atrasActionPerformed
+
+    private void menu_gestionMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_menu_gestionMenuSelected
+        PanelGestionPregunta pg = new PanelGestionPregunta(gp);
+        contenedor.removeAll();
+        contenedor.add(pg);
+        contenedorBotones.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_menu_gestionMenuSelected
 
     /**
      * @param args the command line arguments
@@ -320,6 +345,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.ButtonGroup checkGroup_numeroPreguntas;
     private javax.swing.JPanel contenedor;
     private javax.swing.JPanel contenedorBotones;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     private javax.swing.JMenu listaDificultad;
     private javax.swing.JMenu listaNumeroPreguntas;
     private javax.swing.JMenuBar menu;

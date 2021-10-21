@@ -6,6 +6,12 @@
     </Component>
     <Component class="javax.swing.ButtonGroup" name="checkGroup_dificltad">
     </Component>
+    <Component class="javax.swing.JRadioButtonMenuItem" name="jRadioButtonMenuItem1">
+      <Properties>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="jRadioButtonMenuItem1"/>
+      </Properties>
+    </Component>
     <Menu class="javax.swing.JMenuBar" name="menu">
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="menu_opcion">
@@ -25,6 +31,7 @@
                     </Property>
                     <Property name="selected" type="boolean" value="true"/>
                     <Property name="text" type="java.lang.String" value="5 Preguntas"/>
+                    <Property name="actionCommand" type="java.lang.String" value="5"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="_5_PreguntasActionPerformed"/>
@@ -36,6 +43,7 @@
                       <ComponentRef name="checkGroup_numeroPreguntas"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="10 Preguntas"/>
+                    <Property name="actionCommand" type="java.lang.String" value="10"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="_10_PreguntasActionPerformed"/>
@@ -47,6 +55,7 @@
                       <ComponentRef name="checkGroup_numeroPreguntas"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="15 Preguntas"/>
+                    <Property name="actionCommand" type="java.lang.String" value="15"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="_15_PreguntasActionPerformed"/>
@@ -94,6 +103,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Gestion de preguntas"/>
           </Properties>
+          <Events>
+            <EventHandler event="menuSelected" listener="javax.swing.event.MenuListener" parameters="javax.swing.event.MenuEvent" handler="menu_gestionMenuSelected"/>
+          </Events>
         </Menu>
       </SubComponents>
     </Menu>
