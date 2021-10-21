@@ -27,7 +27,6 @@
                     <Property name="text" type="java.lang.String" value="5 Preguntas"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="_5_PreguntasStateChanged"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="_5_PreguntasActionPerformed"/>
                   </Events>
                 </MenuItem>
@@ -67,6 +66,7 @@
                     </Property>
                     <Property name="selected" type="boolean" value="true"/>
                     <Property name="text" type="java.lang.String" value="Normal"/>
+                    <Property name="actionCommand" type="java.lang.String" value="0"/>
                   </Properties>
                 </MenuItem>
                 <MenuItem class="javax.swing.JRadioButtonMenuItem" name="_Dificil">
@@ -75,6 +75,7 @@
                       <ComponentRef name="checkGroup_dificltad"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Dificil (Penalizaciones -2 pnts)"/>
+                    <Property name="actionCommand" type="java.lang.String" value="1"/>
                   </Properties>
                 </MenuItem>
               </SubComponents>
@@ -121,9 +122,6 @@
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
   <SubComponents>
     <Container class="javax.swing.JPanel" name="contenedor">
-      <Events>
-        <EventHandler event="componentAdded" listener="java.awt.event.ContainerListener" parameters="java.awt.event.ContainerEvent" handler="contenedorComponentAdded"/>
-      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
           <BorderConstraints direction="Center"/>

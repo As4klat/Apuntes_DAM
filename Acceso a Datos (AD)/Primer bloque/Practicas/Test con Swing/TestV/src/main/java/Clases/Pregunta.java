@@ -29,19 +29,6 @@ public class Pregunta {
         return this.listRespuestas;
     }
     
-    @Override
-    public String toString(){
-        
-        String[] letra = {"A","B","C","D"};
-        String cadena="\n"+this.pregunta;
-        
-        for (int i = 0; i < this.listRespuestas.size(); i++){
-            cadena += "\n["+letra[i]+"] " + listRespuestas.get(i).getRespuesta();
-        }
-        
-        return cadena;
-    }
-    
     public boolean esValida(int posicion){
         return listRespuestas.get(posicion).getValida();
     }

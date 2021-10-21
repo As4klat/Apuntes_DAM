@@ -8,8 +8,10 @@ package VentanaPrincipal;
 import Clases.GestionPreguntas;
 import Clases.Pregunta;
 import Interfaces.Paneles.PanelPregunta;
+import Interfaces.Paneles.PanelResultado;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -26,8 +28,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     GestionPreguntas gp = new GestionPreguntas();
     List<Pregunta> listaPreguntas = gp.iniciarJuego(5);
     PanelPregunta pp = new PanelPregunta(listaPreguntas.get(0));
-    int cont=1;
-    List<Integer> respuesta = new ArrayList<Integer>();
+    int cont=0;
+    int dificultad;
+    int[] respuesta = new int[5];
     
     
     public VentanaPrincipal() {
@@ -39,18 +42,37 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         setSize(width/2, height/2);
         setLocationRelativeTo(null);
         
+        dificultad = Integer.parseInt(checkGroup_dificltad.getSelection().getActionCommand());
+        btn_atras.setEnabled(false);
         contenedor.add(pp);
     }
     
-    public void finJuego(){
-        for(int i = 0; i < respuesta.size(); i++){
-            if(gp.comprobarPregunta(listaPreguntas.get(i),respuesta.get(i),0)){
-                System.out.println("Has acertado: " + listaPreguntas.get(i).getPregunta() + "\nPuntuación: "+gp.getPuntuacion() );
-            }
-        } 
+    private void finJuego(){
+        List<String> listaAcertadas = new ArrayList<String>();
+        for(int i = 0; i < respuesta.length; i++){
+            gp.modificarPuntos(listaPreguntas.get(i), respuesta[i], dificultad);
+            listaAcertadas.add(listaPreguntas.get(i).getPregunta());
+        }
+        PanelResultado pr = new PanelResultado(gp.getPuntuacion(),listaAcertadas);
+        
     }
     
-
+    private void resetJuego(int modo){
+        respuesta = new int[modo];
+        dificultad = Integer.parseInt(checkGroup_dificltad.getSelection().getActionCommand());
+        listaPreguntas.removeAll(listaPreguntas);
+        contenedor.removeAll();
+        gp.resetearPuntuacion();
+        listaPreguntas = gp.iniciarJuego(modo);
+        btn_siguiente.setText("Siguiente");
+        pp = new PanelPregunta(listaPreguntas.get(0));
+        contenedor.add(pp);
+        contenedorBotones.setVisible(true);
+        btn_atras.setEnabled(false);
+        this.setVisible(true);
+        cont = 0;
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -81,11 +103,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        contenedor.addContainerListener(new java.awt.event.ContainerAdapter() {
-            public void componentAdded(java.awt.event.ContainerEvent evt) {
-                contenedorComponentAdded(evt);
-            }
-        });
         contenedor.setLayout(new java.awt.GridBagLayout());
         getContentPane().add(contenedor, java.awt.BorderLayout.CENTER);
 
@@ -126,11 +143,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         checkGroup_numeroPreguntas.add(_5_Preguntas);
         _5_Preguntas.setSelected(true);
         _5_Preguntas.setText("5 Preguntas");
-        _5_Preguntas.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                _5_PreguntasStateChanged(evt);
-            }
-        });
         _5_Preguntas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 _5_PreguntasActionPerformed(evt);
@@ -163,10 +175,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         checkGroup_dificltad.add(_Normal);
         _Normal.setSelected(true);
         _Normal.setText("Normal");
+        _Normal.setActionCommand("0");
         listaDificultad.add(_Normal);
 
         checkGroup_dificltad.add(_Dificil);
         _Dificil.setText("Dificil (Penalizaciones -2 pnts)");
+        _Dificil.setActionCommand("1");
         listaDificultad.add(_Dificil);
 
         menu_opcion.add(listaDificultad);
@@ -193,68 +207,32 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btn_salirActionPerformed
 
-    private void _5_PreguntasStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event__5_PreguntasStateChanged
-        
-    }//GEN-LAST:event__5_PreguntasStateChanged
-
     private void _5_PreguntasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event__5_PreguntasActionPerformed
-        listaPreguntas.removeAll(listaPreguntas);
-        respuesta.removeAll(respuesta);
-        listaPreguntas = gp.iniciarJuego(5);
-        contenedor.removeAll();
-        btn_siguiente.setText("Siguiente");
-        pp = new PanelPregunta(listaPreguntas.get(0));
-        contenedor.add(pp);
-        contenedor.validate();
-        contenedorBotones.setVisible(true);
-        gp.resetearPuntuacion();
-        cont = 1;
+        resetJuego(5);
     }//GEN-LAST:event__5_PreguntasActionPerformed
 
     private void _10_PreguntasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event__10_PreguntasActionPerformed
-        listaPreguntas.removeAll(listaPreguntas);
-        respuesta.removeAll(respuesta);
-        listaPreguntas = gp.iniciarJuego(10);
-        contenedor.removeAll();
-        btn_siguiente.setText("Siguiente");
-        pp = new PanelPregunta(listaPreguntas.get(0));
-        contenedor.add(pp);
-        contenedor.validate();
-        contenedorBotones.setVisible(true);
-        gp.resetearPuntuacion();
-        cont = 1;
+        resetJuego(10);
     }//GEN-LAST:event__10_PreguntasActionPerformed
 
     private void _15_PreguntasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event__15_PreguntasActionPerformed
-        listaPreguntas.removeAll(listaPreguntas);
-        respuesta.removeAll(respuesta);
-        listaPreguntas = gp.iniciarJuego(15);
-        contenedor.removeAll();
-        btn_siguiente.setText("Siguiente");
-        pp = new PanelPregunta(listaPreguntas.get(0));
-        contenedor.add(pp);
-        contenedor.validate();
-        contenedorBotones.setVisible(true);
-        gp.resetearPuntuacion();
-        cont = 1;
+        resetJuego(15);
+        
     }//GEN-LAST:event__15_PreguntasActionPerformed
 
-    private void contenedorComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_contenedorComponentAdded
-        
-    }//GEN-LAST:event_contenedorComponentAdded
-
     private void btn_siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_siguienteActionPerformed
-        respuesta.add(pp.respuesta);
+        respuesta[cont] = pp.respuesta;
         
+        cont++;
+        btn_atras.setEnabled(true);
         if(cont < listaPreguntas.size()){
             
-            if(cont < listaPreguntas.size()-1){
+            if(cont != listaPreguntas.size()-1){
                 contenedor.removeAll();
                 pp = new PanelPregunta(listaPreguntas.get(cont));
                 contenedor.add(pp);
                 contenedor.repaint();
                 contenedor.validate();
-                cont++;
             }
             else{
                 btn_siguiente.setText("Terminar");
@@ -263,51 +241,35 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 contenedor.add(pp);
                 contenedor.repaint();
                 contenedor.validate();
-                cont++;
             }
         }
         else{
-            finJuego();
             contenedor.removeAll();
+            finJuego();
             contenedor.repaint();
             contenedor.validate();
             contenedorBotones.setVisible(false);
         }
-
-        
-        
-        
     }//GEN-LAST:event_btn_siguienteActionPerformed
 
     private void btn_atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_atrasActionPerformed
-       if(cont < listaPreguntas.size()){
-            
-            if(cont > 0){
-                contenedor.removeAll();
-                pp = new PanelPregunta(listaPreguntas.get(cont));
-                contenedor.add(pp);
-                contenedor.repaint();
-                contenedor.validate();
-                cont--;
-            }
-            else{
-                btn_atras.setEnabled(false);
-                contenedor.removeAll();
-                pp = new PanelPregunta(listaPreguntas.get(cont));
-                contenedor.add(pp);
-                contenedor.repaint();
-                contenedor.validate();
-                cont--;
-            }
+        
+        cont--;
+        btn_siguiente.setText("Siguiente");
+        if(cont == 0){
+            btn_atras.setEnabled(false);
+            contenedor.removeAll();
+            pp = new PanelPregunta(listaPreguntas.get(cont), respuesta[cont]);
+            contenedor.add(pp);
+            contenedor.repaint();
+            contenedor.validate();
         }
         else{
-            System.out.println(gp.getPuntuacion());
             contenedor.removeAll();
-            contenedorBotones.removeAll();
+            pp = new PanelPregunta(listaPreguntas.get(cont), respuesta[cont]);
+            contenedor.add(pp);
             contenedor.repaint();
-            contenedorBotones.repaint();
             contenedor.validate();
-            contenedorBotones.validate();
         }
     }//GEN-LAST:event_btn_atrasActionPerformed
 

@@ -5,7 +5,6 @@
  */
 package Clases;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,7 +18,7 @@ public class GestionPreguntas {
     private List<Pregunta> listPreguntas;
     private List<Pregunta> listPreguntasJuego;
     private DAOPreguntas dao;
-    private int puntiacion;
+    private int puntuacion;
     
     public GestionPreguntas(){
         DAOPreguntas dao = new DAOPreguntas();
@@ -28,10 +27,10 @@ public class GestionPreguntas {
     }
     
     public int getPuntuacion(){
-        return puntiacion;
+        return puntuacion;
     }
     public void resetearPuntuacion(){
-        puntiacion=0;
+        puntuacion=0;
     }
     
     public void addPregunta(Pregunta p){
@@ -56,28 +55,29 @@ public class GestionPreguntas {
         Collections.shuffle(listPreguntasJuego);
         return listPreguntasJuego;
     }
-    
-    public boolean comprobarPregunta(Pregunta p,int posicion ,int dificultad){
-        boolean comp=false;
+    public void modificarPuntos(Pregunta p,int posicion ,int dificultad){
         if(dificultad == 0){
             if(p.esValida(posicion)){
-                this.puntiacion++;
-                comp = true;
-            }
-            else{
-                comp = false;
+                this.puntuacion++;
             }
         }
-        else{
+        else if(dificultad == 1){
             
             if(p.esValida(posicion)){
-                comp = true;
-                this.puntiacion++;
+                this.puntuacion++;
             }
             else{
-                comp = false;
-                this.puntiacion-=2;
+                this.puntuacion-=2;
             }
+        }
+        if(this.puntuacion < 0){
+            this.puntuacion = 0;
+        }
+    }
+    public boolean comprobarPregunta(Pregunta p,int posicion){
+        boolean comp=false;
+        if(p.esValida(posicion)){
+            comp = true;
         }
         return comp;
     }

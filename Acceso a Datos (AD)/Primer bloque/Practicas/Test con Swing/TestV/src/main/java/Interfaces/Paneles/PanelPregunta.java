@@ -28,13 +28,29 @@ public class PanelPregunta extends javax.swing.JPanel{
     }
     public PanelPregunta(Pregunta p, int posicion) {
         initComponents();
+        selecionarRadio(posicion);
         labelPregunta.setText(p.getPregunta());
         radioRespuesta1.setText(p.getListRespuestas().get(0).getRespuesta());
         radioRespuesta2.setText(p.getListRespuestas().get(1).getRespuesta());
         radioRespuesta3.setText(p.getListRespuestas().get(2).getRespuesta());
         radioRespuesta4.setText(p.getListRespuestas().get(3).getRespuesta());
     }
-
+    private void selecionarRadio(int posicion){
+        switch(posicion){
+            case 0:
+                radioRespuesta1.setSelected(true);
+                break;
+            case 1:
+                radioRespuesta2.setSelected(true);
+                break;
+            case 2:
+                radioRespuesta3.setSelected(true);
+                break;
+            case 3:
+                radioRespuesta4.setSelected(true);
+                break;
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -55,6 +71,7 @@ public class PanelPregunta extends javax.swing.JPanel{
         labelPregunta.setText("¿Pregunta?");
 
         grupoRespuestas.add(radioRespuesta1);
+        radioRespuesta1.setSelected(true);
         radioRespuesta1.setText("respuesta 1");
         radioRespuesta1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
