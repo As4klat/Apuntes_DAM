@@ -187,11 +187,21 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         _Normal.setSelected(true);
         _Normal.setText("Normal");
         _Normal.setActionCommand("0");
+        _Normal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                _NormalActionPerformed(evt);
+            }
+        });
         listaDificultad.add(_Normal);
 
         checkGroup_dificltad.add(_Dificil);
         _Dificil.setText("Dificil (Penalizaciones -2 pnts)");
         _Dificil.setActionCommand("1");
+        _Dificil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                _DificilActionPerformed(evt);
+            }
+        });
         listaDificultad.add(_Dificil);
 
         menu_opcion.add(listaDificultad);
@@ -297,6 +307,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         contenedorBotones.setVisible(false);
         this.setVisible(true);
     }//GEN-LAST:event_menu_gestionMenuSelected
+
+    private void _DificilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event__DificilActionPerformed
+        resetJuego(Integer.parseInt(checkGroup_numeroPreguntas.getSelection().getActionCommand()));
+    }//GEN-LAST:event__DificilActionPerformed
+
+    private void _NormalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event__NormalActionPerformed
+        resetJuego(Integer.parseInt(checkGroup_numeroPreguntas.getSelection().getActionCommand()));
+    }//GEN-LAST:event__NormalActionPerformed
 
     /**
      * @param args the command line arguments

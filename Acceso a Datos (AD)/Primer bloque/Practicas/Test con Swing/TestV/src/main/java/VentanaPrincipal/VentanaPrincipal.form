@@ -77,6 +77,9 @@
                     <Property name="text" type="java.lang.String" value="Normal"/>
                     <Property name="actionCommand" type="java.lang.String" value="0"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="_NormalActionPerformed"/>
+                  </Events>
                 </MenuItem>
                 <MenuItem class="javax.swing.JRadioButtonMenuItem" name="_Dificil">
                   <Properties>
@@ -86,6 +89,9 @@
                     <Property name="text" type="java.lang.String" value="Dificil (Penalizaciones -2 pnts)"/>
                     <Property name="actionCommand" type="java.lang.String" value="1"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="_DificilActionPerformed"/>
+                  </Events>
                 </MenuItem>
               </SubComponents>
             </Menu>
