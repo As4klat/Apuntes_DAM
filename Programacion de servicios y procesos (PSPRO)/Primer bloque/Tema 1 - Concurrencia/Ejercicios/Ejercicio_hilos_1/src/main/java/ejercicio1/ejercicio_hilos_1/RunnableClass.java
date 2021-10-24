@@ -13,10 +13,29 @@ import java.util.logging.Logger;
  * @author Alejandro
  */
 public class RunnableClass implements Runnable{
+    private int opcion;
     
+    public RunnableClass(int opcion){
+        this.opcion = opcion;
+    }
     public void run(){
         String nombre_hilo = Thread.currentThread().getName();
-        System.out.println("Comenzando: " + nombre_hilo);
+        
+        switch(opcion){
+            case 1:
+                for (int i  = 0; i <= 10; i++){
+                    System.out.println("El " + nombre_hilo + " vale: " + i);
+                }
+                break;
+            case 2:
+                String[] abe = {"a","b","c","d","e","f","g","h"};
+                for (int i  = 0; i <= abe.length; i++){
+                    System.out.println("El " + nombre_hilo + " vale: " + abe[i]);
+                }
+                break;
+                  
+        }
+        /*System.out.println("Comenzando: " + nombre_hilo);
         try {
             for(int i = 0; i < 10; i++){
                 Thread.sleep(1* 1000);

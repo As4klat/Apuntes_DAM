@@ -15,16 +15,12 @@ public class Hilo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        RunnableClass rc = new RunnableClass();
-        Thread hilo1 = new Thread(rc);
-        Thread hilo2 = new Thread(rc);
-        Thread hilo3 = new Thread(rc);
+        Thread hilo1 = new Thread(new RunnableClass(1));
+        Thread hilo2 = new Thread(new RunnableClass(2));
         hilo1.setName("hilo 1");
         hilo2.setName("hilo 2");
-        hilo3.setName("hilo 3");
         hilo1.start();
         hilo2.start();
-        hilo3.start();
     }
     
 }
