@@ -28,13 +28,13 @@ public class RunnableClass implements Runnable{
                 }
                 break;
             case 2:
-                String[] abe = {"a","b","c","d","e","f","g","h"};
-                for (int i  = 0; i <= abe.length; i++){
+                String[] abe = {"a","b","c","d","e","f","g","h","i","j","k","m","n","ñ","o"};
+                for (int i  = 0; i < abe.length; i++){
                     System.out.println("El " + nombre_hilo + " vale: " + abe[i]);
                 }
-                break;
-                  
+                break; 
         }
+        // Practicas de hilo 1
         /*System.out.println("Comenzando: " + nombre_hilo);
         try {
             for(int i = 0; i < 10; i++){
@@ -45,6 +45,8 @@ public class RunnableClass implements Runnable{
             System.out.println("El " + nombre_hilo + " se ha interrumpido");
         }
         System.out.println("FInalizado " + nombre_hilo);
+        
+        // Practicas de hilo 2
         /*for (int i = 0; i <= 5; i++){
             try {
                 Thread.sleep(1*1000);
