@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cabecera.component.html',
   styleUrls: ['./cabecera.component.css']
 })
-export class CabeceraComponent implements OnInit {
+export class CabeceraComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
