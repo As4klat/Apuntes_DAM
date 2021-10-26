@@ -20,7 +20,7 @@ public class RunnableClass implements Runnable{
     }
     public void run(){
         String nombre_hilo = Thread.currentThread().getName();
-        
+        Thread.yield();
         switch(opcion){
             case 1:
                 for (int i  = 0; i <= 10; i++){
