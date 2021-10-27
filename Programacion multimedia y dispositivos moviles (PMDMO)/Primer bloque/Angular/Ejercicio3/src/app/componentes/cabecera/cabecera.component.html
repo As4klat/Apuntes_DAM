@@ -1,2 +1,7 @@
-<p>cabecera works!</p>
-<ng-content></ng-content>
+<div class="cabecera">
+    <ng-content></ng-content>
+    <button (click)="hideLogo(true)">Ocultar/Mostrar</button>
+    <button (click)="toggleLogo(true)">Cambiar</button>
+<div class="imagen">
+    <img [src]="url" alt="url">
+</div>
