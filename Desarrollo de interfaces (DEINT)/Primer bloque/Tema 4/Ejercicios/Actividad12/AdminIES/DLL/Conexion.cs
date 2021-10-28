@@ -9,13 +9,13 @@ namespace AdminIES.DLL
 {
     class Conexion
     {
-        private string cadenaConexion = "Data Source=ALEJANDROLAP; Initial Catalog=db.Sistema; Integrated Security = True";
+        private string cadenaConexion = "Data Source="+ Environment.MachineName + "; Initial Catalog=db.Sistema; Integrated Security = True";
         SqlConnection sqlConnection;
 
         public SqlConnection EstablecerConexion()
         {
-            this.sqlConnection = new SqlConnection(this.cadenaConexion);
-            return this.sqlConnection;
+            sqlConnection = new SqlConnection(cadenaConexion);
+            return sqlConnection;
         }
 
         public bool EjecutarComandoSinRetornarDatos(string strComando)
@@ -24,7 +24,7 @@ namespace AdminIES.DLL
             {
                 SqlCommand sqlConmand = new SqlCommand();
                 sqlConmand.CommandText = strComando;
-                sqlConmand.Connection = this.EstablecerConexion();
+                sqlConmand.Connection = EstablecerConexion();
                 sqlConnection.Open();
                 sqlConmand.ExecuteNonQuery();
                 sqlConnection.Close();
@@ -34,6 +34,12 @@ namespace AdminIES.DLL
             {
                 return false;
             }
+        }
+        
+        public SqlDataAdapter EjecutarComandoRetornarDatos(string strComando)
+        {
+            SqlDataAdapter adaptador = new SqlDataAdapter(strComando, cadenaConexion);
+            return adaptador;
         }
     }
 }
