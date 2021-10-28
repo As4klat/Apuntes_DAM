@@ -1,0 +1,12 @@
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\bin\Debug\AdminIES.exe.config
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\bin\Debug\AdminIES.exe
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\bin\Debug\AdminIES.pdb
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\obj\Debug\AdminIES.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\obj\Debug\AdminIES.Form1.resources
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\obj\Debug\AdminIES.frm.frmCiclo.resources
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\obj\Debug\AdminIES.frm.frmEstudiantes.resources
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\obj\Debug\AdminIES.Properties.Resources.resources
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\obj\Debug\AdminIES.csproj.GenerateResource.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\obj\Debug\AdminIES.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\obj\Debug\AdminIES.exe
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad12\AdminIES\obj\Debug\AdminIES.pdb

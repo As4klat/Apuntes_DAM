@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminIES.DLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,49 +16,26 @@ namespace AdminIES.frm
         public frmCiclo()
         {
             InitializeComponent();
+        }     
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            CicloDLL cicloDLL = new CicloDLL();
+            cicloDLL.Agregar(textNombreCiclo.Text);
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            CicloDLL cicloDLL = new CicloDLL();
+            cicloDLL.Modificar(textNombreCiclo.Text, Convert.ToInt32(textID.Text));
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void frmCiclo_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
 
         }

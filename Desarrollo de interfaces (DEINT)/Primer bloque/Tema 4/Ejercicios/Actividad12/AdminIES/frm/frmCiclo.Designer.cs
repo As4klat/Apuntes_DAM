@@ -49,7 +49,6 @@ namespace AdminIES.frm
             this.label1.Size = new System.Drawing.Size(25, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textID
             // 
@@ -57,7 +56,6 @@ namespace AdminIES.frm
             this.textID.Name = "textID";
             this.textID.Size = new System.Drawing.Size(142, 22);
             this.textID.TabIndex = 1;
-            this.textID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -67,7 +65,6 @@ namespace AdminIES.frm
             this.label2.Size = new System.Drawing.Size(100, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = " Nombre Ciclo:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textNombreCiclo
             // 
@@ -75,7 +72,6 @@ namespace AdminIES.frm
             this.textNombreCiclo.Name = "textNombreCiclo";
             this.textNombreCiclo.Size = new System.Drawing.Size(501, 22);
             this.textNombreCiclo.TabIndex = 3;
-            this.textNombreCiclo.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // btnAgregar
             // 
@@ -85,7 +81,7 @@ namespace AdminIES.frm
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.button1_Click);
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCancelar
             // 
@@ -95,7 +91,7 @@ namespace AdminIES.frm
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.button2_Click);
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnBorrar
             // 
@@ -105,7 +101,7 @@ namespace AdminIES.frm
             this.btnBorrar.TabIndex = 6;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
-            this.btnBorrar.Click += new System.EventHandler(this.button3_Click);
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // btnModificar
             // 
@@ -115,7 +111,7 @@ namespace AdminIES.frm
             this.btnModificar.TabIndex = 7;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
-            this.btnModificar.Click += new System.EventHandler(this.button4_Click);
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // dataGridView
             // 
@@ -143,7 +139,6 @@ namespace AdminIES.frm
             this.Controls.Add(this.label1);
             this.Name = "frmCiclo";
             this.Text = "frmCiclo";
-            this.Load += new System.EventHandler(this.frmCiclo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
