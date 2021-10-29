@@ -15,10 +15,12 @@ namespace AdminIES.frm
     {
         private int idSelecionado;
         private string nombreSlecionado;
-        CicloDLL cicloDLL;
+        private Form formPadre;
+        private CicloDLL cicloDLL;
 
-        public frmCiclo()
+        public frmCiclo(Form formPadre)
         {
+            this.formPadre = formPadre;
             cicloDLL = new CicloDLL();
             InitializeComponent();
             LoadDatos();
@@ -26,12 +28,7 @@ namespace AdminIES.frm
 
         private void LoadDatos()
         {
-            dataGridView.DataSource = cicloDLL.CargarDatos2().Tables[0];
-            if (dataGridView.Rows.Count == 1)
-            {
-                idSelecionado = Convert.ToInt32(dataGridView.Rows[0].Cells[0].Value.ToString());
-                nombreSlecionado = dataGridView.Rows[0].Cells[1].Value.ToString();
-            }
+            dataGridView.DataSource = cicloDLL.CargarDatos().Tables[0];
         }
 
         private void VaciarDatos()
@@ -69,16 +66,26 @@ namespace AdminIES.frm
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.idSelecionado = Convert.ToInt32(dataGridView.Rows[e.RowIndex].Cells[0].Value.ToString());
-            this.nombreSlecionado = dataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textID.Text = idSelecionado.ToString();
-            textNombreCiclo.Text = nombreSlecionado;
+            if (!dataGridView.Rows[e.RowIndex].Cells[0].Value.ToString().Equals(""))
+            {
+                idSelecionado = Convert.ToInt32(dataGridView.Rows[e.RowIndex].Cells[0].Value.ToString());
+                nombreSlecionado = dataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+                textID.Text = idSelecionado.ToString();
+                textNombreCiclo.Text = nombreSlecionado;
+            }
+            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             VaciarDatos();
-            this.Close();
+            Hide();
+            formPadre.Show();
+        }
+
+        private void frmCiclo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

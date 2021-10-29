@@ -32,13 +32,7 @@ namespace AdminIES.DLL
             return conexion.EjecutarComandoSinRetornarDatos("delete from Ciclo where id=" + id);
         }
 
-        public SqlDataAdapter CargarDatos()
-        {
-            String consulta = "select * from Ciclo";
-            return conexion.EjecutarComandoRetornarDatos(consulta);
-        }
-
-        public DataSet CargarDatos2()
+        public DataSet CargarDatos()
         {
             SqlCommand consulta = new SqlCommand("Select * from Ciclo");
             return conexion.EjecutarSentencia(consulta);
