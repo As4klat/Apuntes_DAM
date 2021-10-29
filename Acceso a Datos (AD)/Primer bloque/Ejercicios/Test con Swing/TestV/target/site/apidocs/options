@@ -1,0 +1,24 @@
+-classpath
+'C:/Users/Alejandro/.m2/repository/org/netbeans/external/AbsoluteLayout/RELEASE124/AbsoluteLayout-RELEASE124.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'16'
+-sourcepath
+'C:/Users/Alejandro/Desktop/Estudios/Grado Superior DAM/Acceso a Datos (AD)/Primer bloque/Ejercicios/Test con Swing/TestV/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2021. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Alejandro/Desktop/Estudios/Grado Superior DAM/Acceso a Datos (AD)/Primer bloque/Ejercicios/Test con Swing/TestV/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'TestV 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'TestV 1.0-SNAPSHOT API'

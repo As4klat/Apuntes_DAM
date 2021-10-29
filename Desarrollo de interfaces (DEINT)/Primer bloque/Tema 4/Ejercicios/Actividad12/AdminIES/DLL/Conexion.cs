@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -40,6 +41,27 @@ namespace AdminIES.DLL
         {
             SqlDataAdapter adaptador = new SqlDataAdapter(strComando, cadenaConexion);
             return adaptador;
+        }
+
+        public DataSet EjecutarSentencia(SqlCommand sqlComando)
+        {
+            DataSet ds = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            try
+            {
+                SqlCommand sqlConmand = new SqlCommand();
+                sqlConmand = sqlComando;
+                sqlConmand.Connection = EstablecerConexion();
+                adapter.SelectCommand = sqlComando;
+                sqlConnection.Open();
+                adapter.Fill(ds);
+                sqlConnection.Close();
+                return ds;
+            }
+            catch (Exception e)
+            {
+                return ds;
+            }
         }
     }
 }

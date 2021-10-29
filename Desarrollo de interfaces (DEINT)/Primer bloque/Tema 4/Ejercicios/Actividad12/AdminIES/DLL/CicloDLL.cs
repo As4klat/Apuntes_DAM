@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -21,9 +22,9 @@ namespace AdminIES.DLL
             return conexion.EjecutarComandoSinRetornarDatos("Insert into Ciclo(nombre) values('" + nombreCiclo + "')");
         }
 
-        public bool Modificar(string nombreCiclo, int id)
+        public bool Modificar(int id, string nombreCiclo)
         {
-            return conexion.EjecutarComandoSinRetornarDatos("update Ciclo set nombre='" + nombreCiclo + "', where id=" + id);
+            return conexion.EjecutarComandoSinRetornarDatos("update Ciclo set nombre= '" + nombreCiclo + "' where id= " + id);
         }
 
         public bool Borrar(int id)
@@ -33,10 +34,15 @@ namespace AdminIES.DLL
 
         public SqlDataAdapter CargarDatos()
         {
-            String consulta = "select nombre from Ciclo";
+            String consulta = "select * from Ciclo";
             return conexion.EjecutarComandoRetornarDatos(consulta);
         }
 
+        public DataSet CargarDatos2()
+        {
+            SqlCommand consulta = new SqlCommand("Select * from Ciclo");
+            return conexion.EjecutarSentencia(consulta);
+        }
 
     }
 }

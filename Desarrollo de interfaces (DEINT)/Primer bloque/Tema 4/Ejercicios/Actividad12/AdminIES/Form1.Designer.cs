@@ -41,7 +41,7 @@ namespace AdminIES
             this.btnCiclos.TabIndex = 0;
             this.btnCiclos.Text = "Ciclos";
             this.btnCiclos.UseVisualStyleBackColor = true;
-            this.btnCiclos.Click += new System.EventHandler(this.button1_Click);
+            this.btnCiclos.Click += new System.EventHandler(this.btnCiclos_Click);
             // 
             // btnEstudiantes
             // 
@@ -51,6 +51,7 @@ namespace AdminIES
             this.btnEstudiantes.TabIndex = 1;
             this.btnEstudiantes.Text = "Estudiantes";
             this.btnEstudiantes.UseVisualStyleBackColor = true;
+            this.btnEstudiantes.Click += new System.EventHandler(this.btnEstudiantes_Click);
             // 
             // Form1
             // 

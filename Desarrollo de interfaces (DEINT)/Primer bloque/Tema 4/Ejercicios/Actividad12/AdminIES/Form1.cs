@@ -17,9 +17,21 @@ namespace AdminIES
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Cerrar()
         {
+            this.Close();
+        }
 
+        private void btnEstudiantes_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form();
+            frm.Show();
+            Cerrar();
+        }
+
+        private void btnCiclos_Click(object sender, EventArgs e)
+        {
+            Cerrar();
         }
     }
 }
