@@ -1,30 +1,24 @@
-import { Directive, ElementRef, Host, HostListener, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, Host, HostListener, Input, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[mouseHover]'
 })
 export class MouseHoverDirective {
   
-  cadena: String;
+  cadena1: string;
+  @Input('mouseHover') cadena: string;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {
-    this.cadena = "../../../assets/Angular.png";
+    let elemento = this.el.nativeElement;
+    this.cadena1 = elemento.src;
+    this.cadena = elemento.src;
    }
-   @HostListener('mouseover') mouseover(){
-    this.toggle();
+   @HostListener('mouseover') onMouseOver(){
     this.el.nativeElement.setAttribute('src', this.cadena);
+    this.el.nativeElement.classList.add('borde');
   }
-  @HostListener('mouseout') mouseout(){
-    this.toggle();
-    this.el.nativeElement.setAttribute('src', this.cadena);
-  }
-
-  toggle(){
-    if(this.cadena === "../../../assets/Angular.png"){
-      this.cadena = "../../../assets/Vue.png"
-    }
-    else{
-      this.cadena = "../../../assets/Angular.png"
-    }
+  @HostListener('mouseout') onMouseOut(){
+    this.el.nativeElement.setAttribute('src', this.cadena1);
+    this.el.nativeElement.classList.remove('borde');
   }
 }
