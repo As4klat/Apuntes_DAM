@@ -109,19 +109,14 @@ public class Ventana extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEmpezarActionPerformed
 
     private void btnPararActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPararActionPerformed
-        c.pausar();
+        
     }//GEN-LAST:event_btnPararActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
-        
+        c.interrupt();
         c.reset();
+        c = new Crono(this.labelCrono);
     }//GEN-LAST:event_btnReiniciarActionPerformed
-
-    private void actualizar(boolean activado){
-        
-    }
-    
-    
     
     /**
      * @param args the command line arguments

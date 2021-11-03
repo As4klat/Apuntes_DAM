@@ -31,31 +31,24 @@ public class Crono extends Thread {
     }
 
     public void run() {
-        pausado = false;
-        while (!Thread.interrupted()) {
+
+        while (!Thread.currentThread().isInterrupted()) {
             cs.contador();
             try {
                 this.sleep(1 * 1000);
-                if (cs.getSegundos() == 60) {
-                    cs.reiniciar();
-                    cm.contador();
-                    if (cm.getMinutos() == 60) {
-                        cm.reiniciar();
-                    }
-                }
-                format();
-                label.setText(cronoVista);
-                while(pausado){
-                    wait();
-                }
             } catch (InterruptedException ex) {
-                Logger.getLogger(Crono.class.getName()).log(Level.SEVERE, null, ex);
+                Thread.currentThread().interrupt();
             }
+            if (cs.getSegundos() == 60) {
+                cs.reiniciar();
+                cm.contador();
+                if (cm.getMinutos() == 60) {
+                    cm.reiniciar();
+                }
+            }
+            format();
+            label.setText(cronoVista);
         }
-    }
-    
-    public void pausar(){
-        pausado = true;
     }
 
     public void reset() {
