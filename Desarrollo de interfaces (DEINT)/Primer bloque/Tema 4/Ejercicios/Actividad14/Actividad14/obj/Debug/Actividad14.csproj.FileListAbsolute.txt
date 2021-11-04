@@ -1,0 +1,10 @@
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad14\Actividad14\bin\Debug\Actividad14.exe.config
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad14\Actividad14\bin\Debug\Actividad14.exe
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad14\Actividad14\bin\Debug\Actividad14.pdb
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad14\Actividad14\obj\Debug\Actividad14.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad14\Actividad14\obj\Debug\Actividad14.Form1.resources
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad14\Actividad14\obj\Debug\Actividad14.Properties.Resources.resources
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad14\Actividad14\obj\Debug\Actividad14.csproj.GenerateResource.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad14\Actividad14\obj\Debug\Actividad14.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad14\Actividad14\obj\Debug\Actividad14.exe
+C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad14\Actividad14\obj\Debug\Actividad14.pdb

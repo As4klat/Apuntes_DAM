@@ -34,6 +34,13 @@ public class Crono extends Thread {
 
         while (!Thread.currentThread().isInterrupted()) {
             cs.contador();
+            while (pausado) {
+                try {
+                    wait();
+                } catch (InterruptedException ex) {
+                    System.out.println("Error en ela pausa: " + ex);
+                }
+            }
             try {
                 this.sleep(1 * 1000);
             } catch (InterruptedException ex) {
@@ -49,6 +56,16 @@ public class Crono extends Thread {
             format();
             label.setText(cronoVista);
         }
+    }
+    
+    public synchronized void pausar(){
+        pausado = true;
+        notify();
+    }
+    
+    public synchronized void reanudar(){
+        pausado = false;
+        notify();
     }
 
     public void reset() {

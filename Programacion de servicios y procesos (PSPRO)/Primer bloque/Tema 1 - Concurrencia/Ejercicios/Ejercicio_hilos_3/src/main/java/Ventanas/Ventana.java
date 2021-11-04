@@ -13,12 +13,14 @@ import Crono.Crono;
 public class Ventana extends javax.swing.JFrame {
 
     private Crono c;
+    private boolean ejecucion;
     /**
      * Creates new form Ventana
      */
     public Ventana() {
         initComponents();
         c = new Crono(this.labelCrono);
+        ejecucion = false;
     }
 
     /**
@@ -105,11 +107,17 @@ public class Ventana extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnEmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmpezarActionPerformed
-        c.start();
+        if(ejecucion){
+            c.reanudar();
+        }
+        else{
+            c.start();
+            ejecucion = true;
+        }
     }//GEN-LAST:event_btnEmpezarActionPerformed
 
     private void btnPararActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPararActionPerformed
-        
+        c.pausar();
     }//GEN-LAST:event_btnPararActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
