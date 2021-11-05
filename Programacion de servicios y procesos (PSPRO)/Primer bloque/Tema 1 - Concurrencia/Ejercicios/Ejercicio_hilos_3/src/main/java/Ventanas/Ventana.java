@@ -22,6 +22,27 @@ public class Ventana extends javax.swing.JFrame {
         c = new Crono(this.labelCrono);
         ejecucion = false;
     }
+    
+    private void empezar(){
+        if(ejecucion){
+            c.reanudar();
+        }
+        else{
+            c.start();
+            ejecucion = true;
+        }
+    }
+    
+    private void pausar(){
+        c.pausar();
+    }
+    
+    private void reiniciar(){
+        ejecucion = false;
+        c.interrupt();
+        c.reset();
+        c = new Crono(this.labelCrono);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -107,23 +128,15 @@ public class Ventana extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnEmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmpezarActionPerformed
-        if(ejecucion){
-            c.reanudar();
-        }
-        else{
-            c.start();
-            ejecucion = true;
-        }
+        empezar();
     }//GEN-LAST:event_btnEmpezarActionPerformed
 
     private void btnPararActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPararActionPerformed
-        c.pausar();
+        pausar();
     }//GEN-LAST:event_btnPararActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
-        c.interrupt();
-        c.reset();
-        c = new Crono(this.labelCrono);
+        reiniciar();
     }//GEN-LAST:event_btnReiniciarActionPerformed
     
     /**

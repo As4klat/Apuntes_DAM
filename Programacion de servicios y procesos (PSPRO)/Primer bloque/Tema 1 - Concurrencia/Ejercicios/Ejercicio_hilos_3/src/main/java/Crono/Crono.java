@@ -20,7 +20,7 @@ public class Crono extends Thread {
     private String cronoVista;
     private JLabel label;
     private boolean pausado;
-    
+
     public Crono(JLabel label) {
         cm = new CronoMinutos();
         cs = new CronoSegundos();
@@ -33,18 +33,17 @@ public class Crono extends Thread {
     public void run() {
 
         while (!Thread.currentThread().isInterrupted()) {
+
             cs.contador();
-            while (pausado) {
-                try {
-                    wait();
-                } catch (InterruptedException ex) {
-                    System.out.println("Error en ela pausa: " + ex);
-                }
-            }
             try {
+                synchronized (this) {
+                    while (pausado) {
+                        this.wait();
+                    }
+                }
                 this.sleep(1 * 1000);
             } catch (InterruptedException ex) {
-                Thread.currentThread().interrupt();
+                this.interrupt();
             }
             if (cs.getSegundos() == 60) {
                 cs.reiniciar();
@@ -55,15 +54,17 @@ public class Crono extends Thread {
             }
             format();
             label.setText(cronoVista);
+
         }
+
     }
-    
-    public synchronized void pausar(){
+
+    public synchronized void pausar() {
         pausado = true;
         notify();
     }
-    
-    public synchronized void reanudar(){
+
+    public synchronized void reanudar() {
         pausado = false;
         notify();
     }
