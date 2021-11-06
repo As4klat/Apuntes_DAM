@@ -18,14 +18,75 @@ import javax.swing.JOptionPane;
 public class VentanaChat extends javax.swing.JFrame {
 
     private Socket cliente = null;
+    private String nombre;
 
-    public VentanaChat(Socket cliente) {
-        this.cliente = cliente;
-        initComponents();
+    public VentanaChat() throws IOException {
+
+        final int puerto = 6006;
         
+
+        final String host = mostrarModoConexion();
+
+        try {
+            this.cliente = new Socket(host, puerto);
+        } catch (IOException ex) {
+            JOptionPane.showMessageDialog(this, "No se ha podido conectar con el servidor.");
+            System.exit(0);
+        }
+        initComponents();
         Escucha e = new Escucha(cliente, areaTxt);
         e.start();
-        areaTxt.setText("");
+
+        mostrarUsuarioPanel();
+        usuarioConectado();
+        areaTxt.setContentType("text/html");
+    }
+
+    private void mostrarUsuarioPanel() {
+        nombre = JOptionPane.showInputDialog(
+                this,
+                "Nombre de usuario",
+                JOptionPane.QUESTION_MESSAGE);
+        if(nombre == null){
+           System.exit(0); 
+        }
+        if (nombre.equals("")) {
+            JOptionPane.showMessageDialog(this, "Su nombre de usuario predeterminado es: User" + cliente.getLocalPort());
+        } else {
+            nombre += ":" + cliente.getLocalPort();
+        }
+    }
+
+    private String mostrarModoConexion() {
+        String host = null;
+        int seleccion = JOptionPane.showOptionDialog(
+                this,
+                "Seleccione modo de conexion",
+                "Selector tipo conexion",
+                JOptionPane.YES_NO_CANCEL_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                new String[]{"Local", "Online"},
+                "Local");
+        
+        switch(seleccion){
+            case 0:
+                host = "localhost"; 
+                break;
+            case 1:
+                host = "asklat.asuscomm.com";
+                break;
+            default:
+                host = "1";
+                break;
+        }
+        System.out.println(host);
+        return host;
+    }
+
+    private void usuarioConectado() throws IOException {
+        DataOutputStream salida = new DataOutputStream(cliente.getOutputStream());
+        salida.writeUTF(nombre);
     }
 
     @SuppressWarnings("unchecked")
@@ -34,9 +95,9 @@ public class VentanaChat extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        areaTxt = new javax.swing.JTextArea();
         textSend = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        areaTxt = new javax.swing.JEditorPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -52,8 +113,11 @@ public class VentanaChat extends javax.swing.JFrame {
             }
         });
 
-        areaTxt.setColumns(20);
-        areaTxt.setRows(5);
+        areaTxt.setEditable(false);
+        areaTxt.setContentType("text/html"); // NOI18N
+        areaTxt.setText(null);
+        areaTxt.setToolTipText("");
+        areaTxt.setAutoscrolls(false);
         jScrollPane1.setViewportView(areaTxt);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -63,9 +127,9 @@ public class VentanaChat extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 408, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(textSend)
+                        .addComponent(textSend, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -74,8 +138,8 @@ public class VentanaChat extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(textSend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -106,15 +170,15 @@ public class VentanaChat extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowClosed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(textSend.getText() != null){
+        if (textSend.getText() != null) {
             try {
                 DataOutputStream salida = new DataOutputStream(cliente.getOutputStream());
-                salida.writeUTF(textSend.getText());
+                salida.writeUTF(textSend.getText() + ":" + nombre);
                 textSend.setText(null);
             } catch (IOException ex) {
                 Logger.getLogger(VentanaChat.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
+
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -122,21 +186,17 @@ public class VentanaChat extends javax.swing.JFrame {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                final int puerto = 6006;
-                final String host = "localhost";
                 try {
-                    Socket cliente = new Socket(host, puerto);
-                    new VentanaChat(cliente).setVisible(true);
+                    new VentanaChat().setVisible(true);
                 } catch (IOException ex) {
-                    JOptionPane.showMessageDialog(null, "No se ha podido conectar con el servidor.");
+                    Logger.getLogger(VentanaChat.class.getName()).log(Level.SEVERE, null, ex);
                 }
-
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea areaTxt;
+    private javax.swing.JEditorPane areaTxt;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

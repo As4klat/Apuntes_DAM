@@ -5,13 +5,11 @@
 package Principal;
 
 import java.io.DataInputStream;
-import java.io.DataOutput;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JTextArea;
+import javax.swing.JEditorPane;
 
 /**
  *
@@ -20,10 +18,10 @@ import javax.swing.JTextArea;
 public class Escucha extends Thread {
 
     private Socket cliente;
-    private JTextArea areaTxt;
+    private JEditorPane areaTxt;
     private DataInputStream entrada;
 
-    public Escucha(Socket cliente, JTextArea areaTxt) {
+    public Escucha(Socket cliente, JEditorPane areaTxt) {
         this.cliente = cliente;
         this.areaTxt = areaTxt;
     }
@@ -31,32 +29,43 @@ public class Escucha extends Thread {
     @Override
     public void run() {
         String texto = "";
-        String[] chats;
-        
+        String str = null;
+        String[] msn;
+
         while (true) {
             try {
                 entrada = new DataInputStream(cliente.getInputStream());
 
                 texto = entrada.readUTF();
-                    
-                    chats = texto.split(",");
-                    texto = "";
-                    for (int i = 0; i < chats.length; i++){
-                        
-                        if(chats[i].split(":")[1].equals(String.valueOf(cliente.getLocalPort()))){
-                            texto += "                                             " + chats[i].split(":")[0];
-                        }
-                        else{
-                            texto += chats[i].split(":")[0];
-                        }
-                        
+
+                str = areaTxt.getText();
+                str = str.substring(str.indexOf("<body>") + 6, str.indexOf("</body>"));
+                str = str.replaceAll("<p style=\"margin-top: 0\">", "");
+                System.out.println(str);
+                msn = texto.split(":");
+                if (msn.length == 2) {
+                    texto = "<b>" + msn[0] + " se ha unido a la sala</b><br>";
+                } else {
+                    if (msn[2].equals(String.valueOf(cliente.getLocalPort()))) {
+                        texto = cuentaEspacios() +"<b>Tu: </b>"+ msn[0] + "<br>";
+                    } else {
+                        texto = "<b>" + msn[1] + ":</b> " + msn[0] + "<br>";
                     }
-                    
-                    areaTxt.setText(texto);
+                }
+
+                areaTxt.setText(str + texto);
             } catch (IOException ex) {
                 Logger.getLogger(Escucha.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
+
     }
 
+    private String cuentaEspacios() {
+        String espacios = "";
+        for (int i = 0; i < areaTxt.getSize().getWidth() / 6; i++) {
+            espacios += "&nbsp;";
+        }
+        return espacios;
+    }
 }

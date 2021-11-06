@@ -12,23 +12,17 @@ import java.util.List;
  * @author Alejandro
  */
 public class SalaChat {
-    private List<String> chat;
+    private String chat;
     
     public SalaChat(){
-        chat = new LinkedList<>();
+        chat = "";
     }
     
     public void add(String msn){
-        chat.add(msn);
+        chat = msn;
     }
     
-    public synchronized String getList(){
-        
-        String salaChat = "";
-        
-        for(int i = 0; i < chat.size(); i++){
-            salaChat += chat.get(i) + ",";
-        }
-        return salaChat;
+    public String getChat(){
+        return chat;
     }
 }

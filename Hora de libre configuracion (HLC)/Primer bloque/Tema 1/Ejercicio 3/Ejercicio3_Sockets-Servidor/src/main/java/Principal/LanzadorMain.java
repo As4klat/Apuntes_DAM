@@ -13,10 +13,11 @@ public class LanzadorMain {
         final int puerto = 6006;
 
         ServerSocket server = new ServerSocket(puerto);
+        System.out.println("Servidor iniciado en el puerto: " + puerto);
         SalaChat room = new SalaChat();
-
+        
         List<Peticion> listaHilos = new ArrayList<>();
-
+        
         while (true) {
             Socket cliente = new Socket();
             cliente = server.accept();

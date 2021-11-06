@@ -35,6 +35,8 @@ public class Peticion extends Thread {
     public void run() {
         String msn = null;
         System.out.println("Se ha lanzado un hilo. Name: " + this.getName());
+        String nombreUsuario = null;
+        boolean tomaUsuario = true;
 
         while (!cliente.isClosed()) {
             try {
@@ -42,15 +44,19 @@ public class Peticion extends Thread {
                 salida = new DataOutputStream(cliente.getOutputStream());
 
                 msn = entrada.readUTF();
-                room.add(msn + "\n:" + cliente.getPort()+ "\n");              
-                
-                for(int i = 0; i < listaHilos.size(); i++){
-                    listaHilos.get(i).actualizar(room.getList());
+                if (tomaUsuario) {
+                    nombreUsuario = msn;
+                    broadCast(nombreUsuario);
+                    tomaUsuario = false;
+                } else {
+                    room.add(msn);
+                    broadCast(room.getChat());
                 }
-                
+
             } catch (IOException ex) {
                 try {
                     cliente.close();
+                    this.listaHilos.remove(this);
                 } catch (IOException ex1) {
                     Logger.getLogger(Peticion.class.getName()).log(Level.SEVERE, null, ex1);
                 }
@@ -58,8 +64,14 @@ public class Peticion extends Thread {
         }
         System.out.println("Hilo " + this.getName() + " ha finalizado sin problemas.");
     }
-    
-    public void actualizar(String chats) throws IOException{
-        salida.writeUTF(chats);
+
+    public void actualizar(String chat) throws IOException {
+        salida.writeUTF(chat);
+    }
+
+    private void broadCast(String variable) throws IOException {
+        for (int i = 0; i < listaHilos.size(); i++) {
+            listaHilos.get(i).actualizar(variable);
+        }
     }
 }
