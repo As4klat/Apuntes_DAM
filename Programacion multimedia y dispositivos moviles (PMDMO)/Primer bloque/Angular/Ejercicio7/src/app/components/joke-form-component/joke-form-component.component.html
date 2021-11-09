@@ -1,0 +1,33 @@
+<div class="card card-block">
+    <h4 class="card-title">Crear Joke</h4>
+    <form [formGroup]="form" (ngSubmit)="onSubmit(setup.value, punchline.value)" novalidate>
+
+        <div class="form-group">
+            <input type="text"
+                [ngClass]="{'invalido' : formInvalid}" 
+                formControlName="chiste"
+                class="form-control" 
+                placeholder="Aqui va el setup" 
+                #setup>
+            <div *ngIf="form.controls.chiste.errors?.required" class="alert alert-danger">
+                Chiste es obligatorio.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="text"
+                [ngClass]="{'invalido' : formInvalid}"
+                formControlName="respuesta" 
+                class="form-control" 
+                placeholder="Aqui el punchline"
+                #punchline>
+            <div *ngIf="form.controls.respuesta.errors?.required" class="alert alert-danger">
+                Respuesta es obligatoria.
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Crear</button>
+
+    </form>
+
+</div>
