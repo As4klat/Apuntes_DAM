@@ -20,7 +20,7 @@ public class CronoMiliSegunos {
     }
     
     public void contador(){
-        milisegundos++;
+        milisegundos+=4;
     }
     
     public void reiniciar(){

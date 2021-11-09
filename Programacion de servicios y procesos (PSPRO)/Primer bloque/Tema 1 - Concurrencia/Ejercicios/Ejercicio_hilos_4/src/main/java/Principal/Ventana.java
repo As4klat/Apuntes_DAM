@@ -1,45 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package Principal;
 
+import Crono.Crono;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JProgressBar;
-import javax.swing.LookAndFeel;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.plaf.basic.BasicLookAndFeel;
 import javax.swing.plaf.metal.MetalLookAndFeel;
-import javax.swing.plaf.multi.MultiLookAndFeel;
-import javax.swing.plaf.synth.SynthLookAndFeel;
 
-/**
- *
- * @author Alejandro
- */
 public class Ventana extends javax.swing.JFrame {
 
     private CorredorHilo[] corredores = new CorredorHilo[4];
     private GanadorComHilo gh;
     private List<JProgressBar> posicionesCorredores = new LinkedList<JProgressBar>();
     private boolean inicio = false;
+    private Crono c = new Crono();
 
     public Ventana() {
         initComponents();
         btnParar.setEnabled(false);
+        
         int panelX = (getWidth() - panelCorredores.getWidth() - getInsets().left - getInsets().right) / 2;
         int panelY = ((getHeight() - panelCorredores.getHeight() - getInsets().top - getInsets().bottom) / 2);
-
         panelCorredores.setLocation(panelX, panelY);
 
-        corredores[0] = new CorredorHilo(labelCorredor1.getText(), this.corredor1);
-        corredores[1] = new CorredorHilo(labelCorredor2.getText(), this.corredor2);
-        corredores[2] = new CorredorHilo(labelCorredor3.getText(), this.corredor3);
-        corredores[3] = new CorredorHilo(labelCorredor4.getText(), this.corredor4);
+        corredores[0] = new CorredorHilo(labelCorredor1.getText(), this.corredor1, c);
+        corredores[1] = new CorredorHilo(labelCorredor2.getText(), this.corredor2, c);
+        corredores[2] = new CorredorHilo(labelCorredor3.getText(), this.corredor3, c);
+        corredores[3] = new CorredorHilo(labelCorredor4.getText(), this.corredor4, c);
 
         gh = new GanadorComHilo(corredores, this);
     }
@@ -50,6 +40,7 @@ public class Ventana extends javax.swing.JFrame {
             corredores[i].start();
         }
         gh.start();
+        c.start();
         inicio = true;
     }
 
@@ -57,21 +48,26 @@ public class Ventana extends javax.swing.JFrame {
         inicio = false;
         btnParar.setEnabled(false);
         gh.interrupt();
+        c.interrupt();
+        c.reset();
 
         for (int i = 0; i < corredores.length; i++) {
             corredores[i].finalizar();
             corredores[i].interrupt();
         }
-        corredores[0] = new CorredorHilo(labelCorredor1.getText(), this.corredor1);
-        corredores[1] = new CorredorHilo(labelCorredor2.getText(), this.corredor2);
-        corredores[2] = new CorredorHilo(labelCorredor3.getText(), this.corredor3);
-        corredores[3] = new CorredorHilo(labelCorredor4.getText(), this.corredor4);
+        
+        c = new Crono();
+        corredores[0] = new CorredorHilo(labelCorredor1.getText(), this.corredor1, c);
+        corredores[1] = new CorredorHilo(labelCorredor2.getText(), this.corredor2, c);
+        corredores[2] = new CorredorHilo(labelCorredor3.getText(), this.corredor3, c);
+        corredores[3] = new CorredorHilo(labelCorredor4.getText(), this.corredor4, c);
 
         gh = new GanadorComHilo(corredores, this);
     }
 
     private void pausarCorredores() {
         gh.parar();
+        c.pausar();
         btnParar.setEnabled(false);
         for (int i = 0; i < corredores.length; i++) {
             corredores[i].parar();
@@ -80,6 +76,7 @@ public class Ventana extends javax.swing.JFrame {
 
     private void reanudarCorredores() {
         gh.reanudar();
+        c.reanudar();
         btnParar.setEnabled(true);
         for (int i = 0; i < corredores.length; i++) {
             corredores[i].reanudar();
@@ -255,34 +252,8 @@ public class Ventana extends javax.swing.JFrame {
         detenerCorredores();
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {

@@ -49,7 +49,6 @@ public class GanadorComHilo extends Thread {
                     }
                 }
             }
-
             if (isHilosTerminados()) {
                 finCarrera = true;
             }

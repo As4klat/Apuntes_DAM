@@ -4,7 +4,6 @@
  */
 package Crono;
 
-import java.util.logging.Formatter;
 import javax.swing.JLabel;
 
 /**
@@ -19,10 +18,8 @@ public class Crono extends Thread {
     private String cronoVista;
     private JLabel label;
     private boolean pausado;
-    private Formatter obj;
 
     public Crono(JLabel label) {
-        obj = new Formatter();
         cm = new CronoMinutos();
         cs = new CronoSegundos();
         cms = new CronoMiliSegunos();
@@ -57,8 +54,7 @@ public class Crono extends Thread {
 
                 format();
                 label.setText(cronoVista);
-                this.sleep(1);
-
+                this.sleep(4);
             } catch (InterruptedException ex) {
                 this.interrupt();
             }
@@ -97,12 +93,11 @@ public class Crono extends Thread {
             cronoVista += cs.getSegundos() + " : ";
         }
         
-        cronoVista += contarCerosMiliSegundos() + cms.getMilisegundos();
+        cronoVista += contarCerosMiliSegundos();
     }
     
     private String contarCerosMiliSegundos(){
-            String ceros = "";
-            ceros = String.valueOf(obj.format("%05d", cms.getMilisegundos()));
+            String ceros = String.format("%04d", cms.getMilisegundos());
             return ceros;
         }
 }

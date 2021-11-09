@@ -16,17 +16,14 @@ public class Crono extends Thread {
     private CronoSegundos cs;
     private CronoMiliSegunos cms;
     private String cronoVista;
-    private JLabel label;
     private boolean pausado;
 
-    public Crono(JLabel label) {
+    public Crono() {
         cm = new CronoMinutos();
         cs = new CronoSegundos();
         cms = new CronoMiliSegunos();
         pausado = false;
         format();
-        this.label = label;
-        this.label.setText(cronoVista);
     }
 
     public void run() {
@@ -34,14 +31,9 @@ public class Crono extends Thread {
         while (!Thread.currentThread().isInterrupted()) {
 
             try {
-                synchronized (this) {
-                    if (pausado) {
-                        this.wait();
-                    }
-                }
                 cms.contador();
                 if (cms.getMilisegundos() == 1000) {
-                    cs.reiniciar();
+                    cms.reiniciar();
                     cs.contador();
                     if (cs.getSegundos() == 60) {
                         cs.reiniciar();
@@ -51,11 +43,13 @@ public class Crono extends Thread {
                         }
                     }
                 }
-
                 format();
-                label.setText(cronoVista);
-                this.sleep(1);
-
+                synchronized (this) {
+                    if (pausado) {
+                        this.wait();
+                    }
+                }
+                this.sleep(4);
             } catch (InterruptedException ex) {
                 this.interrupt();
             }
@@ -73,6 +67,8 @@ public class Crono extends Thread {
     }
 
     public void reset() {
+        cronoVista = "";
+        cms.reiniciar();
         cm.reiniciar();
         cs.reiniciar();
     }
@@ -93,21 +89,16 @@ public class Crono extends Thread {
         } else {
             cronoVista += cs.getSegundos() + " : ";
         }
-        
-        cronoVista += contarCerosMiliSegundos() + cms.getMilisegundos();
+
+        cronoVista += contarCerosMiliSegundos();
     }
-    
-    private String contarCerosMiliSegundos(){
-            String ceros = "";
-            int numero = cms.getMilisegundos();
-            int contadorCeros=0;
-            while(numero > 10){
-                numero = numero/10;
-                contadorCeros++;
-            }
-            for(int i = 0; i < contadorCeros-1; i++){
-                ceros += "0";
-            }
-            return ceros;
-        }
+
+    private String contarCerosMiliSegundos() {
+        String ceros = String.format("%04d", cms.getMilisegundos());
+        return ceros;
+    }
+
+    public String getCrono() {
+        return cronoVista;
+    }
 }

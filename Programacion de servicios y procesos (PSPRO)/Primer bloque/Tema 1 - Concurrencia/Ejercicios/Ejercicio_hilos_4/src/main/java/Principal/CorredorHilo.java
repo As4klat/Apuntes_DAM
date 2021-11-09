@@ -4,9 +4,8 @@
  */
 package Principal;
 
+import Crono.Crono;
 import java.util.Random;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JProgressBar;
 
 /**
@@ -19,10 +18,13 @@ public class CorredorHilo extends Thread {
     private boolean pausa = false;
     private boolean finalizar = false;
     private int posicion = -1;
+    private String tiempo = null;
+    private Crono c;
 
-    public CorredorHilo(String nombre, JProgressBar corredor) {
+    public CorredorHilo(String nombre, JProgressBar corredor, Crono c) {
         super(nombre);
         this.corredor = corredor;
+        this.c = c;
     }
 
     @Override
@@ -47,12 +49,18 @@ public class CorredorHilo extends Thread {
             } catch (InterruptedException ex) {
                 interrupt();
             }
-
         }
+        tiempo = c.getCrono();
+        
+        
     }
 
     public int getPosicion() {
         return posicion;
+    }
+    
+    public String getTiempo() {
+        return tiempo;
     }
 
     public void setPosicion(int posicion) {

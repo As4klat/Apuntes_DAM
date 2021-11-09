@@ -32,7 +32,8 @@ public class Podiun extends javax.swing.JPanel {
         for(int i = 0; i < arrayLabels.length; i++){
             for(int j = 0; j < corredores.length; j++){
                 if(corredores[j].getPosicion()==(i+1)){
-                    arrayLabels[i].setText(arrayLabels[i].getText() + ponEspacios(20) + corredores[j].getName());
+                    arrayLabels[i].setText(arrayLabels[i].getText() + ponEspacios(20) + corredores[j].getName()
+                                            + ponEspacios(20) + corredores[j].getTiempo());
                 }
             }
         }
@@ -57,6 +58,7 @@ public class Podiun extends javax.swing.JPanel {
         labelCorredorTercero = new javax.swing.JLabel();
         labelCorredorCuarto = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         labelCorredorPrimero.setText("1º");
 
@@ -76,31 +78,41 @@ public class Podiun extends javax.swing.JPanel {
             }
         });
 
+        jLabel1.setText("Tiempos");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(179, 179, 179)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addGap(194, 194, 194))
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addGap(199, 199, 199))
             .addGroup(layout.createSequentialGroup()
-                .addGap(63, 63, 63)
+                .addGap(283, 283, 283)
+                .addComponent(jLabel1)
+                .addGap(130, 140, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(73, 73, 73)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(labelCorredorPrimero, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(labelCorredorSegundo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(labelCorredorTercero, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(labelCorredorCuarto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(21, 21, 21))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(169, 169, 169)
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
+                .addGap(29, 29, 29)
                 .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(21, 21, 21)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
                 .addComponent(labelCorredorPrimero)
                 .addGap(18, 18, 18)
                 .addComponent(labelCorredorSegundo)
@@ -108,7 +120,7 @@ public class Podiun extends javax.swing.JPanel {
                 .addComponent(labelCorredorTercero)
                 .addGap(18, 18, 18)
                 .addComponent(labelCorredorCuarto)
-                .addGap(66, 66, 66)
+                .addGap(39, 39, 39)
                 .addComponent(jButton1)
                 .addGap(35, 35, 35))
         );
@@ -124,6 +136,7 @@ public class Podiun extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel labelCorredorCuarto;
     private javax.swing.JLabel labelCorredorPrimero;
