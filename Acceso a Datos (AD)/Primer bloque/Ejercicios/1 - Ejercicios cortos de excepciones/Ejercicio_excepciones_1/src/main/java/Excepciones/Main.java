@@ -89,7 +89,7 @@ public class Main {
                         finalizar = preguntarVolver();
                     }
                     case 7 -> {
-                        
+                        generaExcepcion(8);
                         finalizar = preguntarVolver();
                     }
                     case 8 -> {
@@ -180,6 +180,29 @@ public class Main {
             } catch (ArrayIndexOutOfBoundsException ex) {
                 System.out.println("El valor de array es mayor");
             }
+        }
+    }
+
+    public static void generaExcepcion(int i) {
+        int t;
+        int num[] = {2, 4, 6};
+        System.out.println("Recibiendo " + i);
+        try {
+            switch (i) {
+                case 0:
+                    t = 10 / i; //division por cero
+                    break;
+                case 1:
+                    num[4] = 4; //genera un error
+                    break;
+                case 2:
+                    return;
+            }
+        } catch (ArithmeticException ex) {
+            System.out.println("Intento de dividir por cero");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } finally {
         }
     }
 
