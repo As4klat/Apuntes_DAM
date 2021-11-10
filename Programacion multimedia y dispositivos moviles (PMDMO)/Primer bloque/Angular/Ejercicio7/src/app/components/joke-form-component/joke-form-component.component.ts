@@ -25,10 +25,9 @@ export class JokeFormComponentComponent {
   onSubmit(setup: string, punchline: string){
     if(this.form.valid){
       this.jokeCreated.emit(new Joke(setup, punchline));
-      this.formInvalid = false;
     }
     else{
-      this.formInvalid = true;
+      this.form.markAllAsTouched();
     }
   }
 }

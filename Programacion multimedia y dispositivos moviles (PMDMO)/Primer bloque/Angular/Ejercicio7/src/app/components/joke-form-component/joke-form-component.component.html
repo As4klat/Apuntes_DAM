@@ -4,7 +4,7 @@
 
         <div class="form-group">
             <input type="text"
-                [ngClass]="{'invalido' : formInvalid}" 
+                [ngClass]="{'invalido' : form.touched}" 
                 formControlName="chiste"
                 class="form-control" 
                 placeholder="Aqui va el setup" 
@@ -16,7 +16,7 @@
 
         <div class="form-group">
             <input type="text"
-                [ngClass]="{'invalido' : formInvalid}"
+                [ngClass]="{'invalido' : form.touched}"
                 formControlName="respuesta" 
                 class="form-control" 
                 placeholder="Aqui el punchline"
