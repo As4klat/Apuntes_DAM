@@ -14,14 +14,14 @@ public class LanzadorMain {
 
         ServerSocket server = new ServerSocket(puerto);
         System.out.println("Servidor iniciado en el puerto: " + puerto);
-        SalaChat room = new SalaChat();
+        SalaChat sala = new SalaChat();
         
         List<Peticion> listaHilos = new ArrayList<>();
         
         while (true) {
             Socket cliente = new Socket();
             cliente = server.accept();
-            Peticion p = new Peticion(cliente, room, listaHilos);
+            Peticion p = new Peticion(cliente, sala, listaHilos);
             listaHilos.add(p);
             p.start();
         }

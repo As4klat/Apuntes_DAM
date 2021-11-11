@@ -33,9 +33,9 @@ public class Peticion extends Thread {
 
     @Override
     public void run() {
-        String msn = null;
+        String msn;
         System.out.println("Se ha lanzado un hilo. Name: " + this.getName());
-        String nombreUsuario = null;
+        String nombreUsuario;
         boolean tomaUsuario = true;
 
         while (!cliente.isClosed()) {

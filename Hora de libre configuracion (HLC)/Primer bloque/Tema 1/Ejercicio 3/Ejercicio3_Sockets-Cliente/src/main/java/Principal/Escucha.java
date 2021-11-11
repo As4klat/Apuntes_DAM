@@ -41,7 +41,6 @@ public class Escucha extends Thread {
                 str = areaTxt.getText();
                 str = str.substring(str.indexOf("<body>") + 6, str.indexOf("</body>"));
                 str = str.replaceAll("<p style=\"margin-top: 0\">", "");
-                System.out.println(str);
                 msn = texto.split(":");
                 if (msn.length == 2) {
                     texto = "<b>" + msn[0] + " se ha unido a la sala</b><br>";

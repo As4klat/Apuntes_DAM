@@ -94,7 +94,7 @@ public class Crono extends Thread {
     }
 
     private String contarCerosMiliSegundos() {
-        String ceros = String.format("%04d", cms.getMilisegundos());
+        String ceros = String.format("%03d", cms.getMilisegundos());
         return ceros;
     }
 
