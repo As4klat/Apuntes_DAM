@@ -158,9 +158,114 @@ namespace Actividad15
                             finalizar = preguntarVolver();
                             break;
                         case 5:
+
+                            Console.WriteLine("Fusión de ficheros [Ruta/nombre_origen] -f [Ruta/nombre_destino]");
+                            Console.Write("-> ");
+                            nombreFicheros = Console.ReadLine();
+                            nombreFicherosArray = nombreFicheros.Trim().Split(" -f ");
+                            List<string> contenidoF1 = new List<string>();
+                            List<string> contenidoF2 = new List<string>();
+                            contenido = new List<string>();
+                            int leng;
+                            bool alternar = true;
+                            int contador1 = 0;
+                            int contador2 = 0;
+                            try
+                            {
+                                foreach (string line in File.ReadLines($@"{nombreFicherosArray[0]}"))
+                                {
+                                    contenidoF1.Add(line);
+                                }
+                                foreach (string line in File.ReadLines($@"{nombreFicherosArray[1]}"))
+                                {
+                                    contenidoF2.Add(line);
+                                }
+
+                                if (contenidoF1.Count > contenidoF2.Count)
+                                {
+                                    for (int i = 0; i < contenidoF1.Count + contenidoF2.Count; i++)
+                                    {
+                                        if (alternar)
+                                        {
+                                            contenido.Add(contenidoF1[contador1]);
+                                            contador1++;
+                                            if (contador2 != contenidoF2.Count)
+                                            {
+                                                alternar = false;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            contenido.Add(contenidoF2[contador2]);
+                                            contador2++;
+                                            alternar = true;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    for (int i = 0; i < contenidoF1.Count + contenidoF2.Count; i++)
+                                    {
+                                        if (alternar)
+                                        {
+                                            contenido.Add(contenidoF2[contador2]);
+                                            contador2++;
+                                            if (contador1 != contenidoF1.Count)
+                                            {
+                                                alternar = false;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            contenido.Add(contenidoF1[contador1]);
+                                            contador1++;
+                                            alternar = true;
+                                        }
+                                    }
+                                }
+
+                                Console.WriteLine("Ruta del nuevo fichero");
+                                Console.Write("-> ");
+                                string ruta = Console.ReadLine();
+
+                                File.WriteAllLines($@"{ruta}\union.txt", contenido);
+                            }
+                            catch (FileNotFoundException e)
+                            {
+                                Console.WriteLine("No se ha encontrado su fichero.");
+                            }
+
                             finalizar = preguntarVolver();
                             break;
                         case 6:
+
+                            Console.WriteLine("Fichero de enteros [Ruta/nombre_origen]");
+                            Console.Write("-> ");
+                            nombreFichero = Console.ReadLine();
+                            contenido = new List<string>();
+                            
+                            try
+                            {
+                                foreach (string line in File.ReadLines($@"{nombreFichero}"))
+                                {
+                                    contenido.Add(line);
+                                }
+
+                                string[] contenidoSplit = contenido[0].Split(",");
+                                int suma = 0;
+                                foreach (string var in contenidoSplit)
+                                {
+                                    Console.Write(var + " ");
+                                    suma += Convert.ToInt32(var);
+                                }
+                                Console.WriteLine("Suma: " + suma);
+                            }
+                            catch (FileNotFoundException e)
+                            {
+                                Console.WriteLine("No se ha encontrado su fichero.");
+                            }
+
+
                             finalizar = preguntarVolver();
                             break;
                         case 7:
