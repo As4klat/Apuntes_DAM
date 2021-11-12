@@ -1,0 +1,16 @@
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\bin\Debug\net5.0\Actividad16.exe
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\bin\Debug\net5.0\Actividad16.deps.json
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\bin\Debug\net5.0\Actividad16.runtimeconfig.json
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\bin\Debug\net5.0\Actividad16.runtimeconfig.dev.json
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\bin\Debug\net5.0\Actividad16.dll
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\bin\Debug\net5.0\ref\Actividad16.dll
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\bin\Debug\net5.0\Actividad16.pdb
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\obj\Debug\net5.0\Actividad16.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\obj\Debug\net5.0\Actividad16.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\obj\Debug\net5.0\Actividad16.AssemblyInfoInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\obj\Debug\net5.0\Actividad16.AssemblyInfo.cs
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\obj\Debug\net5.0\Actividad16.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\obj\Debug\net5.0\Actividad16.dll
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\obj\Debug\net5.0\ref\Actividad16.dll
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\obj\Debug\net5.0\Actividad16.pdb
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad16\Actividad16\obj\Debug\net5.0\Actividad16.genruntimeconfig.cache
