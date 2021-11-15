@@ -4,26 +4,20 @@
 
         <div class="form-group">
             <input type="text"
-                [ngClass]="{'invalido' : form.touched}" 
+                [ngClass]="{'invalido' : form.controls.chiste.errors?.required}" 
                 formControlName="chiste"
                 class="form-control" 
                 placeholder="Aqui va el setup" 
                 #setup>
-            <div *ngIf="form.controls.chiste.errors?.required" class="alert alert-danger">
-                Chiste es obligatorio.
-            </div>
         </div>
 
         <div class="form-group">
             <input type="text"
-                [ngClass]="{'invalido' : form.touched}"
+                [ngClass]="{'invalido' : form.controls.respuesta.errors?.required}"
                 formControlName="respuesta" 
                 class="form-control" 
                 placeholder="Aqui el punchline"
                 #punchline>
-            <div *ngIf="form.controls.respuesta.errors?.required" class="alert alert-danger">
-                Respuesta es obligatoria.
-            </div>
         </div>
 
         <button type="submit" class="btn btn-primary">Crear</button>
