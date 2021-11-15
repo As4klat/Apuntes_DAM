@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Threading;
 
 namespace Actividad16
@@ -25,19 +26,151 @@ namespace Actividad16
                     Console.WriteLine("\nSelecion: ");
                     opcion = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("");
+                    string ruta;
+                    FileInfo[] archivos;
+                    FileInfo ultimoAceso;
                     switch (opcion)
                     {
                         case 1:
+                            Console.WriteLine("Introducir ruta del directorio: ");
+                            Console.Write("-> ");
+                            ruta = Console.ReadLine();
 
+                            if (Directory.Exists(ruta))
+                            {
+                                DirectoryInfo di = new DirectoryInfo(ruta);
+                                archivos = di.GetFiles();
+                                if (archivos.Length != 0)
+                                {
+                                    ultimoAceso = archivos[0];   
+                                    for (int i = 0; i < archivos.Length; i++)
+                                    {
+                                        Console.WriteLine(archivos[i].FullName + " Fecha de acceso ultimo: " + archivos[i].LastAccessTime);
+                                        if (archivos[i].LastAccessTime >= ultimoAceso.LastAccessTime)
+                                        {
+                                            ultimoAceso = archivos[i];
+                                        }
+                                    }
+                                    Console.WriteLine("Ultimo archivo leido: " + ultimoAceso.FullName);
+                                }
+                                else
+                                {
+                                    Console.WriteLine("El directorio selecionado no contiene ningun archivo.");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("No se ha encontrado el directorio.");
+                            }
                             break;
                         case 2:
+                            string filtro;
 
+                            Console.WriteLine("Introducir ruta del directorio: ");
+                            Console.Write("-> ");
+                            ruta = Console.ReadLine();
+
+                            if (Directory.Exists(ruta))
+                            {
+                                DirectoryInfo di = new DirectoryInfo(ruta);
+                                archivos = di.GetFiles();
+                                if (archivos.Length != 0)
+                                {
+                                    Console.WriteLine("Introducir extension de archivos deseados. Ej.: 'txt', 'bat'.");
+                                    Console.Write("-> ");
+                                    filtro = Console.ReadLine();
+                                    archivos = di.GetFiles("*."+filtro);
+                                    if (archivos.Length != 0)
+                                    {
+                                        for (int i = 0; i < archivos.Length; i++)
+                                        {
+                                            Console.WriteLine(archivos[i].FullName);
+                                        }
+                                    }
+                                    else {
+                                        Console.WriteLine("No existen ficheros con esa extension.");
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("El directorio selecionado no contiene ningun archivo.");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("No se ha encontrado el directorio.");
+                            }
                             break;
                         case 3:
+                            Console.WriteLine("Introducir ruta del directorio: ");
+                            Console.Write("-> ");
+                            ruta = Console.ReadLine();
 
+                            if (Directory.Exists(ruta))
+                            {
+                                Console.WriteLine("Introducir ruta del directorio: ");
+                                Console.Write("-> ");
+                                string subdirectorioName = Console.ReadLine();
+
+                                Directory.CreateDirectory(ruta+"\\"+subdirectorioName);
+                            }
+                            else
+                            {
+                                Console.WriteLine("No se ha encontrado el directorio.");
+                            }
                             break;
                         case 4:
+                            Console.WriteLine("Introducir extension: Ej.: 'txt', 'odt', 'pdf'.");
+                            Console.Write("-> ");
+                            string extension = Console.ReadLine();
 
+                            Console.WriteLine("Introducir ruta del directorio: ");
+                            Console.Write("-> ");
+                            ruta = Console.ReadLine();
+
+                            if (Directory.Exists(ruta))
+                            {
+                                DirectoryInfo di = new DirectoryInfo(ruta);
+                                archivos = di.GetFiles();
+                                if (archivos.Length != 0)
+                                {
+                                    archivos = di.GetFiles("*." + extension);
+                                    if (archivos.Length != 0)
+                                    {
+                                        for (int i = 0; i < archivos.Length; i++)
+                                        {
+                                            Console.WriteLine(archivos[i].FullName);
+                                        }
+                                        Console.WriteLine("Deseas eliminar estos archivos? y/n");
+                                        Console.Write("-> ");
+                                        string respuesta = Console.ReadLine();
+                                        if (respuesta.Equals("y"))
+                                        {
+                                            for (int i = 0; i < archivos.Length; i++)
+                                            {
+                                                archivos[i].Delete();
+                                            }
+                                            archivos = di.GetFiles();
+                                            for (int i = 0; i < archivos.Length; i++)
+                                            {
+                                                Console.WriteLine(archivos[i].Name);
+                                            }
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("No existen ficheros con esa extension.");
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("El directorio selecionado no contiene ningun archivo.");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("No se ha encontrado el directorio.");
+                            }
                             break;
                         case 5:
 

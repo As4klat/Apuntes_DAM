@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 4\\Ejercicios\\Actividad16\\Actividad16\\Actividad16.csproj": {}
+    "C:\\Users\\Alejandro\\Desktop\\Estudios\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 4\\Ejercicios\\Actividad16\\Actividad16\\Actividad16.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 4\\Ejercicios\\Actividad16\\Actividad16\\Actividad16.csproj": {
+    "C:\\Users\\Alejandro\\Desktop\\Estudios\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 4\\Ejercicios\\Actividad16\\Actividad16\\Actividad16.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 4\\Ejercicios\\Actividad16\\Actividad16\\Actividad16.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 4\\Ejercicios\\Actividad16\\Actividad16\\Actividad16.csproj",
         "projectName": "Actividad16",
-        "projectPath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 4\\Ejercicios\\Actividad16\\Actividad16\\Actividad16.csproj",
-        "packagesPath": "C:\\Users\\Alejandro Gamaza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 4\\Ejercicios\\Actividad16\\Actividad16\\obj\\",
+        "projectPath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 4\\Ejercicios\\Actividad16\\Actividad16\\Actividad16.csproj",
+        "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 4\\Ejercicios\\Actividad16\\Actividad16\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alejandro Gamaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

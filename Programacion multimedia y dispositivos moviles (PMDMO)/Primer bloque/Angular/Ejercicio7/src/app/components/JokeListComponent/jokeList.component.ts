@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Observable } from "rxjs";
 import { Joke } from "src/app/Clases/joke";
 import { JokesService } from "src/app/Servicio/jokes.service";
 
@@ -9,21 +10,20 @@ import { JokesService } from "src/app/Servicio/jokes.service";
 
 export class JokeListComponent {
 
+    jokes$: Observable<Joke[]>;
     jokes: Joke[];
 
     constructor(public _servicio:JokesService) {
-        /*this.jokes = [
-            new Joke("What did the cheese say when it looked in the mirror?", "Hello-me(Halloumi)"),
-            new Joke("What kind of cheese do you use to disguise a small horse?", "Mask-apony(Mascarpone)"),
-            new Joke("A kid threw a lump of cheddar at me", "I thought ‘That’s not verymature’"),
-        ];*/
-        this.jokes = _servicio.getJokes();
+        this.jokes$ = this._servicio.jokesObse$();
+        this.jokes$.subscribe(jokes => this.jokes = jokes);
+        this._servicio.getJokes();
     }
 
     addJoke(joke: Joke){
-        this.jokes.unshift(joke);
+        this._servicio.addJoke(joke);
     }
     deleteJoke(joke: Joke){
-        this.jokes.splice(this.jokes.indexOf(joke), 1);
+        this._servicio.deleteJoke(joke);
     }
+    
 }
