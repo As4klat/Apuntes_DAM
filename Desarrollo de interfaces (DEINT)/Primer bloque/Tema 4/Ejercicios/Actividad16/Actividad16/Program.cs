@@ -173,7 +173,37 @@ namespace Actividad16
                             }
                             break;
                         case 5:
+                            Console.WriteLine("Introducir ruta del directorio: ");
+                            Console.Write("-> ");
+                            ruta = Console.ReadLine();
 
+                            if (Directory.Exists(ruta))
+                            {
+                                DirectoryInfo di = new DirectoryInfo(ruta);
+                                archivos = di.GetFiles();
+                                if (archivos.Length != 0)
+                                {
+                                    for (int i = 0; i < archivos.Length; i++)
+                                    {
+                                        Console.WriteLine(archivos[i].FullName);
+                                    }
+                                    Console.WriteLine("Nombre del fichero a cambiar: ");
+                                    Console.Write("-> ");
+                                    string nombreFichero = Console.ReadLine();
+                                    Console.WriteLine("Nueva extension: ");
+                                    Console.Write("-> ");
+                                    extension = Console.ReadLine();
+                                    Path.ChangeExtension(nombreFichero, extension);
+                                }
+                                else
+                                {
+                                    Console.WriteLine("El directorio selecionado no contiene ningun archivo.");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("No se ha encontrado el directorio.");
+                            }
                             break;
                         case 6:
                             finalizar = true;
