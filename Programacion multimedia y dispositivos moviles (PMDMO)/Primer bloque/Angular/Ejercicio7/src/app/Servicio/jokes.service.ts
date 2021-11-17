@@ -7,12 +7,14 @@ import { Joke } from '../Clases/joke';
 })
 export class JokesService {
 
-  private jokes$ = new Subject<Joke[]>();
-  jokes: Joke[] = [
+  private jokes: Joke[] = [
     new Joke("What did the cheese say when it looked in the mirror?", "Hello-me(Halloumi)"),
     new Joke("What kind of cheese do you use to disguise a small horse?", "Mask-apony(Mascarpone)"),
     new Joke("A kid threw a lump of cheddar at me", "I thought ‘That’s not verymature’"),
   ];
+
+  private jokes$ = new Subject<Joke[]>();
+
   constructor() {}
 
   jokesObse$(): Observable<Joke[]>{

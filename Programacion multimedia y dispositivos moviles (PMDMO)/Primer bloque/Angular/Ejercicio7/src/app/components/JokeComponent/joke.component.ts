@@ -1,5 +1,4 @@
 import { Component, Input, Output,EventEmitter } from "@angular/core";
-import { Data } from "@angular/router";
 import { Joke } from "src/app/Clases/joke";
 
 @Component({
