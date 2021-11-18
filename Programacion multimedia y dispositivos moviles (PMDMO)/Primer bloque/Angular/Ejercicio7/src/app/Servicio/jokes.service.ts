@@ -20,7 +20,7 @@ export class JokesService {
   jokesObse$(): Observable<Joke[]>{
     return this.jokes$.asObservable();
   }
-
+  // getJokes necesario para mostrar al inicio las bromas.
   getJokes(){
     this.jokes$.next(this.jokes);
   }
