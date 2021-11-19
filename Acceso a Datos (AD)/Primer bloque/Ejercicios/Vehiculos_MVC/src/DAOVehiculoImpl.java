@@ -34,7 +34,7 @@ public class DAOVehiculoImpl implements IDAOVehiculo {
 
             // Print results from select statement
             while (resultSet.next()) {
-                falsaBD.add(new Vehiculo(resultSet.getString(2),resultSet.getString(3),resultSet.getString(4)));
+                falsaBD.add(new Vehiculo(resultSet.getString(2), resultSet.getString(3), resultSet.getString(4)));
             }
 
         } catch (SQLException e) {
@@ -53,7 +53,7 @@ public class DAOVehiculoImpl implements IDAOVehiculo {
             }
         }
         if (insertado == 1) {
-            String orden = "INSERT INTO dbo.vehiculo VALUES ('" + vehiculo.getMarca() + "', '" + vehiculo.getModelo()+ "', '" + vehiculo.getMatricula()+ "');";
+            String orden = "INSERT INTO dbo.vehiculo VALUES ('" + vehiculo.getMarca() + "', '" + vehiculo.getModelo() + "', '" + vehiculo.getMatricula() + "');";
             try {
                 PreparedStatement stmt = connection.prepareStatement(orden);
                 stmt.executeUpdate();
@@ -67,11 +67,18 @@ public class DAOVehiculoImpl implements IDAOVehiculo {
 
     @Override
     public int eliminarVehiculo(String matricula) {
-        for (int i = 0; i < falsaBD.size(); i++) {
-            if (falsaBD.get(i).getMatricula().equals(matricula)) {
-                falsaBD.remove(falsaBD.get(i));
-                i = falsaBD.size();
+        String orden = "DELETE FROM dbo.vehiculo WHERE matricula = '" + matricula + "';";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(orden);
+            stmt.executeUpdate(orden);
+            for (int i = 0; i < falsaBD.size(); i++) {
+                if (falsaBD.get(i).getMatricula().equals(matricula)) {
+                    falsaBD.remove(falsaBD.get(i));
+                    i = falsaBD.size();
+                }
             }
+        } catch (SQLException ex) {
+            System.out.println("No se ha podido Eliminar el coche.");
         }
         return 1;
     }
@@ -115,22 +122,44 @@ public class DAOVehiculoImpl implements IDAOVehiculo {
 
     @Override
     public int eliminarVehiculo(Vehiculo vehiculo) {
-        falsaBD.remove(vehiculo);
+        String orden = "DELETE FROM dbo.vehiculo WHERE matricula = '" + vehiculo.getMatricula() + "';";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(orden);
+            stmt.executeUpdate();
+            falsaBD.remove(vehiculo);
+        } catch (SQLException ex) {
+            System.out.println("No se ha podido Eliminar el coche.");
+        }
         return 1;
     }
 
     @Override
     public int modificarVehiculo(Vehiculo vehiculo) {
         int insertado = 1;
-        for (int i = 0; i < falsaBD.size(); i++) {
-            if (falsaBD.get(i).getMatricula().equals(vehiculo.getMatricula()) && !falsaBD.get(i).equals(vehiculo)) {
-                insertado = 0;
-                i = falsaBD.size();
+        String orden
+                = "UPDATE dbo.vehiculo "
+                + "SET nombre=?, modelo=?, matricula=? "
+                + "WHERE matricula = '" + falsaBD.get(falsaBD.indexOf(vehiculo)).getMatricula() + "';";
+        try {
+            for (int i = 0; i < falsaBD.size(); i++) {
+                if (falsaBD.get(i).getMatricula().equals(vehiculo.getMatricula()) && !falsaBD.get(i).equals(vehiculo)) {
+                    insertado = 0;
+                    i = falsaBD.size();
+                }
             }
+            if (insertado == 1) {
+                PreparedStatement stmt = connection.prepareStatement(orden);
+                stmt.setString(1, vehiculo.getMarca());
+                stmt.setString(2, vehiculo.getModelo());
+                stmt.setString(3, vehiculo.getMatricula());
+                stmt.executeUpdate();
+                falsaBD.set(falsaBD.indexOf(vehiculo), vehiculo);
+            }
+        } catch (SQLException ex) {
+            System.out.println("No se ha podido Modificar el coche.");
+            System.out.println(ex);
         }
-        if (insertado == 1) {
-            falsaBD.set(falsaBD.indexOf(vehiculo), vehiculo);
-        }
+
         return insertado;
     }
 
