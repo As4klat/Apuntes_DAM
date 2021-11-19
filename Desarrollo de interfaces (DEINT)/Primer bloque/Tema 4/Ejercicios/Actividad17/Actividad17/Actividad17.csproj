@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Clases\Banco.cs" />
     <Compile Include="Clases\Cliente.cs" />
+    <Compile Include="Clases\Validator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
