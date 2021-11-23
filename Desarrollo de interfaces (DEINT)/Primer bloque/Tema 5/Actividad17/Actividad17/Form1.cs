@@ -16,16 +16,16 @@ namespace Actividad17
             modificando = false;
         }
 
-        private bool validar()
+        private string validar()
         {
-            bool valido = false;
-            valido = Validator.dniValido
+            string valido = "";
+            valido = Validator.DniValido(textDni.Text);
             return valido;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (validar())
+            if (validar().Equals("true"))
             {
                 banco.AddCliente(new Cliente(textDni.Text, textNombre.Text, textDireccion.Text
                 , Convert.ToInt32(textEdad.Text), Convert.ToInt32(textTelefono.Text), Convert.ToInt64(textNumeroCuenta.Text)));
