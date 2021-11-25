@@ -1,0 +1,6 @@
+c:\users\beatriz\documents\visual studio 2015\Projects\EjemploSerializaciónXML\EjemploSerializaciónXML\bin\Debug\EjemploSerializaciónXML.exe.config
+c:\users\beatriz\documents\visual studio 2015\Projects\EjemploSerializaciónXML\EjemploSerializaciónXML\bin\Debug\EjemploSerializaciónXML.exe
+c:\users\beatriz\documents\visual studio 2015\Projects\EjemploSerializaciónXML\EjemploSerializaciónXML\bin\Debug\EjemploSerializaciónXML.pdb
+c:\users\beatriz\documents\visual studio 2015\Projects\EjemploSerializaciónXML\EjemploSerializaciónXML\obj\Debug\EjemploSerializaciónXML.csprojResolveAssemblyReference.cache
+c:\users\beatriz\documents\visual studio 2015\Projects\EjemploSerializaciónXML\EjemploSerializaciónXML\obj\Debug\EjemploSerializaciónXML.exe
+c:\users\beatriz\documents\visual studio 2015\Projects\EjemploSerializaciónXML\EjemploSerializaciónXML\obj\Debug\EjemploSerializaciónXML.pdb

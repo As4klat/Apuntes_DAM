@@ -8,3 +8,13 @@ C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces 
 C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad17\Actividad17\obj\Debug\Actividad17.csproj.CoreCompileInputs.cache
 C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad17\Actividad17\obj\Debug\Actividad17.exe
 C:\Users\Alejandro\Desktop\Estudios\Grado Superior DAM\Desarrollo de Interfaces (DEINT)\Primer bloque\Tema 4\Ejercicios\Actividad17\Actividad17\obj\Debug\Actividad17.pdb
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Actividad17\Actividad17\bin\Debug\Actividad17.exe.config
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Actividad17\Actividad17\bin\Debug\Actividad17.exe
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Actividad17\Actividad17\bin\Debug\Actividad17.pdb
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Actividad17\Actividad17\obj\Debug\Actividad17.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Actividad17\Actividad17\obj\Debug\Actividad17.Form1.resources
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Actividad17\Actividad17\obj\Debug\Actividad17.Properties.Resources.resources
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Actividad17\Actividad17\obj\Debug\Actividad17.csproj.GenerateResource.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Actividad17\Actividad17\obj\Debug\Actividad17.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Actividad17\Actividad17\obj\Debug\Actividad17.exe
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Actividad17\Actividad17\obj\Debug\Actividad17.pdb

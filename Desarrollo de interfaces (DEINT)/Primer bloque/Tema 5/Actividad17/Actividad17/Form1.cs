@@ -16,23 +16,33 @@ namespace Actividad17
             modificando = false;
         }
 
-        private string validar()
+        private bool validar()
         {
-            string valido = "";
-            valido = Validator.DniValido(textDni.Text);
+            bool valido = false;
+            if (
+                Validator.DniValido(textDni.Text) &&
+                Validator.CadenaNoVacia(textNombre.Text) &&
+                Validator.CadenaNoVacia(textDireccion.Text) &&
+                Validator.EdadValido(textEdad.Text) &&
+                Validator.TelefonoValido(textTelefono.Text) &&
+                Validator.NumeroBancoValido(textNumeroCuenta.Text)
+                )
+            {
+                valido = true;
+            }
             return valido;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (validar().Equals("true"))
+            if (validar())
             {
                 banco.AddCliente(new Cliente(textDni.Text, textNombre.Text, textDireccion.Text
                 , Convert.ToInt32(textEdad.Text), Convert.ToInt32(textTelefono.Text), Convert.ToInt64(textNumeroCuenta.Text)));
             }
             else
             {
-                MessageBox.Show("Mal escrito.");
+                MessageBox.Show("Error en el registro, revise el formulario.");
             }
         }
     }

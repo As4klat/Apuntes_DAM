@@ -15,16 +15,27 @@ namespace Actividad17.Clases
             return rgx.IsMatch(dni);
         }
 
-        public static bool NombreValido(string nombre)
+        public static bool CadenaNoVacia(string cadena)
         {
             Regex rgx = new Regex(@"^\w");
-            return rgx.IsMatch(nombre);
+            return rgx.IsMatch(cadena);
         }
 
         public static bool TelefonoValido(string telefono)
         {
             Regex rgx = new Regex(@"^[0-9]{9}$");
             return rgx.IsMatch(telefono);
+        }
+
+        public static bool EdadValido(string edadtext)
+        {
+            int edad = Convert.ToInt32(edadtext);
+            bool valido = false;
+            if (edad >= 18 && edad <= 130)
+            {
+                valido = true;
+            }
+            return valido;
         }
 
         public static bool NumeroBancoValido(string numeroCuenta)
