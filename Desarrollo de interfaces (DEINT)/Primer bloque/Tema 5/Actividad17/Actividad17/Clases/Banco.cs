@@ -1,32 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
 
 namespace Actividad17.Clases
 {
-    [XmlRoot("Banco", Namespace = "www.banco.es", IsNullable = false)]
-    class Banco
+    public class Banco
     {
-        private List<Cliente> listaClientes;
+        public List<Cliente> listaClientes { get; set; }
 
-        public Banco()
-        {
-            listaClientes = new List<Cliente>();
-        }
+        public Banco() { }
 
-        public Banco(List<Cliente> listaClientes)
-        {
-            this.listaClientes = listaClientes;
-        }
-
-        public List<Cliente> ListaClientes
-        {
-            get { return listaClientes; }
-            set { listaClientes = value; }
+        public Banco(List<Cliente> lista) {
+            listaClientes = lista;
         }
 
         public void AddCliente(Cliente clienteNuevo)
@@ -36,19 +21,33 @@ namespace Actividad17.Clases
 
         public void RemoveCliente(string dniCliente)
         {
-            listaClientes.Remove(listaClientes.Where(x => x.Dni == dniCliente).First());
+            listaClientes.Remove(listaClientes.Where(x => x.dni == dniCliente).First());
         }
 
         public void ModCliente(string dniClienteMod, Cliente clienteMod)
         {
-            Cliente clienteAMod = listaClientes.Where(x => x.Dni == dniClienteMod).First();
-            clienteAMod.Dni = clienteMod.Dni;
-            clienteAMod.Nombre = clienteMod.Nombre;
-            clienteAMod.Direccion = clienteMod.Direccion;
-            clienteAMod.Edad = clienteMod.Edad;
-            clienteAMod.Telefono = clienteMod.Telefono;
-            clienteAMod.NumeroCuentaCorriente = clienteMod.NumeroCuentaCorriente;
+            Cliente clienteAMod = listaClientes.Where(x => x.dni == dniClienteMod).First();
+            clienteAMod.dni = clienteMod.dni;
+            clienteAMod.nombre = clienteMod.nombre;
+            clienteAMod.direccion = clienteMod.direccion;
+            clienteAMod.edad = clienteMod.edad;
+            clienteAMod.telefono = clienteMod.telefono;
+            clienteAMod.numeroCuentaCorriente = clienteMod.numeroCuentaCorriente;
             clienteMod = null;
+        }
+
+        public bool DniNoRepe(string dniCliente)
+        {
+            bool noRepe = false;
+            try
+            {
+                Cliente c = listaClientes.Where(x => x.dni == dniCliente).First();
+            }
+            catch (Exception e)
+            {
+                noRepe = true;
+            }
+            return noRepe;
         }
     }
 }

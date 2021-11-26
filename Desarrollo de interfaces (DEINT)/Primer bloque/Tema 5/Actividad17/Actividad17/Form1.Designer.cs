@@ -30,6 +30,9 @@ namespace Actividad17
         private void InitializeComponent()
         {
             this.pInputsCliente = new System.Windows.Forms.Panel();
+            this.textNumeroCuenta = new System.Windows.Forms.TextBox();
+            this.textTelefono = new System.Windows.Forms.TextBox();
+            this.textEdad = new System.Windows.Forms.TextBox();
             this.textDireccion = new System.Windows.Forms.TextBox();
             this.textNombre = new System.Windows.Forms.TextBox();
             this.textDni = new System.Windows.Forms.TextBox();
@@ -44,12 +47,9 @@ namespace Actividad17
             this.btnSave = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnMod = new System.Windows.Forms.Button();
-            this.datosClientes = new System.Windows.Forms.DataGridView();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.datosClientes = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textEdad = new System.Windows.Forms.TextBox();
-            this.textTelefono = new System.Windows.Forms.TextBox();
-            this.textNumeroCuenta = new System.Windows.Forms.TextBox();
             this.pInputsCliente.SuspendLayout();
             this.pCrud.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datosClientes)).BeginInit();
@@ -76,6 +76,27 @@ namespace Actividad17
             this.pInputsCliente.Name = "pInputsCliente";
             this.pInputsCliente.Size = new System.Drawing.Size(776, 155);
             this.pInputsCliente.TabIndex = 6;
+            // 
+            // textNumeroCuenta
+            // 
+            this.textNumeroCuenta.Location = new System.Drawing.Point(147, 107);
+            this.textNumeroCuenta.Name = "textNumeroCuenta";
+            this.textNumeroCuenta.Size = new System.Drawing.Size(615, 22);
+            this.textNumeroCuenta.TabIndex = 17;
+            // 
+            // textTelefono
+            // 
+            this.textTelefono.Location = new System.Drawing.Point(221, 79);
+            this.textTelefono.Name = "textTelefono";
+            this.textTelefono.Size = new System.Drawing.Size(207, 22);
+            this.textTelefono.TabIndex = 16;
+            // 
+            // textEdad
+            // 
+            this.textEdad.Location = new System.Drawing.Point(61, 78);
+            this.textEdad.Name = "textEdad";
+            this.textEdad.Size = new System.Drawing.Size(80, 22);
+            this.textEdad.TabIndex = 15;
             // 
             // textDireccion
             // 
@@ -179,6 +200,7 @@ namespace Actividad17
             this.btnReset.TabIndex = 5;
             this.btnReset.Text = "Reiniciar";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSave
             // 
@@ -193,6 +215,7 @@ namespace Actividad17
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Guardar";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnRemove
             // 
@@ -207,6 +230,7 @@ namespace Actividad17
             this.btnRemove.TabIndex = 3;
             this.btnRemove.Text = "Eliminar";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnMod
             // 
@@ -221,16 +245,7 @@ namespace Actividad17
             this.btnMod.TabIndex = 2;
             this.btnMod.Text = "Modificar";
             this.btnMod.UseVisualStyleBackColor = true;
-            // 
-            // datosClientes
-            // 
-            this.datosClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datosClientes.Location = new System.Drawing.Point(0, 0);
-            this.datosClientes.Name = "datosClientes";
-            this.datosClientes.RowHeadersWidth = 51;
-            this.datosClientes.RowTemplate.Height = 24;
-            this.datosClientes.Size = new System.Drawing.Size(610, 226);
-            this.datosClientes.TabIndex = 1;
+            this.btnMod.Click += new System.EventHandler(this.btnMod_Click);
             // 
             // btnAdd
             // 
@@ -247,6 +262,20 @@ namespace Actividad17
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // datosClientes
+            // 
+            this.datosClientes.AllowUserToAddRows = false;
+            this.datosClientes.AllowUserToDeleteRows = false;
+            this.datosClientes.AllowUserToOrderColumns = true;
+            this.datosClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datosClientes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.datosClientes.Location = new System.Drawing.Point(0, 0);
+            this.datosClientes.Name = "datosClientes";
+            this.datosClientes.RowHeadersWidth = 51;
+            this.datosClientes.RowTemplate.Height = 24;
+            this.datosClientes.Size = new System.Drawing.Size(610, 226);
+            this.datosClientes.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -255,27 +284,6 @@ namespace Actividad17
             this.label1.Size = new System.Drawing.Size(51, 17);
             this.label1.TabIndex = 19;
             this.label1.Text = "Cliente";
-            // 
-            // textEdad
-            // 
-            this.textEdad.Location = new System.Drawing.Point(61, 78);
-            this.textEdad.Name = "textEdad";
-            this.textEdad.Size = new System.Drawing.Size(80, 22);
-            this.textEdad.TabIndex = 15;
-            // 
-            // textTelefono
-            // 
-            this.textTelefono.Location = new System.Drawing.Point(221, 79);
-            this.textTelefono.Name = "textTelefono";
-            this.textTelefono.Size = new System.Drawing.Size(207, 22);
-            this.textTelefono.TabIndex = 16;
-            // 
-            // textNumeroCuenta
-            // 
-            this.textNumeroCuenta.Location = new System.Drawing.Point(147, 107);
-            this.textNumeroCuenta.Name = "textNumeroCuenta";
-            this.textNumeroCuenta.Size = new System.Drawing.Size(615, 22);
-            this.textNumeroCuenta.TabIndex = 17;
             // 
             // Form1
             // 

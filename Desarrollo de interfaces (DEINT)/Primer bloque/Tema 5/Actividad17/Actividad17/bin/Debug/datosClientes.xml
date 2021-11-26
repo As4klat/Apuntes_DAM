@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Banco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <listaClientes>
+    <Cliente>
+      <dni>32053423J</dni>
+      <nombre>Alejandro</nombre>
+      <direccion>knsagpk</direccion>
+      <edad>23</edad>
+      <telefono>432121224</telefono>
+      <numeroCuentaCorriente>333333333300</numeroCuentaCorriente>
+    </Cliente>
+  </listaClientes>
+</Banco>
