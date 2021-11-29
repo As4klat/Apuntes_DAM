@@ -1,0 +1,20 @@
+C:\Users\usuario\source\repos\ExploradordeArchivos\ExploradordeArchivos\bin\Debug\ExploradordeArchivos.exe.config
+C:\Users\usuario\source\repos\ExploradordeArchivos\ExploradordeArchivos\bin\Debug\ExploradordeArchivos.exe
+C:\Users\usuario\source\repos\ExploradordeArchivos\ExploradordeArchivos\bin\Debug\ExploradordeArchivos.pdb
+C:\Users\usuario\source\repos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.csprojResolveAssemblyReference.cache
+C:\Users\usuario\source\repos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.Form1.resources
+C:\Users\usuario\source\repos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.Properties.Resources.resources
+C:\Users\usuario\source\repos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.csproj.GenerateResource.Cache
+C:\Users\usuario\source\repos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.csproj.CoreCompileInputs.cache
+C:\Users\usuario\source\repos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.exe
+C:\Users\usuario\source\repos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.pdb
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Explorador de Archivos\ExploradordeArchivos\ExploradordeArchivos\bin\Debug\ExploradordeArchivos.exe.config
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Explorador de Archivos\ExploradordeArchivos\ExploradordeArchivos\bin\Debug\ExploradordeArchivos.exe
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Explorador de Archivos\ExploradordeArchivos\ExploradordeArchivos\bin\Debug\ExploradordeArchivos.pdb
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Explorador de Archivos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Explorador de Archivos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.Form1.resources
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Explorador de Archivos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.Properties.Resources.resources
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Explorador de Archivos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.csproj.GenerateResource.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Explorador de Archivos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Explorador de Archivos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.exe
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Primer bloque\Tema 5\Explorador de Archivos\ExploradordeArchivos\ExploradordeArchivos\obj\Debug\ExploradordeArchivos.pdb
