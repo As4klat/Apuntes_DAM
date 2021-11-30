@@ -1,0 +1,28 @@
+<div>
+    <form [formGroup]="form" (ngSubmit)="addNoticia(titulo.value, cuerpo.value, date.valueAsDate)" novalidate>
+        <input type="text" 
+        name="titulo" 
+        formControlName="titulo"
+        placeholder="Titulo"
+        id="titulo"
+        #titulo>
+    
+        <input type="text" 
+        name="cuerpo"
+        formControlName="cuerpo"
+        placeholder="Cuerpo de la noticia"
+        id="cuerpo"
+        #cuerpo>
+    
+        <input type="date" 
+        name="date"
+        formControlName="date"
+        [valueAsDate]="fechaActual()"
+        id="date"
+        #date>
+
+        <button type="submit" [disabled]="form.invalid">
+            Crear
+        </button>
+    </form>
+</div>

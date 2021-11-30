@@ -1,0 +1,9 @@
+<div>
+    <app-modo-oscuro></app-modo-oscuro>
+</div>
+<div>
+    <app-form-noticia (_addNoticia)="addNoticia($event)"></app-form-noticia>
+</div>
+<div>
+    <app-noticia *ngFor="let noticia of listaNoticias" [noticia]="noticia" (_borrarNoticia)="borrarNoticia($event)"></app-noticia>
+</div>
