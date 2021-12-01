@@ -21,10 +21,12 @@ export class FormNoticiaComponent {
     })
   }
   
-  addNoticia(titulo: String, cuerpo: String, date: Date | null){
+  addNoticia(titulo: string, cuerpo: string, date: Date | null){
     if(date==null){
       date = new Date();
     }
     this._addNoticia.emit(new Noticia(titulo,cuerpo,date));
+    this.form.reset()
+    //this.form.clearValidators();
   }
 }

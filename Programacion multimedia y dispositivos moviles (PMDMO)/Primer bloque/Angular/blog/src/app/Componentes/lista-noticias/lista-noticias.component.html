@@ -1,9 +1,13 @@
 <div>
-    <app-modo-oscuro></app-modo-oscuro>
+  <app-modo-oscuro></app-modo-oscuro>
 </div>
-<div>
-    <app-form-noticia (_addNoticia)="addNoticia($event)"></app-form-noticia>
-</div>
-<div>
-    <app-noticia *ngFor="let noticia of listaNoticias" [noticia]="noticia" (_borrarNoticia)="borrarNoticia($event)"></app-noticia>
-</div>
+<app-form-noticia class="m-3" (_addNoticia)="addNoticia($event)"></app-form-noticia>
+<div class="row row-cols-1 row-cols-md-4 g-5">
+    <app-noticia
+      class="col"
+      *ngFor="let noticia of listaNoticias"
+      [noticia]="noticia"
+      (_borrarNoticia)="borrarNoticia($event)"
+    ></app-noticia>
+  </div>
+

@@ -76,9 +76,9 @@ public class Controller
         public static void leerVehiculo(PanelCRUD frmVehiculo, JTable tablaVehiculos){
             TableModel selecion = tablaVehiculos.getModel();
             
-            String marca = selecion.getValueAt(tablaVehiculos.getSelectedRows()[0],0).toString();
-            String modelo = selecion.getValueAt(tablaVehiculos.getSelectedRows()[0],1).toString();
-            String matricula = selecion.getValueAt(tablaVehiculos.getSelectedRows()[0],2).toString();
+            String marca = selecion.getValueAt(tablaVehiculos.getSelectedRow(),0).toString();
+            String modelo = selecion.getValueAt(tablaVehiculos.getSelectedRow(),1).toString();
+            String matricula = selecion.getValueAt(tablaVehiculos.getSelectedRow(),2).toString();
             frmVehiculo.getTxtMarca().setText(marca);
             frmVehiculo.getTxtMatricula().setText(matricula);
             frmVehiculo.getTxtModelo().setText(modelo);

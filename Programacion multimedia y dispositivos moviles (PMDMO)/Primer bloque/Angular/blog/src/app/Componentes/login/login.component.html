@@ -1,25 +1,55 @@
 <div>
-    <app-modo-oscuro></app-modo-oscuro>
+  <app-modo-oscuro></app-modo-oscuro>
 </div>
-<div>
+<div class="m-0 row vh-100 justify-content-center align-items-center">
+  <div class="col-auto bg-light p-5">
     <form [formGroup]="form" novalidate>
-        <label for="usuario">Usuario: </label>
-        <input type="text" 
-        name="usuario" 
-        formControlName="usuario"
-        id="usuario"
-        [ngClass]="{invalida: form.get('usuario')?.invalid}"
-        #usuario>
-    
-        <label for="passwd">Contraseña: </label>
-        <input type="text" 
-        name="passwd"
-        formControlName="passwd"
-        id="passwd"
-        [ngClass]="{invalida: form.get('passwd')?.invalid}"
-        #passwd>
-        <button type="submit" [routerLink]="['/noticias']" routerLinkActive="noticias"  [disabled]="form.invalid">
-            Iniciar Sesión
-        </button>
+      <div class="input-group p-2">
+        <input
+          type="text"
+          class="form-control"
+          name="usuario"
+          formControlName="usuario"
+          placeholder="Usuario"
+          id="usuario"
+          [ngClass]="{
+            'is-invalid':
+              form.get('usuario')?.dirty && form.get('usuario')?.invalid,
+            'is-valid': !form.get('usuario')?.invalid
+          }"
+          #usuario
+        />
+      </div>
+
+      <div class="input-group p-2">
+        <input
+          type="text"
+          class="form-control"
+          name="passwd"
+          formControlName="passwd"
+          placeholder="Contraseña"
+          id="passwd"
+          [ngClass]="{
+            'is-invalid':
+              form.get('passwd')?.dirty && form.get('passwd')?.invalid,
+            'is-valid': !form.get('passwd')?.invalid
+          }"
+          #passwd
+        />
+      </div>
+      <button
+        class="btn w-100"
+        [ngClass]="{
+          'btn-secondary': form.invalid,
+          'btn-primary': !form.invalid
+        }"
+        type="submit"
+        [routerLink]="['/noticias']"
+        routerLinkActive="noticias"
+        [disabled]="form.invalid"
+      >
+        Iniciar Sesión
+      </button>
     </form>
+  </div>
 </div>

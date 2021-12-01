@@ -1,6 +1,8 @@
-<div>
-    <h1>{{data.titulo}}</h1>
-    <p>{{data.cuerpo}}</p>
-    <p>{{data.fecha}}</p>
-    <button (click)="borrarNoticia(data)">Eliminar</button>
+<div class="card rounded-3 h-100">
+  <div class="card-body">
+    <h5 class="card-title">{{ data.titulo | uppercase | sizeWord:0}}</h5>
+    <p class="card-text">{{ data.cuerpo | sizeWord:1 }}</p>
+    <p class="card-text text-muted">{{ data.fecha | date}}</p>
+    <button class="btn btn-primary" (click)="borrarNoticia(data)">Eliminar</button>
+  </div>
 </div>
