@@ -11,7 +11,7 @@ import { JokesService } from "src/app/Servicio/jokes.service";
 export class JokeListComponent {
 
     jokes$: Observable<Joke[]>;
-    jokes: Joke[]; //Comentar esta linea para el ejemplo del for con 'async'
+    jokes: Joke[];
 
     constructor(private _servicio:JokesService) {
     }
@@ -19,9 +19,7 @@ export class JokeListComponent {
     ngOnInit(){
         this.jokes$ = this._servicio.jokesObse$();
         this.jokes = this._servicio.getJokes;
-        this.jokes$.subscribe(jokes => this.jokes = jokes); //Comentar esta linea para el ejemplo del for con 'async'
-                                        // Aqui es donde muestro la primera carga la lista de bromas, sin el no muestra.
-                                        // *Nota: Si se usa async, da igual que se haga, no muestra la primera carga las bormas.
+        this.jokes$.subscribe(jokes => this.jokes = jokes);
     }   
 
     addJoke(joke: Joke){

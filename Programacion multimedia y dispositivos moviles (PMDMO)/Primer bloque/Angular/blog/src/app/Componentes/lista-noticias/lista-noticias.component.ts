@@ -11,15 +11,15 @@ import { Observable } from 'rxjs';
 export class ListaNoticiasComponent implements OnInit {
 
   listaNoticias: Noticia[] = [];
-  private listaNoticias$: Observable<Noticia[]>;
+  listaNoticias$: Observable<Noticia[]>;
 
   constructor(private _noticia: ListaNoticiasService) { 
     this.listaNoticias$ = this._noticia.listaNoticiasObs$();
+    this.listaNoticias = this._noticia.getNoticias;
+    this.listaNoticias$.subscribe(listaNoticias => this.listaNoticias = listaNoticias);
   }
 
   ngOnInit(): void {
-    this.listaNoticias = this._noticia.getNoticias;
-    this.listaNoticias$.subscribe(listaNoticias => this.listaNoticias = listaNoticias);
   }
 
   addNoticia(noticia: Noticia){
@@ -29,5 +29,4 @@ export class ListaNoticiasComponent implements OnInit {
   borrarNoticia(noticia: Noticia){
     this._noticia.borrarNoticias(noticia);
   }
-
 }

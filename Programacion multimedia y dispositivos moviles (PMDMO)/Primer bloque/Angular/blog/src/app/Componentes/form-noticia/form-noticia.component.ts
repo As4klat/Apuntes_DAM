@@ -14,11 +14,10 @@ export class FormNoticiaComponent {
   @Output() _addNoticia = new EventEmitter<Noticia>();
 
   constructor(private fb: FormBuilder){
-
     this.form = this.fb.group({
       titulo: ["", [Validators.required]],
       cuerpo: ["", [Validators.required]],
-      date: [[Validators.required]]
+      date: ["", [Validators.required]]
     })
   }
   
@@ -27,9 +26,5 @@ export class FormNoticiaComponent {
       date = new Date();
     }
     this._addNoticia.emit(new Noticia(titulo,cuerpo,date));
-  }
-
-  fechaActual(){
-    return new Date();
   }
 }

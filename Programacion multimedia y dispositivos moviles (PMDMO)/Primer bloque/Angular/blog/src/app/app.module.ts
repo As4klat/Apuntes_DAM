@@ -9,9 +9,10 @@ import { LoginComponent } from './Componentes/login/login.component';
 import { ListaNoticiasComponent } from './Componentes/lista-noticias/lista-noticias.component';
 import { NoticiaComponent } from './Componentes/noticia/noticia.component';
 import { FormNoticiaComponent } from './Componentes/form-noticia/form-noticia.component';
+import { ModoOscuroComponent } from './Componentes/modo-oscuro/modo-oscuro.component';
 //Importaciones de servicios
 import { ListaNoticiasService } from './Servicios/lista-noticias.service';
-import { ModoOscuroComponent } from './Componentes/modo-oscuro/modo-oscuro.component';
+import { HomeComponent } from './Componentes/home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ModoOscuroComponent } from './Componentes/modo-oscuro/modo-oscuro.compo
     ListaNoticiasComponent,
     NoticiaComponent,
     FormNoticiaComponent,
-    ModoOscuroComponent
+    ModoOscuroComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,6 @@ import { ModoOscuroComponent } from './Componentes/modo-oscuro/modo-oscuro.compo
     AppRoutingModule
   ],
   providers: [ListaNoticiasService],
-  bootstrap: [FormNoticiaComponent]
+  bootstrap: [HomeComponent]
 })
 export class AppModule { }

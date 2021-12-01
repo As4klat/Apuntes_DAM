@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { EMPTY, Observable, Subject } from 'rxjs';
-
+import { Observable, Subject } from 'rxjs';
 import { Noticia } from '../Clases/noticia';
 
 @Injectable({
@@ -9,7 +8,6 @@ import { Noticia } from '../Clases/noticia';
 export class ListaNoticiasService {
 
   private listaNoticias: Noticia[];
-
   private listaNoticias$: Subject<Noticia[]>;
 
   constructor() {
@@ -33,11 +31,11 @@ export class ListaNoticiasService {
 
   addNoticia(noticia: Noticia){
     this.listaNoticias.push(noticia);
-    this.listaNoticias$.next();
+    this.listaNoticias$.next([...this.listaNoticias]);
   }
 
   borrarNoticias(noticia: Noticia){
     this.listaNoticias.splice(this.listaNoticias.indexOf(noticia), 1);
-    this.listaNoticias$.next();
+    this.listaNoticias$.next([...this.listaNoticias]);
   }
 }

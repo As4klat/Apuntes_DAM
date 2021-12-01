@@ -1,24 +1,29 @@
 <div>
     <form [formGroup]="form" (ngSubmit)="addNoticia(titulo.value, cuerpo.value, date.valueAsDate)" novalidate>
+        <label for="titulo">Titulo: </label>
         <input type="text" 
         name="titulo" 
         formControlName="titulo"
         placeholder="Titulo"
         id="titulo"
+        [ngClass]="{invalida: form.get('titulo')?.invalid}"
         #titulo>
     
+        <label for="cuerpo">Cuerpo: </label>
         <input type="text" 
         name="cuerpo"
         formControlName="cuerpo"
         placeholder="Cuerpo de la noticia"
         id="cuerpo"
+        [ngClass]="{invalida: form.get('cuerpo')?.invalid}"
         #cuerpo>
     
+        <label for="date">Fecha de creación: </label>
         <input type="date" 
         name="date"
         formControlName="date"
-        [valueAsDate]="fechaActual()"
         id="date"
+        [ngClass]="{invalida: form.get('date')?.invalid}"
         #date>
 
         <button type="submit" [disabled]="form.invalid">

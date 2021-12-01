@@ -1,1 +1,25 @@
-<p>login works!</p>
+<div>
+    <app-modo-oscuro></app-modo-oscuro>
+</div>
+<div>
+    <form [formGroup]="form" novalidate>
+        <label for="usuario">Usuario: </label>
+        <input type="text" 
+        name="usuario" 
+        formControlName="usuario"
+        id="usuario"
+        [ngClass]="{invalida: form.get('usuario')?.invalid}"
+        #usuario>
+    
+        <label for="passwd">Contraseña: </label>
+        <input type="text" 
+        name="passwd"
+        formControlName="passwd"
+        id="passwd"
+        [ngClass]="{invalida: form.get('passwd')?.invalid}"
+        #passwd>
+        <button type="submit" [routerLink]="['/noticias']" routerLinkActive="noticias"  [disabled]="form.invalid">
+            Iniciar Sesión
+        </button>
+    </form>
+</div>
