@@ -11,14 +11,13 @@ export class SizeWordPipe implements PipeTransform {
       case 0:
         limite = 10;
         if(cadena.length >= limite){
-          let cadena2 = cadena.substr(limite-1,cadena.length);
-          cadena = cadena.replace(cadena2, "...")
+          cadena = cadena.substr(0,limite) + "...";
         }
         break;
       case 1:
         limite = 50;
         if(cadena.length >= limite){
-          cadena.substr(limite-1,cadena.length) + "..."
+          cadena = cadena.substr(0,limite) + "..."
         }
         break;
     }

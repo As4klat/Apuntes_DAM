@@ -14,6 +14,7 @@ import { ModoOscuroComponent } from './Componentes/modo-oscuro/modo-oscuro.compo
 import { ListaNoticiasService } from './Servicios/lista-noticias.service';
 import { HomeComponent } from './Componentes/home/home.component';
 import { SizeWordPipe } from './Pipers/sizeWord.pipe';
+import { DetallesNoticiaComponent } from './Componentes/detalles-noticia/detalles-noticia.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SizeWordPipe } from './Pipers/sizeWord.pipe';
     FormNoticiaComponent,
     ModoOscuroComponent,
     HomeComponent,
-    SizeWordPipe
+    SizeWordPipe,
+    DetallesNoticiaComponent
   ],
   imports: [
     BrowserModule,

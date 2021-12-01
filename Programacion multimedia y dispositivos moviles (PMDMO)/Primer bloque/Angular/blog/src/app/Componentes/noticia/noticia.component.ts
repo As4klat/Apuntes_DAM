@@ -7,9 +7,8 @@ import { Noticia } from 'src/app/Clases/noticia';
   styleUrls: ['./noticia.component.css']
 })
 export class NoticiaComponent {
-
   constructor(){
-    this.data = new Noticia("","",new Date);
+    this.data = new Noticia("","",new Date());
   }
 
   @Input('noticia') data: Noticia;

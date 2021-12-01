@@ -1,0 +1,8 @@
+<div class="card rounded-3 m-5">
+    <div class="card-body">
+        <h5 class="card-title">{{ data.titulo | uppercase}}</h5>
+        <p class="card-text">{{ data.cuerpo }}</p>
+        <p class="card-text text-muted">{{ data.fecha | date}}</p>
+        <button class="btn btn-primary" [routerLink]="['/noticias']" (click)="borrarNoticia(data)">Eliminar</button>
+    </div>
+</div>

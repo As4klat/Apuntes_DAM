@@ -1,3 +1,4 @@
+import { findReadVarNames, not } from '@angular/compiler/src/output/output_ast';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { Noticia } from '../Clases/noticia';
@@ -27,6 +28,16 @@ export class ListaNoticiasService {
 
   get getNoticias(){
     return [...this.listaNoticias];
+  }
+
+  getNoticia(titulo: string): Noticia{
+    let noticia = new Noticia("","",new Date());
+    this.listaNoticias.forEach(x => {
+      if(titulo == x.titulo){
+        noticia = x;
+      }
+    });
+    return noticia;
   }
 
   addNoticia(noticia: Noticia){

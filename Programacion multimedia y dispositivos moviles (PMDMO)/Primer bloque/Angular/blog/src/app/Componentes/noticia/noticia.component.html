@@ -4,5 +4,6 @@
     <p class="card-text">{{ data.cuerpo | sizeWord:1 }}</p>
     <p class="card-text text-muted">{{ data.fecha | date}}</p>
     <button class="btn btn-primary" (click)="borrarNoticia(data)">Eliminar</button>
+    <button class="btn btn-secondary" [routerLink]="['/','noticias',data.titulo]">Ver</button>
   </div>
 </div>
