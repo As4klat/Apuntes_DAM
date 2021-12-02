@@ -1,10 +1,12 @@
 ﻿using System.Windows.Forms;
 using System.IO;
+using System.Drawing;
 
 namespace ExploradordeArchivos
 {
     public partial class Form1 : Form
     {
+        TreeNode node;
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +33,7 @@ namespace ExploradordeArchivos
                 aNode = new TreeNode(subDir.Name, 0, 0);
                 aNode.Tag = subDir;
                 aNode.ImageKey = "Folder";
+                node = aNode;
                 subSubDirs = subDir.GetDirectories();
                 if (subSubDirs.Length != 0)
                 {
@@ -65,5 +68,30 @@ namespace ExploradordeArchivos
             }
             listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
+
+        private void iconosGrandesToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconosPequeñosToolStripMenuItem1_Click(object sender, System.EventArgs e)
+        {
+            listView1.View = View.SmallIcon;
+        }
+
+        private void iconosGrandesToolStripMenuItem1_Click(object sender, System.EventArgs e)
+        {
+            listView1.View = View.LargeIcon;
+        }
+
+        private void listaToolStripMenuItem1_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void detalleToolStripMenuItem1_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
-    }
+}
