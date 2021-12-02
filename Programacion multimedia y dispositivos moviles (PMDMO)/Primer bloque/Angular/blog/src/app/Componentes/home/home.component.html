@@ -1,1 +1,6 @@
-<router-outlet></router-outlet>
+<div [ngClass]="{'oscuro': theme}">
+    <div class="container">
+        <app-modo-oscuro (_toggleTheme)="toggleTheme($event)"></app-modo-oscuro>
+        <router-outlet></router-outlet>
+    </div>
+</div>
