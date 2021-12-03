@@ -1,0 +1,10 @@
+C:\Users\Alejandro\Desktop\Examen2-gamaza\bin\Debug\Examen2-gamaza.exe.config
+C:\Users\Alejandro\Desktop\Examen2-gamaza\bin\Debug\Examen2-gamaza.exe
+C:\Users\Alejandro\Desktop\Examen2-gamaza\bin\Debug\Examen2-gamaza.pdb
+C:\Users\Alejandro\Desktop\Examen2-gamaza\obj\Debug\Examen2-gamaza.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Examen2-gamaza\obj\Debug\Examen2_gamaza.Form1.resources
+C:\Users\Alejandro\Desktop\Examen2-gamaza\obj\Debug\Examen2_gamaza.Properties.Resources.resources
+C:\Users\Alejandro\Desktop\Examen2-gamaza\obj\Debug\Examen2-gamaza.csproj.GenerateResource.cache
+C:\Users\Alejandro\Desktop\Examen2-gamaza\obj\Debug\Examen2-gamaza.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Examen2-gamaza\obj\Debug\Examen2-gamaza.exe
+C:\Users\Alejandro\Desktop\Examen2-gamaza\obj\Debug\Examen2-gamaza.pdb
