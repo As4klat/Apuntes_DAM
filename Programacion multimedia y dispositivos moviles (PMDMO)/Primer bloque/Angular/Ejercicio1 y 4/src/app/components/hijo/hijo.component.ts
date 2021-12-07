@@ -7,11 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HijoComponent {
 
-  @Input('btnPulsado') intPosicion:number;
+  @Input('btnClick') btnId:number;
 
   constructor() { }
-
-  getBoton(){
-    return this.intPosicion;
-  }
 }

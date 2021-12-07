@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-boton.component.css']
 })
 export class ListBotonComponent {
-  colorId: number;
+  btnId: number;
   constructor() {
-
+    this.btnId = 1;
   }
 
 }
