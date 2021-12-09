@@ -20,7 +20,7 @@ public class Taquilla {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        SalaCine sala = new SalaCine();
+        SalaCine sala = new SalaCine(60);
         
         List<Entrada> entradas = new LinkedList<>();
         for(int i = 1; i <= sala.getnButacas(); i++){
@@ -32,8 +32,9 @@ public class Taquilla {
             personas.add(new Persona(i));
         }
         
-        
-        
+        for(int i = 0; i < 5; i++){
+            Operador o = new Operador(personas, entradas);
+            o.start();
+        }
     }
-    
 }

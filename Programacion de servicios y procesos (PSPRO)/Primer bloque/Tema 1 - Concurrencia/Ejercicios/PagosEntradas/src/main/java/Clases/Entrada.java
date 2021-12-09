@@ -13,10 +13,12 @@ import java.util.List;
 public class Entrada {
     private int id;
     private int butaca;
+    private boolean comprada;
 
     public Entrada(int id, int butaca) {
         this.id = id;
         this.butaca = butaca;
+        comprada = false;
     }
     
     //
@@ -29,6 +31,10 @@ public class Entrada {
     public int getButaca() {
         return butaca;
     }
+    
+    public boolean getComprada() {
+        return comprada;
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -37,5 +43,8 @@ public class Entrada {
     public void setButaca(int butaca) {
         this.butaca = butaca;
     }
-    
+
+    public void setComprada(boolean comprada) {
+        this.comprada = comprada;
+    }
 }
