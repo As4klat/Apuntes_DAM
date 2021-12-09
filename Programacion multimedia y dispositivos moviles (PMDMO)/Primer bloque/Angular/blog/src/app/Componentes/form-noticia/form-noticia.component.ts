@@ -27,6 +27,5 @@ export class FormNoticiaComponent {
     }
     this._addNoticia.emit(new Noticia(titulo,cuerpo,date));
     this.form.reset()
-    //this.form.clearValidators();
   }
 }

@@ -1,0 +1,15 @@
+<app-menu (_loged)="isLoged()"></app-menu>
+<br>
+<div [ngSwitch]="login">
+    <div *ngSwitchCase="true">
+        <div>
+            <app-buscador></app-buscador>
+        </div>
+        <div>
+            <app-lista-libros></app-lista-libros>
+        </div>
+    </div>
+    <div *ngSwitchDefault>
+        <app-bienvenida></app-bienvenida>
+    </div>
+</div>
