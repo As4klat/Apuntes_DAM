@@ -28,7 +28,7 @@ public class Sala {
         return sala;
     }
     
-    public boolean quedanCestas(){
+    public synchronized boolean quedanCestas(){
         boolean hayCestas = true;
         if(nCestas==0){
             hayCestas=false;
