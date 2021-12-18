@@ -1,44 +1,41 @@
 const fs = require('fs')
 const chalk = require('chalk')
 
-const addCliente = (id, nombre) => {
+const addCliente = (nombre) => {
     const clientes = cargarClientes()
-    const clienteDuplicado = clientes.find((cliente) => cliente.id === id)
+    const clienteDuplicado = clientes.find((cliente) => cliente.nombre === nombre)
 
     if (!clienteDuplicado) {
+        var idIndex = clientes.length
         clientes.push({
-            id: id,
+            id: idIndex,
             nombre: nombre
         })
         saveClientes(clientes)
         console.log(chalk.green.inverse('Se ha añadido un nuevo cliente!'))
     } else {
-        console.log(chalk.red.inverse('No se ha podido crear el cliente con id: ' + id + ' Ya existe.'))
+        console.log(chalk.red.inverse('No se ha podido crear el cliente ' + nombre + ' Ya existe.'))
     }
 }
 
-const addFactura = (idCliente, idFactura, total) => {
+const addFactura = (idCliente, total) => {
     const facturas = cargarFacturas()
     const clientes = cargarClientes()
 
-    const facturaDuplicada = facturas.find((factura) => factura.idFactura === idFactura)
-    const clienteExiste = clientes.find((cliente) => cliente.id === idCliente)
+    const clienteExiste = clientes.find((cliente) => cliente.id == idCliente)
 
     if(clienteExiste){
-        if (!facturaDuplicada) {
+        var idFactura = facturas.length
             facturas.push({
-                idCliente: idCliente,
                 idFactura: idFactura,
+                idCliente: idCliente,
                 total: total
             })
             saveFacturas(facturas)
             console.log(chalk.green.inverse('Se ha añadido una nueva factura!'))
-        } else {
-            console.log(chalk.red.inverse('No se ha podido crear la factura con id: ' + idFactura + ' Ya existe.'))
-        }
     }
     else{
-        console.log(chalk.red.inverse('No se existe el cliente con id:' + idCliente))
+        console.log(chalk.red.inverse('No existe el cliente con id:' + idCliente))
     }
     
 }
@@ -60,6 +57,67 @@ const listaFacturas = () => {
 
     facturas.forEach((factura) => {
         console.log(factura.idFactura + ": " + " --- Cliente: " + factura.idCliente + " Total: " + factura.total)
+    })
+}
+
+const removeCliente = (idCliente) => {
+    var clientes = cargarClientes()
+    var facturas = cargarFacturas()
+    const clienteExiste = clientes.find((cliente) => cliente.id == idCliente)
+
+    if(clienteExiste){
+        clientes = clientes.filter((cliente) => cliente.id != idCliente)
+        facturas = facturas.filter((factura) => factura.idCliente != idCliente)
+        clientes.forEach((cliente) => {
+            if(cliente.id > idCliente){
+                cliente.id--
+            }
+        })
+        for(var i = 0; i < facturas.length; i++){
+            if(facturas[i].idFactura != i){
+                facturas[i].idFactura = i
+            }
+        }
+        console.log(chalk.green.inverse('Se ha borrado con exito.'))
+        saveClientes(clientes)
+        saveFacturas(facturas)
+    } else {
+        console.log(chalk.red.inverse('No existe el cliente con id: ' + idCliente))
+    }
+}
+
+const removeFactura = (idFactura) => {
+    var facturas = cargarFacturas()
+    const facturaExiste = facturas.find((factura) => factura.idFactura == idFactura)
+
+    if(facturaExiste){
+        facturas = facturas.filter((factura) => factura.idFactura != idFactura)
+        facturas.forEach((factura) => {
+            if(factura.idFactura > idFactura){
+                factura.idFactura--
+            }
+        })
+        console.log(chalk.green.inverse('Se ha borrado con exito.'))
+        saveFacturas(facturas)
+    } else {
+        console.log(chalk.red.inverse('No existe el cliente con id: ' + idFactura))
+    }
+}
+
+const listaFacturasCliente = (idCliente) => {
+    const facturas = cargarFacturas()
+    const clientes = cargarClientes()
+
+    const cliente = clientes.find(function(cliente) {
+        return cliente.id == idCliente;
+    })
+
+    console.log(chalk.inverse('------ Facturas del cliente ' + cliente.nombre + ' ------'))
+
+    facturas.forEach((factura) => {
+        if(factura.idCliente == idCliente){
+            console.log(factura.idFactura + ": ---Total: " + factura.total)
+        }
     })
 }
 
@@ -98,5 +156,7 @@ module.exports = {
     addFactura: addFactura,
     listaClientes: listaClientes,
     listaFacturas: listaFacturas,
-    //removeCliente: removeCliente
+    removeCliente: removeCliente,
+    removeFactura: removeFactura,
+    listaFacturasCliente: listaFacturasCliente
 }

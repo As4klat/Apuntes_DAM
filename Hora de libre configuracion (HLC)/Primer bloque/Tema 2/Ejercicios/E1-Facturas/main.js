@@ -6,11 +6,6 @@ yargs.command({
     command: 'addCliente',
     describe: 'Añade un cliente a la lista.',
     builder: {
-        id: {
-            describe: 'Id del cliente.',
-            demandOption: true,
-            type: 'string'
-        },
         nombre: {
             describe: 'Nombre del cliente.',
             demandOption: true,
@@ -18,7 +13,7 @@ yargs.command({
         }
     },
     handler(argv) {
-        facturasController.addCliente(argv.id, argv.nombre)
+        facturasController.addCliente(argv.nombre)
     }
 })
 
@@ -32,11 +27,6 @@ yargs.command({
             demandOption: true,
             type: 'string'
         },
-        idFactura: {
-            describe: 'Id de la factura crada.',
-            demandOption: true,
-            type: 'string'
-        },
         total:{
             describe: 'Total de la factura recibida.',
             demandOption: true,
@@ -44,7 +34,7 @@ yargs.command({
         }
     },
     handler(argv) {
-        facturasController.addFactura(argv.idCliente, argv.idFactura, argv.total)
+        facturasController.addFactura(argv.idCliente, argv.total)
     }
 })
 
@@ -61,7 +51,7 @@ yargs.command({
 yargs.command({
     command: 'listaFacturas',
     describe: 'Lista las facturas actuales.',
-    handler(argv){
+    handler(){
         facturasController.listaFacturas()
     }
 })
@@ -78,6 +68,7 @@ yargs.command({
         }
     },
     handler(argv) {
+        facturasController.removeCliente(argv.idCliente)
     }
 })
 
@@ -86,13 +77,14 @@ yargs.command({
     command: 'removeFactura',
     describe: 'Elimina una factura por su id.',
     builder: {
-        idCliente: {
+        idFactura: {
             describe: 'Id de la factura a eliminar.',
             demandOption: true,
             type: 'string'
         }
     },
     handler(argv) {
+        facturasController.removeFactura(argv.idFactura)
     }
 })
 
@@ -108,6 +100,7 @@ yargs.command({
         }
     },
     handler(argv){
+        facturasController.listaFacturasCliente(argv.idCliente)
     }
 })
 

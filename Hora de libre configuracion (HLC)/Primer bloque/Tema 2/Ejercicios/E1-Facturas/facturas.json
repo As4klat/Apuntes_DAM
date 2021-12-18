@@ -1,1 +1,1 @@
-[{"idCliente":"1","idFactura":"1","total":"2312"}]
+[{"idFactura":0,"idCliente":"0","total":"10"},{"idFactura":1,"idCliente":"2","total":"10"},{"idFactura":2,"idCliente":"2","total":"20"},{"idFactura":3,"idCliente":"0","total":"20"}]
