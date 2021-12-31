@@ -18,5 +18,5 @@ const show = (ciudad) => {
 }
 
 module.exports = {
-    show: show
+  show: show
 }

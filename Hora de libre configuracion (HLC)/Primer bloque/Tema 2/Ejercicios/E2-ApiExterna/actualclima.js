@@ -1,5 +1,5 @@
 const yargs = require('yargs')
-const weatherstack = require('./apis/weatherstack.js')
+const weatherstack = require('./appis/weatherstack.js')
 
 yargs.command({
     command: 'mostrarClima',
