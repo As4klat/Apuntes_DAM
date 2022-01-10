@@ -14,7 +14,8 @@ namespace Jardineria
 
         public ConexionBD():base()
         {
-            string cadena = "data source = DESKTOP-4MUCRB0; initial catalog = jardineria; user id = ra; password = ra12345";
+
+            string cadena = $"data source = {Environment.MachineName}; initial catalog = jardineria; user id = ra; password = ra12345";
             conectarbd = new SqlConnection();
             conectarbd.ConnectionString = cadena;
             try
