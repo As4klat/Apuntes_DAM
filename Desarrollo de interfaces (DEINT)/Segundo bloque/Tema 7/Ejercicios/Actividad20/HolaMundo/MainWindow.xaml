@@ -1,0 +1,20 @@
+﻿<Window x:Class="HolaMundo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HolaMundo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="ventanaPrincipal">
+        <Button x:Name="btnGirar" Content="Girar" HorizontalAlignment="Left" Margin="262,110,0,0" VerticalAlignment="Top" Width="75" Click="btnGirar_Click"/>
+        <Label Content="Angulo de giro:" HorizontalAlignment="Left" Margin="164,71,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textAngulo" HorizontalAlignment="Left" Height="23" Margin="262,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="textAngulo_KeyDown"/>
+        <Label Content="Antes" HorizontalAlignment="Left" Margin="125,173,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Despues" HorizontalAlignment="Left" Margin="433,173,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="129" Margin="135,247,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.5,0.5">
+            
+        </Rectangle>
+        <Rectangle x:Name="rectMov" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="129" Margin="454,247,0,0" Stroke="Black" VerticalAlignment="Top" Width="60"/>
+    </Grid>
+</Window>

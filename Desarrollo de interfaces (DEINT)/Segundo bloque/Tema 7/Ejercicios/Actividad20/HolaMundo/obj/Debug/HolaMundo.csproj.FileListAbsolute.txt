@@ -1,0 +1,15 @@
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\bin\Debug\HolaMundo.exe.config
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\bin\Debug\HolaMundo.exe
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\bin\Debug\HolaMundo.pdb
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\HolaMundo.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\MainWindow.g.cs
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\App.g.cs
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\HolaMundo_MarkupCompile.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\HolaMundo_MarkupCompile.lref
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\MainWindow.baml
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\HolaMundo.g.resources
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\HolaMundo.Properties.Resources.resources
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\HolaMundo.csproj.GenerateResource.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\HolaMundo.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\HolaMundo.exe
+C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad20\HolaMundo\obj\Debug\HolaMundo.pdb
