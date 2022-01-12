@@ -57,22 +57,14 @@
             </Rectangle>
         </StackPanel>
         <StackPanel x:Name="QuintoWrap" Height="140" Orientation="Vertical" Width="140" Margin="80,40,20,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Rectangle Height="140" Width="140" RadiusX="70" RadiusY="70" StrokeThickness="4" Stroke="White" RenderTransformOrigin="0.5,0.5">
-                <Rectangle.Fill>
-                    <RadialGradientBrush SpreadMethod="Repeat" MappingMode="RelativeToBoundingBox" RadiusY="0.5" RadiusX="0.5">
-                        <RadialGradientBrush.RelativeTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </RadialGradientBrush.RelativeTransform>
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
+            <Ellipse Height="140" Stroke="Black" Width="140">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5" RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
+                        <GradientStop Color="#FF1EF700"/>
+                        <GradientStop Color="Black" Offset="1"/>
                     </RadialGradientBrush>
-                </Rectangle.Fill>
-            </Rectangle>
+                </Ellipse.Fill>
+            </Ellipse>
         </StackPanel>
         <StackPanel x:Name="SextoWrap" Height="140" Orientation="Vertical" Width="140" Margin="80,40,20,0">
             <Rectangle Height="140" Width="140" Stroke="White" StrokeThickness="2">

@@ -1,0 +1,70 @@
+﻿<Window x:Name="VentanaPrincipal" x:Class="Actividad21_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Actividad21_2"
+        mc:Ignorable="d"
+        Title="Árbol de habilidades" Height="550" Width="1000">
+    <StackPanel Margin="10,10,10,10" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <StackPanel Width="480" Height="50" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,50,0,0">
+            <TextBlock x:Name="menuCombatSkills" TextWrapping="Wrap" Width="80" Background="#FFDA0D0D" Foreground="#FFFF4949" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuCombatSkills_MouseEnter" MouseLeave="menuCombatSkills_MouseLeave"><Run Language="es-es" Text="Combat Skills"/>
+
+                <TextBlock.Effect>
+                    <DropShadowEffect
+                        ShadowDepth="4"
+                        Direction="330"
+                        Color="Black"
+                        Opacity="0.5"
+                        BlurRadius="4"/>
+                </TextBlock.Effect>
+            </TextBlock>
+
+            <TextBlock x:Name="menuSignsSkills" TextWrapping="Wrap" Width="80" Background="#FF2B1FAE" Foreground="#FF5C55B1" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuSignsSkills_MouseEnter">
+                <TextBlock.Effect>
+                    <DropShadowEffect
+                        ShadowDepth="4"
+                        Direction="330"
+                        Color="Black"
+                        Opacity="0.5"/>
+                </TextBlock.Effect><Run Text="S"/><Run Language="es-es" Text="i"/><Run Text="gns"/><LineBreak/><Run Text="Skills"/></TextBlock>
+            <TextBlock x:Name="menuAlchemySkills" TextWrapping="Wrap" Width="80" Background="#FF096523" Foreground="#FF52725B" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuAlchemySkills_MouseEnter">
+                <TextBlock.Effect>
+                    <DropShadowEffect
+                        ShadowDepth="4"
+                        Direction="330"
+                        Color="Black"
+                        Opacity="0.5"
+                        BlurRadius="4"/>
+                </TextBlock.Effect><Run Language="es-es" Text="Alchemy Skills"/></TextBlock>
+            <TextBlock x:Name="menuGeneralSkills" TextWrapping="Wrap" Width="80" Background="#FFA16013" Foreground="#FFAC8C66" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuGeneralSkills_MouseEnter">
+                <TextBlock.Effect>
+                    <DropShadowEffect
+                        ShadowDepth="4"
+                        Direction="330"
+                        Color="Black"
+                        Opacity="0.5"
+                        BlurRadius="4"/>
+                </TextBlock.Effect><Run Text="General"/><Run Language="es-es" Text=" "/><Run Text="Skills"/></TextBlock>
+            <TextBlock x:Name="menuMutagens" TextWrapping="Wrap" Width="80" Background="#FF2D5E90" Foreground="#FF6D859D" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutagens_MouseEnter">
+                <TextBlock.Effect>
+                    <DropShadowEffect
+                        ShadowDepth="4"
+                        Direction="330"
+                        Color="Black"
+                        Opacity="0.5"
+                        BlurRadius="4"/>
+                </TextBlock.Effect><Run Language="es-es" Text="Mutagens"/></TextBlock>
+            <TextBlock x:Name="menuMutations" TextWrapping="Wrap" Width="80" Background="#FFBEA56D" Foreground="#FFBDB198" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutations_MouseEnter">
+                <TextBlock.Effect>
+                    <DropShadowEffect
+                        ShadowDepth="4"
+                        Direction="330"
+                        Color="Black"
+                        Opacity="0.5"
+                        BlurRadius="4"/>
+                </TextBlock.Effect><Run Language="es-es" Text="Mutations"/></TextBlock>
+
+        </StackPanel>
+    </StackPanel>
+</Window>
