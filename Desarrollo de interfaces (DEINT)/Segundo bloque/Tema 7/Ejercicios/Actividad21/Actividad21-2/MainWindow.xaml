@@ -5,132 +5,171 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad21_2"
         mc:Ignorable="d"
-        Title="Árbol de habilidades" Height="854" Width="1482">
-    <WrapPanel x:Name="WraperPrincipal" Margin="0,0,0,0" Orientation="Vertical">
-        <WrapPanel.Background>
-            <ImageBrush ImageSource="/get_image_large (1).jpg" Stretch="UniformToFill" Opacity="0.85"/>
-        </WrapPanel.Background>
-        <StackPanel x:Name="PanelMenuDeNavegacion" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="50,50,0,0" Height="50" Width="480">
-            <StackPanel.Effect>
-                <DropShadowEffect x:Name="PanelMenuDeNavegacionEffect"
-                        ShadowDepth="4"
-                        Direction="330"
-                        Color="Black"
-                        Opacity="0.5"
-                        BlurRadius="4"/>
-            </StackPanel.Effect>
-            <TextBlock x:Name="menuCombatSkills" TextWrapping="Wrap" Width="80" Background="#FFC54444" Foreground="#FFDE6767" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuCombatSkills_MouseEnter" MouseLeave="menuCombatSkills_MouseLeave" Cursor="Hand">
-                <TextBlock.Triggers>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation
-                                    Storyboard.TargetName="menuCombatSkills" 
-                                    Storyboard.TargetProperty="(FrameworkElement.Width)"
-                                    To="75" Duration="0:0:0.1"
-                                    AutoReverse="True"/>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </TextBlock.Triggers>
-                <Run Language="es-es" Text="Combat Skills"/>
-            </TextBlock>
-            <TextBlock x:Name="menuSignsSkills" TextWrapping="Wrap" Width="80" Background="#FF2B1FAE" Foreground="#FF5C55B1" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuSignsSkills_MouseEnter" MouseLeave="menuSignsSkills_MouseLeave" Cursor="Hand">
-                <TextBlock.Triggers>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation
-                                    Storyboard.TargetName="menuSignsSkills" 
-                                    Storyboard.TargetProperty="(FrameworkElement.Width)"
-                                    To="75" Duration="0:0:0.1"
-                                    AutoReverse="True"/>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </TextBlock.Triggers>
-                <Run Text="Signs"/><LineBreak/>
-                <Run Language="es-es" Text="Skills"/>
-            </TextBlock>
-            <TextBlock x:Name="menuAlchemySkills" TextWrapping="Wrap" Width="80" Background="#FF096523" Foreground="#FF52725B" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuAlchemySkills_MouseEnter" MouseLeave="menuAlchemySkills_MouseLeave" Cursor="Hand">
-                <TextBlock.Triggers>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation
-                                    Storyboard.TargetName="menuAlchemySkills" 
-                                    Storyboard.TargetProperty="(FrameworkElement.Width)"
-                                    To="75" Duration="0:0:0.1"
-                                    AutoReverse="True"/>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </TextBlock.Triggers><Run Language="es-es" Text="Alchemy Skills"/></TextBlock>
-            <TextBlock x:Name="menuGeneralSkills" TextWrapping="Wrap" Width="80" Background="#FFA16013" Foreground="#FFAC8C66" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuGeneralSkills_MouseEnter" MouseLeave="menuGeneralSkills_MouseLeave" Cursor="Hand">
-                <TextBlock.Triggers>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation
-                                    Storyboard.TargetName="menuGeneralSkills" 
-                                    Storyboard.TargetProperty="(FrameworkElement.Width)"
-                                    To="75" Duration="0:0:0.1"
-                                    AutoReverse="True"/>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </TextBlock.Triggers><Run Text="General"/><Run Language="es-es" Text=" "/><Run Text="Skills"/></TextBlock>
-            <TextBlock x:Name="menuMutagens" TextWrapping="Wrap" Width="80" Background="#FF2D5E90" Foreground="#FF6D859D" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutagens_MouseEnter" MouseLeave="menuMutagens_MouseLeave" Cursor="Hand">
-                <TextBlock.Triggers>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation
-                                    Storyboard.TargetName="menuMutagens" 
-                                    Storyboard.TargetProperty="(FrameworkElement.Width)"
-                                    To="75" Duration="0:0:0.1"
-                                    AutoReverse="True"/>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </TextBlock.Triggers><Run Language="es-es" Text="Mutagens"/></TextBlock>
-            <TextBlock x:Name="menuMutations" TextWrapping="Wrap" Width="80" Background="#FFBEA56D" Foreground="#FF948464" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutations_MouseEnter" MouseLeave="menuMutations_MouseLeave" Cursor="Hand">
-                <TextBlock.Triggers>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation
-                                    Storyboard.TargetName="menuMutations" 
-                                    Storyboard.TargetProperty="(FrameworkElement.Width)"
-                                    To="75" Duration="0:0:0.1"
-                                    AutoReverse="True"/>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </TextBlock.Triggers><Run Language="es-es" Text="Mutations"/></TextBlock>
-        </StackPanel>
-        <StackPanel x:Name="PanelCambiante" Orientation="Vertical" Width="480" Height="630" Margin="50,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <StackPanel x:Name="PanelContadores" Width="480" Orientation="Horizontal" Height="48" VerticalAlignment="Top" Margin="0,0,0,20">
-                <StackPanel.Background>
-                    <SolidColorBrush Color="#FF383838" Opacity="0.8"/>
-                </StackPanel.Background>
-                <Label x:Name="PuntosEnPosesion" Content="Puntos en posesión:" VerticalAlignment="Center" HorizontalContentAlignment="Left" Width="240" HorizontalAlignment="Center" Foreground="#FFD6A76E" FontFamily="Segoe UI Black" FontSize="16"/>
-                <Label x:Name="PuntosConsumidos" Content="Puntos consumidos:" HorizontalContentAlignment="Right" Width="240" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe UI Black" Foreground="#FFD6A76E" FontSize="16"/>
-            </StackPanel>
-            <DockPanel x:Name="PanelHabilidades" LastChildFill="False" HorizontalAlignment="Stretch" Height="562">
-                <StackPanel x:Name="Cabecera" Orientation="Vertical" Width="{Binding ActualWidth, ElementName=PanelCambiante, Mode=OneWay}" Height="120" DockPanel.Dock="Top" Margin="0,0,0,10" Background="#FFC54444">
-                    <StackPanel x:Name="CabeceraTitulo" Orientation="Horizontal" Width="{Binding ActualWidth, ElementName=PanelCambiante, Mode=OneWay}" Height="60" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        Title="Árbol de habilidades" Height="880" Width="1520" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+    <Grid x:Name="GridPrincipal">
+        <Grid.Background>
+            <ImageBrush ImageSource="/get_image_large (1).jpg"/>
+        </Grid.Background>
+        <WrapPanel x:Name="WraperPrincipal" Orientation="Vertical" HorizontalAlignment="Left" Margin="0,-10,0,10">
+            <StackPanel Margin="30,27,0,0">
+                <StackPanel x:Name="PanelMenuDeNavegacion" Orientation="Horizontal" Margin="0,0,0,30">
+                    <StackPanel.Effect>
+                        <DropShadowEffect x:Name="PanelMenuDeNavegacionEffect"
+                            ShadowDepth="4"
+                            Direction="330"
+                            Color="Black"
+                            Opacity="0.5"
+                            BlurRadius="4"/>
+                    </StackPanel.Effect>
+                    <TextBlock x:Name="menuCombatSkills" TextWrapping="Wrap" Width="99.5" Background="#FFC54444" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuCombatSkills_MouseEnter" MouseLeave="menuCombatSkills_MouseLeave" Cursor="Hand">
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="White" Opacity="0.2"/>
+                        </TextBlock.Foreground>
+                        <TextBlock.Triggers>
+                            <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="menuCombatSkills" 
+                                            Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                            To="75" Duration="0:0:0.1"
+                                            AutoReverse="True"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </TextBlock.Triggers><Run Text="Combat"/><LineBreak/><Run Text="Skills"/></TextBlock>
+                    <TextBlock x:Name="menuSignsSkills" TextWrapping="Wrap" Width="99.5" Background="#FF2B1FAE" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuSignsSkills_MouseEnter" MouseLeave="menuSignsSkills_MouseLeave" Cursor="Hand">
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="White" Opacity="0.2"/>
+                        </TextBlock.Foreground>
+                        <TextBlock.Triggers>
+                            <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="menuSignsSkills" 
+                                            Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                            To="75" Duration="0:0:0.1"
+                                            AutoReverse="True"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </TextBlock.Triggers><Run Text="Signs"/><LineBreak/><Run Language="es-es" Text="Skills"/></TextBlock>
+                    <TextBlock x:Name="menuAlchemySkills" TextWrapping="Wrap" Width="99.5" Background="#FF096523" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuAlchemySkills_MouseEnter" MouseLeave="menuAlchemySkills_MouseLeave" Cursor="Hand">
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="White" Opacity="0.2"/>
+                        </TextBlock.Foreground>
+                        <TextBlock.Triggers>
+                            <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="menuAlchemySkills" 
+                                            Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                            To="75" Duration="0:0:0.1"
+                                            AutoReverse="True"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </TextBlock.Triggers><Run Text="Alchemy"/><LineBreak/><Run Text="Skills"/></TextBlock>
+                    <TextBlock x:Name="menuGeneralSkills" TextWrapping="Wrap" Width="99.5" Background="#FFA16013" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuGeneralSkills_MouseEnter" MouseLeave="menuGeneralSkills_MouseLeave" Cursor="Hand">
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="White" Opacity="0.2"/>
+                        </TextBlock.Foreground>
+                        <TextBlock.Triggers>
+                            <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="menuGeneralSkills" 
+                                            Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                            To="75" Duration="0:0:0.1"
+                                            AutoReverse="True"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </TextBlock.Triggers><Run Text="General"/><LineBreak/><Run Text="Skills"/></TextBlock>
+                    <TextBlock x:Name="menuMutagens" TextWrapping="Wrap" Width="99.5" Background="#FF2D5E90" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutagens_MouseEnter" MouseLeave="menuMutagens_MouseLeave" Cursor="Hand">
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="White" Opacity="0.2"/>
+                        </TextBlock.Foreground>
+                        <TextBlock.Triggers>
+                            <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="menuMutagens" 
+                                            Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                            To="75" Duration="0:0:0.1"
+                                            AutoReverse="True"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </TextBlock.Triggers><Run Language="es-es" Text="Mutagens"/></TextBlock>
+                    <TextBlock x:Name="menuMutations" TextWrapping="Wrap" Width="99.5" Background="#FFBEA56D" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutations_MouseEnter" MouseLeave="menuMutations_MouseLeave" Cursor="Hand">
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="White" Opacity="0.2"/>
+                        </TextBlock.Foreground>
+                        <TextBlock.Triggers>
+                            <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="menuMutations" 
+                                            Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                            To="75" Duration="0:0:0.1"
+                                            AutoReverse="True"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </TextBlock.Triggers><Run Language="es-es" Text="Mutations"/></TextBlock>
+                </StackPanel>
+                <StackPanel x:Name="PanelCambiante" Orientation="Vertical" Width="597" Height="630">
+                    <StackPanel x:Name="PanelContadores" Width="597" Orientation="Horizontal" Height="48" VerticalAlignment="Center" Margin="0,0,0,20" HorizontalAlignment="Left">
                         <StackPanel.Background>
-                            <LinearGradientBrush EndPoint="1,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FFC54444"/>
-                                <GradientStop Color="#FF400707" Offset="1"/>
-                            </LinearGradientBrush>
+                            <SolidColorBrush Color="#FF383838" Opacity="0.8"/>
                         </StackPanel.Background>
-                        <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="476" Margin="2,2,2,2">
-                            <StackPanel x:Name="PanelTitulo" Orientation="Horizontal" Height="48" Margin="0,0,0,0">
-                                <Label x:Name="Titulo" Content="Titulo" VerticalAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Foreground="White" FontFamily="Segoe UI" FontSize="18" Margin="5,0,0,0" FontWeight="Bold">
+                        <Label x:Name="PuntosEnPosesion" Content="Puntos en posesión:" VerticalAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Foreground="#FFD6A76E" FontFamily="Segoe UI Black" FontSize="16" VerticalContentAlignment="Center" Padding="5,5,5,5" Margin="20,0,0,0"/>
+                        <Label x:Name="PuntosConsumidos" Content="Puntos consumidos:" HorizontalContentAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Segoe UI Black" Foreground="#FFD6A76E" FontSize="16" VerticalContentAlignment="Center" Padding="5,5,5,5" Margin="180,0,0,0"/>
+                    </StackPanel>
+                    <DockPanel x:Name="PanelHabilidades" LastChildFill="False" HorizontalAlignment="Stretch" Height="562">
+                        <StackPanel x:Name="Cabecera" Orientation="Vertical" Width="{Binding ActualWidth, ElementName=PanelCambiante, Mode=OneWay}" DockPanel.Dock="Top" Margin="0,0,0,10">
+                            <StackPanel x:Name="CabeceraTitulo" Orientation="Vertical" Width="{Binding ActualWidth, ElementName=PanelCambiante, Mode=OneWay}" Height="60" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,1">
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="1,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFC54444"/>
+                                        <GradientStop Color="#FF400707" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
+                                <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" VerticalAlignment="Center" Margin="2,2,2,2">
+                                    <StackPanel x:Name="PanelTitulo" Orientation="Horizontal" Height="48" Margin="0,0,0,0" FlowDirection="LeftToRight">
+                                        <Label x:Name="Titulo" Content="Titulo" VerticalAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Foreground="White" FontFamily="Segoe UI" FontSize="18" Margin="20,0,0,0" FontWeight="Bold">
+                                            <Label.Effect>
+                                                <DropShadowEffect x:Name="TituloShadowEffect"
+                                                    ShadowDepth="3"
+                                                    Direction="330"
+                                                    Color="Black"
+                                                    Opacity="0.8"
+                                                    BlurRadius="1"/>
+                                            </Label.Effect>
+                                        </Label>
+                                        <Label x:Name="PuntosEnRama" Content="Puntos gastados en la rama:" HorizontalContentAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Segoe UI" Foreground="White" FontSize="18" Margin="200,0,0,0" FontWeight="Bold">
+                                            <Label.Effect>
+                                                <DropShadowEffect x:Name="PuntosEnRamaShadowEffect"
+                                                    ShadowDepth="3"
+                                                    Direction="330"
+                                                    Color="Black"
+                                                    Opacity="0.8"
+                                                    BlurRadius="1"/>
+                                            </Label.Effect>
+                                        </Label>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                            <StackPanel x:Name="CabeceraCategorias" Orientation="Horizontal" Width="{Binding ActualWidth, ElementName=PanelCambiante, Mode=OneWay}" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFC54444">
+                                <Label x:Name="CabezeraHabilidad1" Content="Attaque&#xA;Rapido" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="24,0,0,0" Width="90" FontSize="18" Foreground="#FFFCFCFC" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                                     <Label.Effect>
-                                        <DropShadowEffect x:Name="TituloShadowEffect"
+                                        <DropShadowEffect x:Name="CabezeraHabilidad1ShadowEffect"
                                             ShadowDepth="3"
                                             Direction="330"
                                             Color="Black"
@@ -138,9 +177,39 @@
                                             BlurRadius="1"/>
                                     </Label.Effect>
                                 </Label>
-                                <Label x:Name="PuntosEnRama" Content="Puntos gastados en la rama:" HorizontalContentAlignment="Left" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="Segoe UI" Foreground="White" FontSize="18" Margin="140,0,0,0" FontWeight="Bold">
+                                <Label x:Name="CabezeraHabilidad2" Content="Ataque&#xA;Fuerte" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="24,0,0,0" Width="90" FontSize="18" Foreground="#FFFCFCFC" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
                                     <Label.Effect>
-                                        <DropShadowEffect x:Name="PuntosEnRamaShadowEffect"
+                                        <DropShadowEffect x:Name="CabezeraHabilidad2ShadowEffect"
+                                            ShadowDepth="3"
+                                            Direction="330"
+                                            Color="Black"
+                                            Opacity="0.8"
+                                            BlurRadius="1"/>
+                                    </Label.Effect>
+                                </Label>
+                                <Label x:Name="CabezeraHabilidad3" Content="Defensa" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="24,0,0,0" Width="90" FontSize="18" Foreground="#FFFCFCFC" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                                    <Label.Effect>
+                                        <DropShadowEffect x:Name="CabezeraHabilidad3ShadowEffect"
+                                            ShadowDepth="3"
+                                            Direction="330"
+                                            Color="Black"
+                                            Opacity="0.8"
+                                            BlurRadius="1"/>
+                                    </Label.Effect>
+                                </Label>
+                                <Label x:Name="CabezeraHabilidad4" Content="Tirador" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="24,0,0,0" Width="90" FontSize="18" Foreground="#FFFCFCFC" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                                    <Label.Effect>
+                                        <DropShadowEffect x:Name="CabezeraHabilidad4ShadowEffect"
+                                            ShadowDepth="3"
+                                            Direction="330"
+                                            Color="Black"
+                                            Opacity="0.8"
+                                            BlurRadius="1"/>
+                                    </Label.Effect>
+                                </Label>
+                                <Label x:Name="CabezeraHabilidad4_Copy" Content="Tirador" Width="90" FontSize="18" Foreground="#FFFCFCFC" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="24,0,0,0">
+                                    <Label.Effect>
+                                        <DropShadowEffect x:Name="CabezeraHabilidad4ShadowEffect1"
                                             ShadowDepth="3"
                                             Direction="330"
                                             Color="Black"
@@ -149,67 +218,121 @@
                                     </Label.Effect>
                                 </Label>
                             </StackPanel>
-                        </Border>
-                    </StackPanel>
-                    <StackPanel x:Name="CabeceraCategorias" Orientation="Horizontal" Width="{Binding ActualWidth, ElementName=PanelCambiante, Mode=OneWay}" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        </StackPanel>
+                        <StackPanel x:Name="GrupoHabilidadesT1" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" Margin="24,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" Margin="24,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" Margin="24,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" Margin="24,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                        </StackPanel>
+                        <StackPanel x:Name="GrupoHabilidadesT2" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                        </StackPanel>
+                        <StackPanel x:Name="GrupoHabilidadesT3" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                        </StackPanel>
+
+                        <StackPanel x:Name="GrupoHabilidadesT4" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                            <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
+                                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+                            </Border>
+                        </StackPanel>
+                    </DockPanel>
                 </StackPanel>
-                <StackPanel x:Name="GrupoHabilidadesT1" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" Margin="24,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" Margin="24,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" Margin="24,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" Margin="24,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
+
+                <StackPanel x:Name="PanelBotones" Orientation="Horizontal" VerticalAlignment="Top" Height="55" HorizontalAlignment="Center" Margin="0,10,0,0">
+                    <Button Content="Reiniciar Árbol" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="15,0,15,0" FontSize="20" FontWeight="Bold" FontFamily="Reem Kufi" RenderTransformOrigin="0,0">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Foreground>
+                            <SolidColorBrush Color="#FFFDFDFD" Opacity="0.3"/>
+                        </Button.Foreground>
+                        <Button.Background>
+                            <SolidColorBrush Color="Black" Opacity="0.15"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="Reiniciar Todo" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,0,20,0" Padding="15,0,15,0" FontSize="20" FontWeight="Bold" FontFamily="Reem Kufi" RenderTransformOrigin="0,0">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Foreground>
+                            <SolidColorBrush Color="#FFFDFDFD" Opacity="0.3"/>
+                        </Button.Foreground>
+                        <Button.Background>
+                            <SolidColorBrush Color="Black" Opacity="0.15"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Content="Exportar" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="15,0,15,0" FontSize="20" FontWeight="Bold" FontFamily="Reem Kufi" RenderTransformOrigin="0,0">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Foreground>
+                            <SolidColorBrush Color="#FFFDFDFD" Opacity="0.3"/>
+                        </Button.Foreground>
+                        <Button.Background>
+                            <SolidColorBrush Color="Black" Opacity="0.15"/>
+                        </Button.Background>
+                    </Button>
                 </StackPanel>
-                <StackPanel x:Name="GrupoHabilidadesT2" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                </StackPanel>
-                <StackPanel x:Name="GrupoHabilidadesT3" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                </StackPanel>
-                <StackPanel x:Name="GrupoHabilidadesT4" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                    <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
-                        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-                    </Border>
-                </StackPanel>
-            </DockPanel>
-        </StackPanel>
-    </WrapPanel>
+            </StackPanel>
+        </WrapPanel>
+    </Grid>
 </Window>
