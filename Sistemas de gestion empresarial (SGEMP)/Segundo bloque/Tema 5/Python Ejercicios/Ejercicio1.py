@@ -17,7 +17,7 @@ opcion = 0
 while not salir:
 
     for n in range(6):
-        print("Ejercicio"+n)
+        print("Ejercicio" )
         
     print ("Elige una opcion")
  

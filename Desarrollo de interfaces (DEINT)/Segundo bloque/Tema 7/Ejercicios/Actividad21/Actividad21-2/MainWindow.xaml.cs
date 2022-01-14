@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Actividad21_2.Componentes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Actividad21_2
         public MainWindow()
         {
             InitializeComponent();
+            PanelCambiante.Children.Add(new GrupoH1());
         }
 
         // Boton del menu 'Combat Skills'

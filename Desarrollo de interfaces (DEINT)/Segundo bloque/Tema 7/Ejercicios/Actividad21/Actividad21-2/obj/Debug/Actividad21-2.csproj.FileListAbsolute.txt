@@ -30,3 +30,5 @@ C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2.csproj.CoreCompileInputs.cache
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2.exe
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2.pdb
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Componentes\GrupoH1.g.cs
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Componentes\GrupoH1.baml

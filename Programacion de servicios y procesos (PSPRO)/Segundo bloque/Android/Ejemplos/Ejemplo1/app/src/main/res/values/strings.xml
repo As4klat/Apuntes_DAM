@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ejemplo1</string>
+    <string name="btnSaludar">Pulsaciones: 0</string>
+    <string name="saludo">Hola</string>
+    <string name="btnSumar">Sumar</string>
+    <string name="textNum1">Intoduzca número 1:</string>
+    <string name="textNum2">Intoduzca número 2:</string>
+</resources>
