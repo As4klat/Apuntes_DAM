@@ -219,7 +219,7 @@
                                 </Label>
                             </StackPanel>
                         </StackPanel>
-                        <StackPanel x:Name="GrupoHabilidadesT1" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
+                        <StackPanel x:Name="GrupoHabilidadesT1" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,2" Background="#FF961C1C">
                             <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" Margin="24,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90">
                                 <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
                             </Border>
@@ -236,7 +236,7 @@
                                 <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
                             </Border>
                         </StackPanel>
-                        <StackPanel x:Name="GrupoHabilidadesT2" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
+                        <StackPanel x:Name="GrupoHabilidadesT2" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,2" Background="#FF961C1C">
                             <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
                                 <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
                             </Border>
@@ -253,7 +253,7 @@
                                 <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
                             </Border>
                         </StackPanel>
-                        <StackPanel x:Name="GrupoHabilidadesT3" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
+                        <StackPanel x:Name="GrupoHabilidadesT3" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,2" Background="#FF961C1C">
                             <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
                                 <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
                             </Border>
@@ -271,7 +271,7 @@
                             </Border>
                         </StackPanel>
 
-                        <StackPanel x:Name="GrupoHabilidadesT4" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,5" Background="#FF961C1C">
+                        <StackPanel x:Name="GrupoHabilidadesT4" Orientation="Horizontal" DockPanel.Dock="Top" Height="100" Margin="0,0,0,2" Background="#FF961C1C">
                             <Border BorderBrush="#FFF93E3E" BorderThickness="2,2,2,2" Width="90" Padding="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Cursor="Hand" OverridesDefaultStyle="True" Height="90" Margin="24,0,0,0">
                                 <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
                             </Border>
