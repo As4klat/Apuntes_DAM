@@ -17,8 +17,11 @@ C:\Users\Alejandro\Desktop\Estudios\Desarrollo de interfaces (DEINT)\Segundo blo
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\bin\Debug\Actividad21-2.exe.config
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\bin\Debug\Actividad21-2.exe
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\bin\Debug\Actividad21-2.pdb
-C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2.csproj.AssemblyReference.cache
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Componentes\PanelHabilidades.baml
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Componentes\PanelHabilidades.g.cs
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\MainWindow.g.cs
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\App.g.cs
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2_MarkupCompile.cache
@@ -28,7 +31,7 @@ C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21_2.Properties.Resources.resources
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2.csproj.GenerateResource.cache
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2.csproj.CopyComplete
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2.exe
 C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2.pdb
-C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Componentes\GrupoH1.g.cs
-C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Componentes\GrupoH1.baml
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 7\Ejercicios\Actividad21\Actividad21-2\obj\Debug\Actividad21-2.csproj.AssemblyReference.cache

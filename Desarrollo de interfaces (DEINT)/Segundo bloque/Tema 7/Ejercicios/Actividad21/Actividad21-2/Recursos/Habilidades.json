@@ -1,0 +1,181 @@
+{
+  "1": {
+    "titulo": "Combat",
+    "cabecera": [
+      "Fast Attack",
+      "Strong Attack",
+      "Defense",
+      "Marksmanship",
+      "Battle Trance"
+    ],
+    "habilidades": {
+      "1": "Muscle Memory",
+      "2": "Strength Training",
+      "3": "Arrow Deflection",
+      "4": "Lightning Reflexes",
+      "5": "Resolve",
+      "6": "Precise Blows",
+      "7": "Crushing Blows",
+      "8": "Fleet Footed",
+      "9": "Cold Blood",
+      "10": "Undying",
+      "11": "Whirl",
+      "12": "Rend",
+      "13": "Counter Attack",
+      "14": "Anatomical Knowledge",
+      "15": "Razor Focus",
+      "16": "Crippling Strikes",
+      "17": "Sunder Armor",
+      "18": "Deadly Precision",
+      "19": "Crippling Shot",
+      "20": "Flood of Anger"
+    },
+    "colores": {
+      "principal": "#FFC54444",
+      "secundario": "#FF790C0C",
+      "border": "#FFF93E3E"
+    }
+  },
+  "2": {
+    "titulo": "Signs",
+    "cabecera": [
+      "Aard",
+      "Igni",
+      "Yrden",
+      "Quen",
+      "Axii"
+    ],
+    "habilidades": {
+      "1": "Far-Reaching Aard",
+      "2": "MeltArmor",
+      "3": "Sustained Glyhs",
+      "4": "Exploding Shield",
+      "5": "Delusion",
+      "6": "Aard Sweep",
+      "7": "Firestream",
+      "8": "Magic Trap",
+      "9": "Active Shield",
+      "10": "Puppet",
+      "11": "Aard Intensity",
+      "12": "Igni Intensity",
+      "13": "Yrden Intensity",
+      "14": "Quen Intensity",
+      "15": "Axii Intensity",
+      "16": "Shock Wave",
+      "17": "Pyromaniac",
+      "18": "Supercharged Glyphs",
+      "19": "Quen Dischange",
+      "20": "Domination"
+    },
+    "colores": {
+      "principal": "#FF243CC3",
+      "secundario": "#FF241A94",
+      "border": "#FF493DD4"
+    }
+  },
+  "3": {
+    "titulo": "Alchemy",
+    "cabecera": [
+      "Brewing",
+      "Oil Preparation",
+      "Bomb Creation",
+      "Mutation",
+      "Trial of the Grasses"
+    ],
+    "habilidades": {
+      "1": "Heigtened Tolerance",
+      "2": "Poisoned Blades",
+      "3": "Steady Aim",
+      "4": "Acqired Tolerance",
+      "5": "Frenzy",
+      "6": "Refreshment",
+      "7": "Protective Coating",
+      "8": "Pyrotechnics",
+      "9": "Tissue Transmutatuion",
+      "10": "Endure Pain",
+      "11": "Delayed Recovery",
+      "12": "Fixative",
+      "13": "Efficiency",
+      "14": "Synergy",
+      "15": "Fast Metabolism",
+      "16": "Side Effects",
+      "17": "Hunter Instinct",
+      "18": "Cluster Bombs",
+      "19": "Adaption",
+      "20": "Killing Spree"
+    },
+    "colores": {
+      "principal": "#FF14AB36",
+      "secundario": "#FF09581B",
+      "border": "#FF08D837"
+    }
+  },
+  "4": {
+    "titulo": "General",
+    "habilidades": {
+      "1": "Sun and Stars",
+      "2": "Survival Instinct",
+      "3": "Cat School Techniques",
+      "4": "Griffin School Techniques",
+      "5": "Bear School Techniques",
+      "6": "Steady Shot",
+      "7": "Rage Management",
+      "8": "Focus",
+      "9": "Adrenaline Burst",
+      "10": "Metabolism Control",
+      "11": "Metabolism Boost",
+      "12": "Trick Shot",
+      "13": "Advanced Pyrotechnics",
+      "14": "Battle Frenzy",
+      "15": "Strong Back",
+      "16": "Gorged On Power",
+      "17": "Gourmet",
+      "18": "In Combat's Fires",
+      "19": "Heavy Artillery",
+      "20": "Attack Is The Best Defense"
+    },
+    "colores": {
+      "principal": "#FFA16013",
+      "secundario": "#FF773F07",
+      "border": "#FFB77A32"
+    }
+  },
+  "5": {
+    "titulo": "Mutagens",
+    "habilidades": {
+      "1": "L. Red Mutagen",
+      "2": "Red Mutagen",
+      "3": "G. Red Mutagen",
+      "4": "L. Blue Mutagen",
+      "5": "Blue Mutagen",
+      "6": "G. Blue Mutagen",
+      "7": "L. Green Mutagen",
+      "8": "Green Mutagen",
+      "9": "G. Green Mutagen"
+    },
+    "colores": {
+      "principal": "#FF2D5E90",
+      "secundario": "#FF162E46",
+      "border": "#FF5685B5"
+    }
+  },
+  "6": {
+    "titulo": "Mutagens",
+    "habilidades": {
+      "1": "L. Red Mutagen",
+      "2": "Red Mutagen",
+      "3": "G. Red Mutagen",
+      "4": "L. Blue Mutagen",
+      "5": "Blue Mutagen",
+      "6": "G. Blue Mutagen",
+      "7": "L. Green Mutagen",
+      "8": "Green Mutagen",
+      "9": "G. Green Mutagen"
+    },
+    "colores": {
+      "principal": "#FF2D5E90",
+      "secundario": "#FF162E46",
+      "border": "#FF5685B5"
+    }
+  }
+}

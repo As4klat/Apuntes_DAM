@@ -1,18 +1,8 @@
 ﻿using Actividad21_2.Componentes;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Actividad21_2
 {
@@ -21,10 +11,46 @@ namespace Actividad21_2
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<object> list;
         public MainWindow()
         {
             InitializeComponent();
-            PanelCambiante.Children.Add(new GrupoH1());
+            list = new List<object>();
+            
+            for (int i = 1; i <= 6; i++)
+            {
+                list.Add(new PanelHabilidades(i));
+            }
+            ContenedorHabilidades.Children.Add((UIElement)list[0]);
+        }
+
+        private void menuBottons_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ContenedorHabilidades.Children.Clear();
+            if (sender.Equals(menuCombatSkills))
+            {
+                ContenedorHabilidades.Children.Add((UIElement)list[0]);
+            }
+            else if (sender.Equals(menuSignsSkills))
+            {
+                ContenedorHabilidades.Children.Add((UIElement)list[1]);
+            }
+            else if (sender.Equals(menuAlchemySkills))
+            {
+                ContenedorHabilidades.Children.Add((UIElement)list[2]);
+            }
+            else if (sender.Equals(menuGeneralSkills))
+            {
+                ContenedorHabilidades.Children.Add((UIElement)list[3]);
+            }
+            else if (sender.Equals(menuMutagens))
+            {
+                ContenedorHabilidades.Children.Add((UIElement)list[4]);
+            }
+            else if (sender.Equals(menuMutations))
+            {
+                ContenedorHabilidades.Children.Add((UIElement)list[5]);
+            }
         }
 
         // Boton del menu 'Combat Skills'

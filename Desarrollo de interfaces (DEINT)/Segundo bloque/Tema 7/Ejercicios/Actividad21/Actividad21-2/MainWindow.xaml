@@ -3,8 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:ac="clr-namespace:Actividad21_2.Componentes"
-        xmlns:local="clr-namespace:Actividad21_2"
+        xmlns:hs="clr-namespace:Actividad21_2.Componentes"
         mc:Ignorable="d"
         Title="Árbol de habilidades" Height="880" Width="1520" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
     <Grid x:Name="GridPrincipal">
@@ -26,7 +25,7 @@
                             Opacity="0.5"
                             BlurRadius="4"/>
                     </StackPanel.Effect>
-                    <TextBlock x:Name="menuCombatSkills" TextWrapping="Wrap" Width="99.5" Background="#FFC54444" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuCombatSkills_MouseEnter" MouseLeave="menuCombatSkills_MouseLeave" Cursor="Hand">
+                    <TextBlock x:Name="menuCombatSkills" TextWrapping="Wrap" Width="99.5" Background="#FFC54444" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuCombatSkills_MouseEnter" MouseLeave="menuCombatSkills_MouseLeave" Cursor="Hand" MouseDown="menuBottons_MouseDown">
                         <TextBlock.Foreground>
                             <SolidColorBrush Color="White" Opacity="0.2"/>
                         </TextBlock.Foreground>
@@ -43,7 +42,7 @@
                                 </BeginStoryboard>
                             </EventTrigger>
                         </TextBlock.Triggers><Run Text="Combat"/><LineBreak/><Run Text="Skills"/></TextBlock>
-                    <TextBlock x:Name="menuSignsSkills" TextWrapping="Wrap" Width="99.5" Background="#FF2B1FAE" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuSignsSkills_MouseEnter" MouseLeave="menuSignsSkills_MouseLeave" Cursor="Hand">
+                    <TextBlock x:Name="menuSignsSkills" TextWrapping="Wrap" Width="99.5" Background="#FF2B1FAE" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuSignsSkills_MouseEnter" MouseLeave="menuSignsSkills_MouseLeave" Cursor="Hand" MouseDown="menuBottons_MouseDown">
                         <TextBlock.Foreground>
                             <SolidColorBrush Color="White" Opacity="0.2"/>
                         </TextBlock.Foreground>
@@ -60,7 +59,7 @@
                                 </BeginStoryboard>
                             </EventTrigger>
                         </TextBlock.Triggers><Run Text="Signs"/><LineBreak/><Run Language="es-es" Text="Skills"/></TextBlock>
-                    <TextBlock x:Name="menuAlchemySkills" TextWrapping="Wrap" Width="99.5" Background="#FF096523" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuAlchemySkills_MouseEnter" MouseLeave="menuAlchemySkills_MouseLeave" Cursor="Hand">
+                    <TextBlock x:Name="menuAlchemySkills" TextWrapping="Wrap" Width="99.5" Background="#FF14AB36" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuAlchemySkills_MouseEnter" MouseLeave="menuAlchemySkills_MouseLeave" Cursor="Hand" MouseDown="menuBottons_MouseDown">
                         <TextBlock.Foreground>
                             <SolidColorBrush Color="White" Opacity="0.2"/>
                         </TextBlock.Foreground>
@@ -77,7 +76,7 @@
                                 </BeginStoryboard>
                             </EventTrigger>
                         </TextBlock.Triggers><Run Text="Alchemy"/><LineBreak/><Run Text="Skills"/></TextBlock>
-                    <TextBlock x:Name="menuGeneralSkills" TextWrapping="Wrap" Width="99.5" Background="#FFA16013" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuGeneralSkills_MouseEnter" MouseLeave="menuGeneralSkills_MouseLeave" Cursor="Hand">
+                    <TextBlock x:Name="menuGeneralSkills" TextWrapping="Wrap" Width="99.5" Background="#FFB77A32" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,4,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuGeneralSkills_MouseEnter" MouseLeave="menuGeneralSkills_MouseLeave" Cursor="Hand" MouseDown="menuBottons_MouseDown">
                         <TextBlock.Foreground>
                             <SolidColorBrush Color="White" Opacity="0.2"/>
                         </TextBlock.Foreground>
@@ -94,7 +93,7 @@
                                 </BeginStoryboard>
                             </EventTrigger>
                         </TextBlock.Triggers><Run Text="General"/><LineBreak/><Run Text="Skills"/></TextBlock>
-                    <TextBlock x:Name="menuMutagens" TextWrapping="Wrap" Width="99.5" Background="#FF2D5E90" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutagens_MouseEnter" MouseLeave="menuMutagens_MouseLeave" Cursor="Hand">
+                    <TextBlock x:Name="menuMutagens" TextWrapping="Wrap" Width="99.5" Background="#FF2D5E90" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutagens_MouseEnter" MouseLeave="menuMutagens_MouseLeave" Cursor="Hand" MouseDown="menuBottons_MouseDown">
                         <TextBlock.Foreground>
                             <SolidColorBrush Color="White" Opacity="0.2"/>
                         </TextBlock.Foreground>
@@ -111,7 +110,7 @@
                                 </BeginStoryboard>
                             </EventTrigger>
                         </TextBlock.Triggers><Run Language="es-es" Text="Mutagens"/></TextBlock>
-                    <TextBlock x:Name="menuMutations" TextWrapping="Wrap" Width="99.5" Background="#FFBEA56D" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutations_MouseEnter" MouseLeave="menuMutations_MouseLeave" Cursor="Hand">
+                    <TextBlock x:Name="menuMutations" TextWrapping="Wrap" Width="99.5" Background="#FFBEA56D" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutations_MouseEnter" MouseLeave="menuMutations_MouseLeave" Cursor="Hand" MouseDown="menuBottons_MouseDown">
                         <TextBlock.Foreground>
                             <SolidColorBrush Color="White" Opacity="0.2"/>
                         </TextBlock.Foreground>
@@ -137,9 +136,8 @@
                         <Label x:Name="PuntosEnPosesion" Content="Puntos en posesión:" VerticalAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Foreground="#FFD6A76E" FontFamily="Segoe UI Black" FontSize="16" VerticalContentAlignment="Center" Padding="5,5,5,5" Margin="20,0,0,0"/>
                         <Label x:Name="PuntosConsumidos" Content="Puntos consumidos:" HorizontalContentAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Segoe UI Black" Foreground="#FFD6A76E" FontSize="16" VerticalContentAlignment="Center" Padding="5,5,5,5" Margin="180,0,0,0"/>
                     </StackPanel>
-                    
+                    <Grid x:Name="ContenedorHabilidades"/>
                 </StackPanel>
-
                 <StackPanel x:Name="PanelBotones" Orientation="Horizontal" VerticalAlignment="Top" Height="55" HorizontalAlignment="Center" Margin="0,10,0,0">
                     <Button Content="Reiniciar Árbol" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="15,0,15,0" FontSize="20" FontWeight="Bold" FontFamily="Reem Kufi" RenderTransformOrigin="0,0">
                         <Button.Resources>
@@ -184,5 +182,6 @@
             </StackPanel>
         </WrapPanel>
         <StackPanel x:Name="stackBloqueo" Height="400" Margin="656,291,10,173"/>
+        <Canvas Grid.Column="1"/>
     </Grid>
 </Window>

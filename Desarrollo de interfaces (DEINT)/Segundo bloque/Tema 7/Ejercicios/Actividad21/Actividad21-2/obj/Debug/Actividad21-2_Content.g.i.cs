@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("get_image_large%20(1).jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("recursos/data.tt")]
 
 

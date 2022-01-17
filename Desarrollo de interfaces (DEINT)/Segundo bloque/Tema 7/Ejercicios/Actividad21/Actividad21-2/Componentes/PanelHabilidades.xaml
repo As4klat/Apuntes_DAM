@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="Actividad21_2.Componentes.PanelHabilidades"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <DockPanel x:Name="panelHabilidades" LastChildFill="False" HorizontalAlignment="Stretch">
+        <StackPanel x:Name="Cabecera" Orientation="Vertical" Width="{Binding ActualWidth, ElementName=PanelCambiante, Mode=OneWay}" DockPanel.Dock="Top" Margin="0,0,0,10" Height="Auto">
+            <StackPanel x:Name="CabeceraTitulo" Orientation="Vertical" Width="{Binding ActualWidth, ElementName=PanelCambiante, Mode=OneWay}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,1" Height="55">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFC54444"/>
+                        <GradientStop Color="#FF790C0C" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Border x:Name="borderCabecera"  BorderThickness="2,2,2,2" Margin="2,2,2,2" BorderBrush="Black" HorizontalAlignment="Stretch" Height="52">
+                    <StackPanel x:Name="PanelTitulo" Orientation="Horizontal" Margin="0,0,0,0" FlowDirection="LeftToRight" HorizontalAlignment="Stretch">
+                        <Label x:Name="tituloCabecera" Content="Titulo" VerticalAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Foreground="White" FontFamily="Segoe UI" FontSize="18" Margin="20,0,0,0" FontWeight="Bold" VerticalContentAlignment="Center" Width="250">
+                            <Label.Effect>
+                                <DropShadowEffect x:Name="TituloShadowEffect"
+                                                    ShadowDepth="3"
+                                                    Direction="330"
+                                                    Color="Black"
+                                                    Opacity="0.8"
+                                                    BlurRadius="1"/>
+                            </Label.Effect>
+                        </Label>
+                        <Label x:Name="PuntosEnRama" Content="Puntos gastados en la rama:" HorizontalContentAlignment="Stretch" FontFamily="Segoe UI" Foreground="White" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalAlignment="Right">
+                            <Label.Effect>
+                                <DropShadowEffect x:Name="PuntosEnRamaShadowEffect"
+                                                    ShadowDepth="3"
+                                                    Direction="330"
+                                                    Color="Black"
+                                                    Opacity="0.8"
+                                                    BlurRadius="1"/>
+                            </Label.Effect>
+                        </Label>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            <StackPanel x:Name="CabeceraCategorias" Orientation="Horizontal" Height="60" HorizontalAlignment="Stretch">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="#FF5685B5" Opacity="1"/>
+                </StackPanel.Background>
+                <Label x:Name="CabezeraHabilidad1" Content="Attaque&#xA;Rapido" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="24,0,0,0" Foreground="#FFFCFCFC" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="90" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                    <Label.Effect>
+                        <DropShadowEffect x:Name="CabezeraHabilidad1ShadowEffect"
+                                            ShadowDepth="3"
+                                            Direction="330"
+                                            Color="Black"
+                                            Opacity="0.8"
+                                            BlurRadius="1"/>
+                    </Label.Effect>
+                </Label>
+                <Label x:Name="CabezeraHabilidad2" Content="Ataque&#xA;Fuerte" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="24,0,0,0" Width="90" Foreground="#FFFCFCFC" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                    <Label.Effect>
+                        <DropShadowEffect x:Name="CabezeraHabilidad2ShadowEffect"
+                                            ShadowDepth="3"
+                                            Direction="330"
+                                            Color="Black"
+                                            Opacity="0.8"
+                                            BlurRadius="1"/>
+                    </Label.Effect>
+                </Label>
+                <Label x:Name="CabezeraHabilidad3" Content="Defensa" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="24,0,0,0" Width="90" Foreground="#FFFCFCFC" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                    <Label.Effect>
+                        <DropShadowEffect x:Name="CabezeraHabilidad3ShadowEffect"
+                                            ShadowDepth="3"
+                                            Direction="330"
+                                            Color="Black"
+                                            Opacity="0.8"
+                                            BlurRadius="1"/>
+                    </Label.Effect>
+                </Label>
+                <Label x:Name="CabezeraHabilidad4" Content="Tirador" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="24,0,0,0" Width="90" Foreground="#FFFCFCFC" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                    <Label.Effect>
+                        <DropShadowEffect x:Name="CabezeraHabilidad4ShadowEffect"
+                                            ShadowDepth="3"
+                                            Direction="330"
+                                            Color="Black"
+                                            Opacity="0.8"
+                                            BlurRadius="1"/>
+                    </Label.Effect>
+                </Label>
+                <Label x:Name="CabezeraHabilidad5" Content="Tirador" Width="90" Foreground="#FFFCFCFC" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="24,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                    <Label.Effect>
+                        <DropShadowEffect x:Name="CabezeraHabilidad4ShadowEffect1"
+                                            ShadowDepth="3"
+                                            Direction="330"
+                                            Color="Black"
+                                            Opacity="0.8"
+                                            BlurRadius="1"/>
+                    </Label.Effect>
+                </Label>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel x:Name="GrupoHabilidadesT1" Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,2" Background="#FF773F07"/>
+        <StackPanel x:Name="GrupoHabilidadesT2" Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,2" Background="#FF773F07"/>
+        <StackPanel x:Name="GrupoHabilidadesT3" Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,2" Background="#FF773F07"/>
+        <StackPanel x:Name="GrupoHabilidadesT4" Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,2" Background="#FF773F07"/>
+    </DockPanel>
+</UserControl>
