@@ -110,7 +110,7 @@
                                 </BeginStoryboard>
                             </EventTrigger>
                         </TextBlock.Triggers><Run Language="es-es" Text="Mutagens"/></TextBlock>
-                    <TextBlock x:Name="menuMutations" TextWrapping="Wrap" Width="99.5" Background="#FFBEA56D" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutations_MouseEnter" MouseLeave="menuMutations_MouseLeave" Cursor="Hand" MouseDown="menuBottons_MouseDown">
+                    <TextBlock x:Name="menuMutations" TextWrapping="Wrap" Width="99.5" Background="#FFD2BD8F" LineHeight="10" TextAlignment="Center" FontSize="14" FontWeight="Bold" Padding="2,14,2,2" FontFamily="Segoe UI" ScrollViewer.HorizontalScrollBarVisibility="Disabled" FlowDirection="LeftToRight" MouseEnter="menuMutations_MouseEnter" MouseLeave="menuMutations_MouseLeave" Cursor="Hand" MouseDown="menuBottons_MouseDown">
                         <TextBlock.Foreground>
                             <SolidColorBrush Color="White" Opacity="0.2"/>
                         </TextBlock.Foreground>
@@ -182,6 +182,6 @@
             </StackPanel>
         </WrapPanel>
         <StackPanel x:Name="stackBloqueo" Height="400" Margin="656,291,10,173"/>
-        <Canvas Grid.Column="1"/>
+        
     </Grid>
 </Window>

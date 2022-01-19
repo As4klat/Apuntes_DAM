@@ -160,22 +160,26 @@
     }
   },
   "6": {
-    "titulo": "Mutagens",
+    "titulo": "Mutations",
     "habilidades": {
-      "1": "L. Red Mutagen",
-      "2": "Red Mutagen",
-      "3": "G. Red Mutagen",
-      "4": "L. Blue Mutagen",
-      "5": "Blue Mutagen",
-      "6": "G. Blue Mutagen",
-      "7": "L. Green Mutagen",
-      "8": "Green Mutagen",
-      "9": "G. Green Mutagen"
+      "1": "Second Life",
+      "2": "BloodBath",
+      "3": "Metamorphosis",
+      "4": "Adrenaline Rush",
+      "5": "Cat Eyes",
+      "6": "Pircing Cold",
+      "7": "Magic Sesibilities",
+      "8": "Deadly Counter",
+      "9": "Toxic Blood",
+      "10": "Euphoria",
+      "11": "Conductors of Magic",
+      "12": "Strengthened Synapses",
+      "13": "Mutated Skin"
     },
     "colores": {
-      "principal": "#FF2D5E90",
-      "secundario": "#FF162E46",
-      "border": "#FF5685B5"
+      "principal": "#FFBEA56D",
+      "secundario": "#FF635638",
+      "border": "#FFD2BD8F"
     }
   }
 }
