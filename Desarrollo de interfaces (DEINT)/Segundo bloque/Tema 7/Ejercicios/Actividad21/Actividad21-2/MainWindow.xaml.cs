@@ -1,7 +1,9 @@
 ﻿using Actividad21_2.Componentes;
 using System;
 using System.Collections.Generic;
+using System.Windows.Media;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace Actividad21_2
@@ -115,6 +117,14 @@ namespace Actividad21_2
         private void menuMutations_MouseLeave(object sender, MouseEventArgs e)
         {
             menuMutations.Foreground.Opacity = 0.2;
+        }
+
+        private void Border_Drop(object sender, DragEventArgs e)
+        {
+            Border b = sender as Border;
+            Border nb = (Border)e.Data;
+            Console.WriteLine(nb.BorderBrush);
+            b.BorderBrush = nb.BorderBrush;
         }
     }
 }

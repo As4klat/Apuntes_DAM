@@ -223,7 +223,6 @@ namespace Actividad21_2.Componentes
                     t.Text = (string)s["habilidades"].ElementAt(j);
                     t.TextAlignment = TextAlignment.Center;
                     t.TextWrapping = TextWrapping.Wrap;
-                    Panel.SetZIndex(t,1);
                     Label lbl = new Label();
                     lbl.Name = "H" + i;
                     lbl.Content = t;
@@ -378,9 +377,10 @@ namespace Actividad21_2.Componentes
 
         private void Drag_MouseMove(object sender, MouseEventArgs e)
         {
+            
             if (e.LeftButton == MouseButtonState.Pressed)
             {
-                DragDrop.DoDragDrop((DependencyObject)sender, sender, DragDropEffects.Move);
+                DragDrop.DoDragDrop((Border)sender, sender, DragDropEffects.Copy);
             }
         }
     }
