@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.service.autofill.OnClickAction;
 import android.text.Layout;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private boolean parentesisCerrado = true;
     private int parentesisAbiertos = 0;
     private TextView textOperacion;
     private TextView textResultado;
@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         textOperacion.setText("");
         textResultado = findViewById(R.id.textResultado);
         textResultado.setText("");
-
     }
     public void onBtnClicked(View v) {
         String cadena="";
@@ -33,52 +32,42 @@ public class MainActivity extends AppCompatActivity {
         switch (v.getId()) {
             case R.id.btn0:
                 xNumeroantes();
-                comrpuebaParentesis();
                 textOperacion.append("0");
                 break;
             case R.id.btn1:
                 xNumeroantes();
-                comrpuebaParentesis();
                 textOperacion.append("1");
                 break;
             case R.id.btn2:
                 xNumeroantes();
-                comrpuebaParentesis();
                 textOperacion.append("2");
                 break;
             case R.id.btn3:
                 xNumeroantes();
-                comrpuebaParentesis();
                 textOperacion.append("3");
                 break;
             case R.id.btn4:
                 xNumeroantes();
-                comrpuebaParentesis();
                 textOperacion.append("4");
                 break;
             case R.id.btn5:
                 xNumeroantes();
-                comrpuebaParentesis();
                 textOperacion.append("5");
                 break;
             case R.id.btn6:
                 xNumeroantes();
-                comrpuebaParentesis();
                 textOperacion.append("6");
                 break;
             case R.id.btn7:
                 xNumeroantes();
-                comrpuebaParentesis();
                 textOperacion.append("7");
                 break;
             case R.id.btn8:
                 xNumeroantes();
-                comrpuebaParentesis();
                 textOperacion.append("8");
                 break;
             case R.id.btn9:
                 xNumeroantes();
-                comrpuebaParentesis();
                 textOperacion.append("9");
                 break;
             case R.id.btnSumar:
@@ -100,31 +89,40 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btnParentesis:
                 cadena = textOperacion.getText().toString();
-                if(!cadena.equals("")){
-                    String ultimaCaracter = String.valueOf(cadena.charAt(cadena.length()-1));
-
-                    if(ultimaCaracter.equals("(") || parentesisAbiertos==0){
-                        if(ultimaCaracter.matches("\\d")){
-                            textOperacion.append("x(");
-                        }
-                        else
-                        {
-                            textOperacion.append("(");
-                        }
-                        parentesisAbiertos++;
-                    }
-                    else
-                    {
+                if(!cadena.equals("")) {
+                    String ultimaCaracter = String.valueOf(cadena.charAt(cadena.length() - 1));
+                    if(ultimaCaracter.matches("\\d") && parentesisAbiertos>0){
                         textOperacion.append(")");
                         parentesisAbiertos--;
                     }
+                    else {
+                        if(ultimaCaracter.matches("\\d") && parentesisAbiertos==0){
+                            textOperacion.append("x(");
+                            parentesisAbiertos++;
+                        }
+                        else{
+                            if(ultimaCaracter.equals("(")){
+                                textOperacion.append("(");
+                                parentesisAbiertos++;
+                            }else {
+                                if(!ultimaCaracter.matches("\\d") && parentesisAbiertos>0){
+                                    textOperacion.append(")");
+                                    parentesisAbiertos--;
+                                }
+                                else{
+                                    if(!ultimaCaracter.matches("\\d") && parentesisAbiertos==0){
+                                        textOperacion.append("(");
+                                        parentesisAbiertos++;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-                else
-                {
+                else{
                     textOperacion.append("(");
                     parentesisAbiertos++;
                 }
-
                 break;
             case R.id.btnC:
                 textOperacion.setText("");
@@ -132,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btnIgual:
                 textResultado.setText(Calculadora.calcular(textOperacion.getText().toString()));
+                textOperacion.setText("");
                 break;
             case R.id.btnComa:
                 textOperacion.append(",");
@@ -173,6 +172,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                         textOperacion.setText(cadena);
                     }
+                    parentesisAbiertos++;
                 }
                 break;
             default:
@@ -186,15 +186,7 @@ public class MainActivity extends AppCompatActivity {
             String ultimaCaracter = String.valueOf(cadena.charAt(cadena.length()-1));
             if(ultimaCaracter.equals(")")){
                 textOperacion.append("x");
-                parentesisAbiertos--;
-                parentesisCerrado = true;
             }
-        }
-    }
-
-    private void comrpuebaParentesis(){
-        if(!parentesisCerrado){
-            parentesisCerrado = true;
         }
     }
 }

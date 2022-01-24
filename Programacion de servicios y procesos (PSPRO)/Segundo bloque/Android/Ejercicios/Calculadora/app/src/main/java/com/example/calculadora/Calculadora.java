@@ -1,5 +1,7 @@
 package com.example.calculadora;
 
+import android.icu.text.SymbolTable;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -88,16 +90,16 @@ public class Calculadora {
     };
 
     private static String sumar(String n1, String n2){
-        return formatDecimal((Double.valueOf(n1) + Double.valueOf(n2)));
+        return formatDecimal(Double.valueOf(n1) + Double.valueOf(n2));
     }
     private static String restar(String n1, String n2){
-        return formatDecimal((Double.valueOf(n1) - Double.valueOf(n2)));
+        return formatDecimal(Double.valueOf(n1) - Double.valueOf(n2));
     }
     private static String dividr(String n1, String n2){
-        return formatDecimal((Double.valueOf(n1) / Double.valueOf(n2)));
+        return formatDecimal(Double.valueOf(n1) / Double.valueOf(n2));
     }
     private static String multiplicar(String n1, String n2){
-        return formatDecimal((Double.valueOf(n1) * Double.valueOf(n2)));
+        return formatDecimal(Double.valueOf(n1) * Double.valueOf(n2));
     }
     private static void porciento(){
 
@@ -110,8 +112,7 @@ public class Calculadora {
             numString = d.format(num);
         }
         else {
-            DecimalFormat d =new DecimalFormat("#.##");
-            numString = d.format(num);
+            numString = String.valueOf(num);
         }
         return numString;
     }
@@ -128,14 +129,14 @@ public class Calculadora {
                 }
                 else
                 {
-                    if(!arr[i-1].matches("-?\\d")){
+                    if(!arr[i-1].matches("-?\\d"))
+                    {
                         listaCadena.add(arr[i]);
                     }
                     else
                     {
                         listaCadena.set(j,listaCadena.get(j) + arr[i]);
                     }
-
                 }
             }
             else
