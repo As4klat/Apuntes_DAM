@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "QmhDj+J9DM3/026MMiXejduUefYP4/VUcnyQvjAsxnLt3IVc0gG88vLiS+gz+Kzof6ynqcXUDUXP+243Zvshqg==",
+  "dgSpecHash": "3AH5tS90s8bGL9X1gCCMhlOzq+Fd9OUX9ZKfgchNQp5L5TKFf4M+CgLHexzgVvuHh0JpzDV3Hf8l4nFSZy3LyQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Actividad5\\Actividad5.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Actividad5\\Actividad5.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

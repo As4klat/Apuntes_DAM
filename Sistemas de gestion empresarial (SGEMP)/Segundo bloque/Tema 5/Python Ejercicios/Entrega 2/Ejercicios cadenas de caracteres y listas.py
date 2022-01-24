@@ -51,9 +51,10 @@ while not salir:
 
         salir = True
     elif opcion == 3:
-        
+        print("Ejercicio 3".center(50,"="))
         salir = True
     elif opcion == 4:
+        print("Ejercicio 4".center(50,"="))
         lista = []
         cadena = input("Introduce una cadena. (* para terminar):")
         while cadena != "*":
@@ -94,6 +95,7 @@ while not salir:
                 print("Opción incorrecta")
         salir = True
     elif opcion == 5:
+        print("Ejercicio 5".center(50,"="))
         palabra=input("Palabra lista 1:")
         lista1=[]
         while palabra != " ":
@@ -157,6 +159,7 @@ while not salir:
         print (lista6)
         salir = True
     elif opcion == 6:
+        print("Ejercicio 6".center(50,"="))
         conwhile=1
         alumnos=[]
         while conwhile==1:
@@ -227,6 +230,7 @@ while not salir:
         print("Los alumnos con mayoria de edad son: "+str(alumnosMayoresDeEdad))
         salir = True
     elif opcion == 7:
+        print("Ejercicio 7".center(50,"="))
         salir = True            
     else:
         print ("Introduce un numero entre 1 y 3")

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Test1\\Test1.csproj": {}
+    "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Test1\\Test1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Actividad5\\Actividad5.csproj": {
+    "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Actividad5\\Actividad5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Actividad5\\Actividad5.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Actividad5\\Actividad5.csproj",
         "projectName": "Actividad5",
-        "projectPath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Actividad5\\Actividad5.csproj",
-        "packagesPath": "C:\\Users\\Alejandro Gamaza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Actividad5\\obj\\",
+        "projectPath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Actividad5\\Actividad5.csproj",
+        "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Actividad5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alejandro Gamaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,26 +49,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.13, 5.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Test1\\Test1.csproj": {
+    "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Test1\\Test1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Test1\\Test1.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Test1\\Test1.csproj",
         "projectName": "Test1",
-        "projectPath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Test1\\Test1.csproj",
-        "packagesPath": "C:\\Users\\Alejandro Gamaza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Test1\\obj\\",
+        "projectPath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Test1\\Test1.csproj",
+        "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Test1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alejandro Gamaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +100,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Actividad5\\Actividad5.csproj": {
-                "projectPath": "C:\\Users\\Alejandro Gamaza\\Desktop\\Estudios\\Grado Superior DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Actividad5\\Actividad5\\Actividad5.csproj"
+              "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Actividad5\\Actividad5.csproj": {
+                "projectPath": "C:\\Users\\Alejandro\\Desktop\\Estudios\\Apuntes_DAM\\Desarrollo de interfaces (DEINT)\\Primer bloque\\Tema 3\\Ejercicios\\Actividad5\\Actividad5\\Actividad5.csproj"
               }
             }
           }
@@ -125,12 +143,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

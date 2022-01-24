@@ -149,14 +149,14 @@ namespace Actividad21_2.Componentes
 
                 for (int i = 0; i < 5; i++)
                 {
-                    Border b = new Border();
-                    b.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString((string)s["colores"]["border"]));
-                    b.BorderThickness = new Thickness(2, 2, 2, 2);
-                    b.Width = 90;
-                    b.Height = 90;
-                    b.Margin = new Thickness(24, 5, 0, 5);
-                    b.Cursor = Cursors.Hand;
-                    b.MouseMove += new MouseEventHandler(Drag_MouseMove);
+                    Border r = new Border();
+                    r.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString((string)s["colores"]["border"]));
+                    r.BorderThickness = new Thickness(2, 2, 2, 2);
+                    r.Width = 90;
+                    r.Height = 90;
+                    r.Margin = new Thickness(24, 5, 0, 5);
+                    r.Cursor = Cursors.Hand;
+                    r.MouseMove += new MouseEventHandler(Drag_MouseMove);
 
                     TextBlock t = new TextBlock();
                     t.Text = (string)s["habilidades"].ElementAt(j);
@@ -179,8 +179,8 @@ namespace Actividad21_2.Componentes
                     te.BlurRadius = 1;
 
                     lbl.Effect = te;
-                    b.Child = lbl;
-                    gr.Children.Add(b);
+                    r.Child = lbl;
+                    gr.Children.Add(r);
                     j++;
                 }
             }
@@ -377,11 +377,7 @@ namespace Actividad21_2.Componentes
 
         private void Drag_MouseMove(object sender, MouseEventArgs e)
         {
-            
-            if (e.LeftButton == MouseButtonState.Pressed)
-            {
-                DragDrop.DoDragDrop((Border)sender, sender, DragDropEffects.Copy);
-            }
+
         }
     }
 }

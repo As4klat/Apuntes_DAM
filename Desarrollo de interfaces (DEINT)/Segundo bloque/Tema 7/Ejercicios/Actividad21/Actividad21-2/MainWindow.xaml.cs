@@ -121,10 +121,6 @@ namespace Actividad21_2
 
         private void Border_Drop(object sender, DragEventArgs e)
         {
-            Border b = sender as Border;
-            Border nb = (Border)e.Data;
-            Console.WriteLine(nb.BorderBrush);
-            b.BorderBrush = nb.BorderBrush;
         }
     }
 }

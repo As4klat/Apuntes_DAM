@@ -182,7 +182,7 @@
             </StackPanel>
         </WrapPanel>
         <StackPanel x:Name="stackBloqueo" Height="400" Margin="656,291,10,173"/>
-        <Border BorderBrush="Red" AllowDrop="True" BorderThickness="1" Drop="Border_Drop" Grid.Column="1" Width="90" Height="90" Margin="335,332,335,442">
+        <Border BorderBrush="Red" x:Name="sl" AllowDrop="True" BorderThickness="1" Drop="Border_Drop" Grid.Column="1" Width="90" Height="90" Margin="335,332,335,442">
             <Border.Background>
                 <SolidColorBrush Color="White" Opacity="0"/>
             </Border.Background>

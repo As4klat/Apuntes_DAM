@@ -16,21 +16,15 @@ namespace Jardineria.Clases
         private string comentarios;
         private int codigo_cliente;
 
-        public Pedido(string codigo_pedido,
-            DateTime fecha_pedido,
-            DateTime fecha_esperada,
-            DateTime fecha_entrega,
-            string estado,
-            string comentarios,
-            int codigo_cliente)
+        public Pedido(string codigo_pedido, DateTime fecha_pedido, DateTime fecha_esperada, DateTime fecha_entrega, string estado, string comentarios, int codigo_cliente)
         {
-            Codigo_pedido = codigo_pedido;
-            Fecha_pedido = fecha_pedido;
-            Fecha_esperada = fecha_esperada;
-            Fecha_entrega = fecha_entrega;
-            Estado = estado;
-            Comentarios = comentarios;
-            Codigo_cliente = codigo_cliente;
+            this.codigo_pedido = codigo_pedido;
+            this.fecha_pedido = fecha_pedido;
+            this.fecha_esperada = fecha_esperada;
+            this.fecha_entrega = fecha_entrega;
+            this.estado = estado;
+            this.comentarios = comentarios;
+            this.codigo_cliente = codigo_cliente;
         }
 
         public string Codigo_pedido { get => codigo_pedido; set => codigo_pedido = value; }
