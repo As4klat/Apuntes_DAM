@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1</title>
+    {{>bootstrapCss}}
+</head>
+
+<body>
+    <div class="container">
+        {{>header}}
+        <div class="row justify-content-center">
+            <div class="col-6">
+
+                <form id="apiForm" class="mt-5 mb-5">
+                    <div class="mb-3 row">
+                        <div class="col-10">
+                            <input type="text" placeholder="Localización" class="form-control" id="apiInput">
+                        </div>
+                        <div class="col-2">
+                            <button class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+
+                <p id="message-1"></p>
+                <p id="message-2"></p>
+
+            </div>
+        </div>
+        {{>footer}}
+    </div>
+    <script src="/js/main.js"></script>
+    {{>bootstrapJs}}
+</body>
+
+</html>
