@@ -1,0 +1,23 @@
+{
+    "1":{
+        "nombre": "Pizza con piña",
+        "condimentos": [
+            "tomate",
+            "jamon",
+            "peregil",
+            "queso chedar",
+            "pan",
+            "piña"
+        ]
+    },
+    "2":{
+        "nombre": "Pizza 4 quesos",
+        "condimentos":[
+            "tomate",
+            "queso gouda",
+            "queso chedar",
+            "queso roquefort",
+            "queso parmesano"
+        ]
+    }
+}
