@@ -1,5 +1,6 @@
-{
-    "1":{
+[
+    {
+        "id": 1,
         "nombre": "Pizza con piña",
         "condimentos": [
             "tomate",
@@ -10,9 +11,10 @@
             "piña"
         ]
     },
-    "2":{
+    {
+        "id": 2,
         "nombre": "Pizza 4 quesos",
-        "condimentos":[
+        "condimentos": [
             "tomate",
             "queso gouda",
             "queso chedar",
@@ -20,4 +22,4 @@
             "queso parmesano"
         ]
     }
-}
+]

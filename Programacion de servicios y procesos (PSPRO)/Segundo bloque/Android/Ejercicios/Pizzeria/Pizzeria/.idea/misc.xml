@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/Pizzeria/Pizzeria/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/Pizzeria/Pizzeria/app/src/main/res/layout/activity_home.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/Pizzeria/Pizzeria/app/src/main/res/layout/activity_login.xml" value="0.536" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/Pizzeria/Pizzeria/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/Pizzeria/Pizzeria/app/src/main/res/layout/activity_register.xml" value="0.23097826086956522" />
       </map>
     </option>
   </component>
