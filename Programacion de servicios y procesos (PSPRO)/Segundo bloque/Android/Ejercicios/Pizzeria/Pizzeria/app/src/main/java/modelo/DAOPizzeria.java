@@ -1,5 +1,7 @@
 package modelo;
+import android.annotation.SuppressLint;
 import android.os.StrictMode;
+import android.util.Log;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,22 +21,32 @@ public class DAOPizzeria implements IDAOPizzeria{
     private List<Usuario> listaUsuarios;
     private static IDAOPizzeria dao = null;
     private Connection connection;
+    private String ip = "192.168.56.1";
+    private String db = "Pizzeria";
+    private String usuario = "ra";
+    private String contraseña = "admin";
 
-    private DAOPizzeria(){
+    @SuppressLint("NewApi")
+    public DAOPizzeria(){
         super();
-
         this.listaPizzas = new ArrayList<>();
         this.listaUsuarios = new ArrayList<>();
-        String conexionBD = "jdbc:jtds:sqlserver://localhost:1433;"
-                + "databaseName=Pizzeria;user=ra;password=admin;";
+        String conexionBD;
 
         ResultSet resultSet = null;
 
+        connection = null;
         try {
-
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
+            conexionBD = "jdbc:jtds:sqlserver://"+ip+";" +
+                    "databaseName=" + db + ";" +
+                    "user=" + usuario + ";" +
+                    "password=" + contraseña + ";";
             connection = DriverManager.getConnection(conexionBD);
-            /*Statement statement = connection.createStatement();
+            System.out.println("Conexion buena");
+            Statement statement = connection.createStatement();
 
             String selectSql = "SELECT * FROM dbo.Pizzas;";
             resultSet = statement.executeQuery(selectSql);
@@ -52,12 +64,9 @@ public class DAOPizzeria implements IDAOPizzeria{
                         resultSet.getString(6),
                         resultSet.getInt(7),
                         null));
-            }*/
-
-        }
-        catch (SQLException | ClassNotFoundException e) {
-            connection = null;
-            e.printStackTrace();
+            }
+        } catch (Exception e){
+            Log.e("Error ", e.getMessage());
         }
     }
 

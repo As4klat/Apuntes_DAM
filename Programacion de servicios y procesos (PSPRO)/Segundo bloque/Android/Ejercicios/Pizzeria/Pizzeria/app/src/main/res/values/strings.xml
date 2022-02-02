@@ -3,6 +3,9 @@
     <string name="btnPageRegister">aquí.</string>
     <string name="inEmail">Email</string>
     <string name="inPasswd">Contraseña</string>
+    <string name="inConfirmPasswd">Repita Contraseña</string>
     <string name="preguntaRegistrar">¿No tienes cuenta? Pulsa</string>
     <string name="btnLogin">Iniciar sesión</string>
+    <string name="btnRegister">Crear</string>
+    <string name="textRegistro">Crear cuenta</string>
 </resources>
