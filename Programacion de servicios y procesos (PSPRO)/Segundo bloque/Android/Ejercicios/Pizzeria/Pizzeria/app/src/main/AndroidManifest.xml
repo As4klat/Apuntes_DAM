@@ -13,7 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pizzeria">
         <activity
-            android:name=".MainActivity"
+            android:name=".PedidosViews.PedidosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WebActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfigActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"

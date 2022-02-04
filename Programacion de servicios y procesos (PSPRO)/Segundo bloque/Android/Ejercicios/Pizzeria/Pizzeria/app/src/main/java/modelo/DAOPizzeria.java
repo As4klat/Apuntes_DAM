@@ -21,7 +21,7 @@ public class DAOPizzeria implements IDAOPizzeria{
     private List<Usuario> listaUsuarios;
     private static IDAOPizzeria dao = null;
     private Connection connection;
-    private String ip = "192.168.56.1";
+    private String ip = "192.168.11.120";
     private String db = "Pizzeria";
     private String usuario = "ra";
     private String contraseña = "admin";

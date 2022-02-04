@@ -6,4 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnWeb"
+        android:onClick="onMenuBtnCliked"
+        app:layout_constraintBottom_toTopOf="@+id/btnPedido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfig" />
+
+    <Button
+        android:id="@+id/btnPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnPedido"
+        android:onClick="onMenuBtnCliked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeb" />
+
+    <Button
+        android:id="@+id/btnConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnConfig"
+        android:onClick="onMenuBtnCliked"
+        app:layout_constraintBottom_toTopOf="@+id/btnWeb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,4 +8,7 @@
     <string name="btnLogin">Iniciar sesión</string>
     <string name="btnRegister">Crear</string>
     <string name="textRegistro">Crear cuenta</string>
+    <string name="btnWeb">¡Entra en nuestra web!</string>
+    <string name="btnPedido">Pedidos</string>
+    <string name="btnConfig">Configuración</string>
 </resources>

@@ -26,6 +26,7 @@ public class Controlador {
         return existe;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public static boolean comprobarLogin(String email, String passwd){
         boolean errores=false;
         if(DAOPizzeria.getInstance().listarUsuarios().isEmpty()) {
@@ -34,13 +35,12 @@ public class Controlador {
         else
         {
             for (Usuario u : DAOPizzeria.getInstance().listarUsuarios()) {
-                if (!u.getEmail().equals(email)) {
+                if (!u.getEmail().equals(email) && u.getPassword().equals(passwd)) {
                     errores = true;
                 }
                 else {
-                    if(!u.getPassword().equals(passwd)){
-                        errores = true;
-                    }
+                    errores = false;
+                    break;
                 }
             }
         }
