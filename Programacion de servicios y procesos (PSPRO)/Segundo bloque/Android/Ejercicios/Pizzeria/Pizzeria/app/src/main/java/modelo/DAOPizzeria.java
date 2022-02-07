@@ -21,7 +21,7 @@ public class DAOPizzeria implements IDAOPizzeria{
     private List<Usuario> listaUsuarios;
     private static IDAOPizzeria dao = null;
     private Connection connection;
-    private String ip = "192.168.11.120";
+    private String ip = "asklat.asuscomm.com";
     private String db = "Pizzeria";
     private String usuario = "ra";
     private String contraseña = "admin";
@@ -158,9 +158,6 @@ public class DAOPizzeria implements IDAOPizzeria{
 
     private List<Object> parseStringPizzasToList(String listaPizzasCadena){
         List<Object> listaPizasFav = new ArrayList<>();
-
-
-
         return listaPizasFav;
     }
 }
