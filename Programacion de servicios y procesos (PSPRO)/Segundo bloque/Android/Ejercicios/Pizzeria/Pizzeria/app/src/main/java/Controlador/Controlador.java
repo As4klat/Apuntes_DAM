@@ -35,7 +35,7 @@ public class Controlador {
         else
         {
             for (Usuario u : DAOPizzeria.getInstance().listarUsuarios()) {
-                if (!u.getEmail().equals(email) && u.getPassword().equals(passwd)) {
+                if (!(u.getEmail().equals(email) && u.getPassword().equals(passwd))) {
                     errores = true;
                 }
                 else {
