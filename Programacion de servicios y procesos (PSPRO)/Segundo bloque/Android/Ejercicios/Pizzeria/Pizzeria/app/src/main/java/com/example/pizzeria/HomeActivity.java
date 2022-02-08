@@ -3,31 +3,62 @@ package com.example.pizzeria;
 import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.OnLifecycleEvent;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.pizzeria.PedidosViews.PedidosActivity;
 
+import Controlador.LoginStatusUser;
+
 public class HomeActivity extends AppCompatActivity {
 
+    TextView textUsuario;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        textUsuario = findViewById(R.id.textUsuario);
+
+        if(LoginStatusUser.getUser().getNombre().equals("null")){
+            textUsuario.setText(LoginStatusUser.getUser().getEmail());
+        }else{
+            textUsuario.setText(LoginStatusUser.getUser().getNombre());
+        }
+
         OnBackPressedCallback callback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
-                AlertDialog alertDialog = new AlertDialog.Builder(getBaseContext()).create();
-                alertDialog.setTitle("Error!");
-                alertDialog.setMessage("El usuario o la contaseña es incorrecto.");
+                AlertDialog.Builder builderalert = new AlertDialog.Builder(HomeActivity.this);
+                builderalert.setTitle("Salir de la aplicación");
+                builderalert.setMessage("¿Deseas cerrar sesión?")
+                        .setPositiveButton("Confirmar", (dialog, id) -> {
+                            finishAffinity();
+                        })
+                        .setNegativeButton("Cancelar", (dialog, id) -> {
+
+                        });
+                AlertDialog alertDialog = builderalert.create();
                 alertDialog.show();
             }
         };
         this.getOnBackPressedDispatcher().addCallback(this, callback);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (LoginStatusUser.getUser().getNombre().equals("null")) {
+            textUsuario.setText(LoginStatusUser.getUser().getEmail());
+        } else {
+            textUsuario.setText(LoginStatusUser.getUser().getNombre());
+        }
     }
 
     public void onMenuBtnCliked(View v) {

@@ -51,4 +51,23 @@ public class Controlador {
     public static Usuario tomarUsuario(String email){
         return DAOPizzeria.getInstance().sacarUsuario(email);
     }
+
+    public static boolean ActualizarUsuario(Usuario u){
+        boolean error = false;
+        Usuario oldUser = DAOPizzeria.getInstance().sacarUsuario(LoginStatusUser.getUser().getEmail());
+        oldUser.setPizzasFav(u.getPizzasFav());
+        oldUser.setEmail(u.getEmail());
+        oldUser.setPassword(u.getPassword());
+        oldUser.setNombre(u.getNombre());
+        oldUser.setApellidos(u.getApellidos());
+        oldUser.setEmailConfirm(u.getEmailConfirm());
+        if(DAOPizzeria.getInstance().modificarUsuario(oldUser, LoginStatusUser.getUser().getEmail())){
+            LoginStatusUser.modUsuario(u);
+        }
+        else
+        {
+            error = true;
+        }
+        return error;
+    }
 }

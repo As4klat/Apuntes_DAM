@@ -1,7 +1,10 @@
 package modelo;
 import android.annotation.SuppressLint;
+import android.os.Build;
 import android.os.StrictMode;
 import android.util.Log;
+
+import androidx.annotation.RequiresApi;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,7 +24,7 @@ public class DAOPizzeria implements IDAOPizzeria{
     private List<Usuario> listaUsuarios;
     private static IDAOPizzeria dao = null;
     private Connection connection;
-    private String ip = "asklat.asuscomm.com";
+    private String ip = "192.168.11.120";
     private String db = "Pizzeria";
     private String usuario = "ra";
     private String contraseña = "admin";
@@ -100,6 +103,7 @@ public class DAOPizzeria implements IDAOPizzeria{
                 stmt.executeUpdate();
                 listaUsuarios.add(u);
             } catch (SQLException ex) {
+                insertado = false;
                 System.out.println("No se ha podido registrar al usuario.");
             }
         }
@@ -107,38 +111,36 @@ public class DAOPizzeria implements IDAOPizzeria{
     }
 
     @Override
-    public boolean modificarUsuario(Usuario u) {
+    public boolean modificarUsuario(Usuario u, String oldEmail) {
         boolean insertado = true;
         String orden
                 = "UPDATE dbo.Usuarios "
-                + "SET nombre=?, modelo=?, matricula=? "
-                + "WHERE email = '" + listaUsuarios.get(listaUsuarios.indexOf(u)).getEmail() + "';";
+                + "SET pizzas_fav=?, email=?, contraseña=?, nombre=?, Apellidos=?, email_confirm=? "
+                + "WHERE email = '" + oldEmail + "';";
         try {
-            for (int i = 0; i < listaUsuarios.size(); i++) {
-                if (listaUsuarios.get(i).getEmail().equals(u.getEmail()) && !listaUsuarios.get(i).equals(u)) {
-                    insertado = false;
-                    i = listaUsuarios.size();
-                }
-            }
-            if (insertado) {
                 PreparedStatement stmt = connection.prepareStatement(orden);
-                /*stmt.setString(1, u.getMarca());
-                stmt.setString(2, u.getModelo());
-                stmt.setString(3, u.getMatricula());
+                stmt.setString(1, null);
+                stmt.setString(2, u.getEmail());
+                stmt.setString(3, u.getPassword());
+                stmt.setString(4, u.getNombre());
+                stmt.setString(5, u.getApellidos());
+                stmt.setInt(6, u.getEmailConfirm());
                 stmt.executeUpdate();
-                listaUsuarios.set(listaUsuarios.indexOf(u), u);*/
-            }
+                listaUsuarios.set(listaUsuarios.indexOf(u), u);
         } catch (SQLException ex) {
             System.out.println("No se ha podido modificar el usuario.");
             System.out.println(ex);
+            insertado = false;
         }
 
         return insertado;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public Usuario sacarUsuario(String email) {
-        return null;
+        Usuario u = listaUsuarios.stream().filter(x -> x.getEmail().equals(email)).findFirst().get();
+        return u;
     }
 
     @Override

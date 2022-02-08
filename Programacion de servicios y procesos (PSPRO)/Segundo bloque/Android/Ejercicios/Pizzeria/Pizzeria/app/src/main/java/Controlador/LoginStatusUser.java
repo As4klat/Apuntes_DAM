@@ -2,7 +2,7 @@ package Controlador;
 
 import Clases.Usuario;
 
-public class LoginStatus {
+public class LoginStatusUser {
     private static Usuario usuarioLogeado;
 
     public static void setUser(Usuario u){

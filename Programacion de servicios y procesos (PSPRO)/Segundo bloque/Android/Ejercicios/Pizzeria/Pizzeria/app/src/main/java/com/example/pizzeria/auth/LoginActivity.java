@@ -1,9 +1,11 @@
 package com.example.pizzeria.auth;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText textEmail;
     private EditText textPasswd;
     private Button btnLogin;
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                 alertDialog.show();
             }
             else{
-                LoginStatus.setUser(Controlador.tomarUsuario(textEmail.getText().toString()));
+                LoginStatusUser.setUser(Controlador.tomarUsuario(textEmail.getText().toString()));
                 Intent i = new Intent(btnLogin.getContext(), HomeActivity.class);
                 startActivity(i);
             }

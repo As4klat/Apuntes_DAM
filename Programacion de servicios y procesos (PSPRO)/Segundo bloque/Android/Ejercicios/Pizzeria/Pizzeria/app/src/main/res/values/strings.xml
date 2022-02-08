@@ -1,14 +1,31 @@
 <resources>
     <string name="app_name">Pizzeria</string>
     <string name="btnPageRegister">aquí.</string>
+
     <string name="inEmail">Email</string>
     <string name="inPasswd">Contraseña</string>
     <string name="inConfirmPasswd">Repita Contraseña</string>
     <string name="preguntaRegistrar">¿No tienes cuenta? Pulsa</string>
     <string name="btnLogin">Iniciar sesión</string>
-    <string name="btnRegister">Crear</string>
+
     <string name="textRegistro">Crear cuenta</string>
+    <string name="btnRegister">Crear</string>
+
     <string name="btnWeb">¡Entra en nuestra web!</string>
     <string name="btnPedido">Pedidos</string>
     <string name="btnConfig">Configuración</string>
+
+    <string name="textConfigTitleUserData">Datos del usuario</string>
+    <string name="textNombreUser">Nombre:</string>
+    <string name="textApellidosUser">Apellidos:</string>
+    <string name="textEmailUser">Correo actual:</string>
+
+    <string name="textConfigTitleSecurity">Seguridad</string>
+    <string name="textOldPasswd">Contraseña actual:</string>
+    <string name="textNewPasswd">Contraseña Nueva:</string>
+    <string name="textConfirmNewPasswd">Repita Contraseña nueva:</string>
+
+    <string name="textColorTheme">Color de fondo:</string>
+
+    <string name="btnGuardarDataUser">Guardar cambios</string>
 </resources>

@@ -5,15 +5,119 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ConfigActivity">
-
+    <!--
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textConfigTitleUserData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Configuración"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="24dp"
+        android:text="@string/textConfigTitleUserData"
+        android:textColor="@color/material_dynamic_neutral20"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bordes_redondo"
+        android:orientation="vertical"
+        android:padding="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textNombreUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textNombreUser"
+                android:labelFor="@id/inNombreConfig"
+                android:textColor="@color/material_dynamic_neutral10" />
+
+            <EditText
+                android:id="@+id/inNombreConfig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            tools:ignore="DuplicateIds">
+
+            <TextView
+                android:id="@+id/textApellidosUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textApellidosUser"
+                android:labelFor="@id/inApellidosConfig"
+                android:textColor="@color/material_dynamic_neutral10" />
+
+            <EditText
+                android:id="@+id/inApellidosConfig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            tools:ignore="DuplicateIds">
+
+            <TextView
+                android:id="@+id/textEmailUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textEmailUser"
+                android:labelFor="@id/inEmailConfig"
+                android:textColor="@color/material_dynamic_neutral10" />
+
+            <EditText
+                android:id="@+id/inEmailConfig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+-->
+    <Button
+        android:id="@+id/btnSaveOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnGuardarDataUser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
