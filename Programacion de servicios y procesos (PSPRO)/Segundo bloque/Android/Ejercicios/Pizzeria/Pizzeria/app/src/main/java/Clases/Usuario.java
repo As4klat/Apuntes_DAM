@@ -15,7 +15,7 @@ public class Usuario {
         this.password = password;
         emailConfirm = 1;
         nombre = null;
-        apellidos=null;
+        apellidos = null;
         pizzasFav = null;
     }
 

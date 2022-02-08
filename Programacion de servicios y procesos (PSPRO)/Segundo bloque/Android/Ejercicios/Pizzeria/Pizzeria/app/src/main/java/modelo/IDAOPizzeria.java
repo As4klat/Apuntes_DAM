@@ -7,7 +7,7 @@ import Clases.Usuario;
 
 public interface IDAOPizzeria {
     boolean insertarUsuario(Usuario u);
-    boolean modificarUsuario(Usuario u, String oldEmail);
+    int modificarUsuario(Usuario u);
     Usuario sacarUsuario(String email);
     List<Usuario> listarUsuarios();
 

@@ -52,21 +52,28 @@ public class Controlador {
         return DAOPizzeria.getInstance().sacarUsuario(email);
     }
 
-    public static boolean ActualizarUsuario(Usuario u){
-        boolean error = false;
-        Usuario oldUser = DAOPizzeria.getInstance().sacarUsuario(LoginStatusUser.getUser().getEmail());
-        oldUser.setPizzasFav(u.getPizzasFav());
-        oldUser.setEmail(u.getEmail());
-        oldUser.setPassword(u.getPassword());
-        oldUser.setNombre(u.getNombre());
-        oldUser.setApellidos(u.getApellidos());
-        oldUser.setEmailConfirm(u.getEmailConfirm());
-        if(DAOPizzeria.getInstance().modificarUsuario(oldUser, LoginStatusUser.getUser().getEmail())){
-            LoginStatusUser.modUsuario(u);
+    public static int ActualizarUsuario(Usuario u){
+
+        Usuario modUser = DAOPizzeria.getInstance().sacarUsuario(LoginStatusUser.getUser().getEmail());
+        modUser.setPizzasFav(u.getPizzasFav());
+        modUser.setEmail(u.getEmail());
+        modUser.setPassword(u.getPassword());
+        if(u.getNombre().equals("")){
+            modUser.setNombre(null);
         }
-        else
-        {
-            error = true;
+        else{
+            modUser.setNombre(u.getNombre());
+        }
+        if(u.getApellidos().equals("")){
+            modUser.setApellidos(null);
+        }
+        else{
+            modUser.setApellidos(u.getApellidos());
+        }
+        modUser.setEmailConfirm(u.getEmailConfirm());
+        int error = DAOPizzeria.getInstance().modificarUsuario(modUser);
+        if(error==0){
+            LoginStatusUser.modUsuario(modUser);
         }
         return error;
     }

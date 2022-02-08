@@ -24,7 +24,7 @@ public class DAOPizzeria implements IDAOPizzeria{
     private List<Usuario> listaUsuarios;
     private static IDAOPizzeria dao = null;
     private Connection connection;
-    private String ip = "192.168.11.120";
+    private String ip = "asklat.asuscomm.com";
     private String db = "Pizzeria";
     private String usuario = "ra";
     private String contraseña = "admin";
@@ -91,15 +91,15 @@ public class DAOPizzeria implements IDAOPizzeria{
             }
         }
         if (insertado) {
-            String orden = "INSERT INTO dbo.Usuarios VALUES (" +
-                    "'"+u.getPizzasFav()+"'," +
-                    "'"+u.getEmail()+"'," +
-                    "'"+u.getPassword()+"'," +
-                    "'"+u.getNombre()+"'," +
-                    "'"+u.getApellidos()+"'," +
-                    "'"+u.getEmailConfirm()+"');";
+            String orden = "INSERT INTO dbo.Usuarios VALUES (?, ?, ?, ?, ?, ?);";
             try {
                 PreparedStatement stmt = connection.prepareStatement(orden);
+                stmt.setString(1, null);
+                stmt.setString(2, u.getEmail());
+                stmt.setString(3, u.getPassword());
+                stmt.setString(4, u.getNombre());
+                stmt.setString(5, u.getApellidos());
+                stmt.setInt(6, u.getEmailConfirm());
                 stmt.executeUpdate();
                 listaUsuarios.add(u);
             } catch (SQLException ex) {
@@ -110,30 +110,37 @@ public class DAOPizzeria implements IDAOPizzeria{
         return insertado;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
-    public boolean modificarUsuario(Usuario u, String oldEmail) {
-        boolean insertado = true;
+    public int modificarUsuario(Usuario user) {
+        int erroTipo = 0;
         String orden
                 = "UPDATE dbo.Usuarios "
                 + "SET pizzas_fav=?, email=?, contraseña=?, nombre=?, Apellidos=?, email_confirm=? "
-                + "WHERE email = '" + oldEmail + "';";
+                + "WHERE email = '" + listaUsuarios.get(listaUsuarios.indexOf(user)).getEmail() + "';";
         try {
+            for (int i = 0; i < listaUsuarios.size(); i++) {
+                if (listaUsuarios.get(i).getEmail().equals(user.getEmail()) && !listaUsuarios.get(i).equals(user)) {
+                    erroTipo = 2;
+                    i = listaUsuarios.size();
+                }
+            }
+            if(erroTipo==0){
                 PreparedStatement stmt = connection.prepareStatement(orden);
                 stmt.setString(1, null);
-                stmt.setString(2, u.getEmail());
-                stmt.setString(3, u.getPassword());
-                stmt.setString(4, u.getNombre());
-                stmt.setString(5, u.getApellidos());
-                stmt.setInt(6, u.getEmailConfirm());
+                stmt.setString(2, user.getEmail());
+                stmt.setString(3, user.getPassword());
+                stmt.setString(4, user.getNombre());
+                stmt.setString(5, user.getApellidos());
+                stmt.setInt(6, user.getEmailConfirm());
                 stmt.executeUpdate();
-                listaUsuarios.set(listaUsuarios.indexOf(u), u);
+                listaUsuarios.set(listaUsuarios.indexOf(user), user);
+            }
         } catch (SQLException ex) {
-            System.out.println("No se ha podido modificar el usuario.");
             System.out.println(ex);
-            insertado = false;
+            erroTipo = 1;
         }
-
-        return insertado;
+        return erroTipo;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -156,10 +163,5 @@ public class DAOPizzeria implements IDAOPizzeria{
     @Override
     public List<Pizza> listarPizzas() {
         return listaPizzas;
-    }
-
-    private List<Object> parseStringPizzasToList(String listaPizzasCadena){
-        List<Object> listaPizasFav = new ArrayList<>();
-        return listaPizasFav;
     }
 }

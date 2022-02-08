@@ -26,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
 
         textUsuario = findViewById(R.id.textUsuario);
 
-        if(LoginStatusUser.getUser().getNombre().equals("null")){
+        if(LoginStatusUser.getUser().getNombre()==null){
             textUsuario.setText(LoginStatusUser.getUser().getEmail());
         }else{
             textUsuario.setText(LoginStatusUser.getUser().getNombre());
@@ -54,7 +54,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        if (LoginStatusUser.getUser().getNombre().equals("null")) {
+        if (LoginStatusUser.getUser().getNombre() == null) {
             textUsuario.setText(LoginStatusUser.getUser().getEmail());
         } else {
             textUsuario.setText(LoginStatusUser.getUser().getNombre());

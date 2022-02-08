@@ -33,7 +33,6 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(view -> {
             boolean error = Controlador.comprobarLogin(textEmail.getText().toString(),textPasswd.getText().toString());
-
             if(error){
                 AlertDialog alertDialog = new AlertDialog.Builder(this).create();
                 alertDialog.setTitle("Error!");

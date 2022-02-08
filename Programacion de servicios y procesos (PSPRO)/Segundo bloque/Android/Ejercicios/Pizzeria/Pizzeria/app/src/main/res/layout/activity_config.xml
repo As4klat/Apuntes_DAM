@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ConfigActivity">
-    <!--
+
     <TextView
         android:id="@+id/textConfigTitleUserData"
         android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/entradaNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -57,12 +57,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/entradaApellidos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            tools:ignore="DuplicateIds">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textApellidosUser"
@@ -84,12 +83,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/entradaEmail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
-            android:orientation="vertical"
-            tools:ignore="DuplicateIds">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textEmailUser"
@@ -111,7 +109,7 @@
         </LinearLayout>
 
     </LinearLayout>
--->
+
     <Button
         android:id="@+id/btnSaveOptions"
         android:layout_width="wrap_content"
