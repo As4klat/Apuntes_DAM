@@ -28,4 +28,12 @@
     <string name="textModoOscuro">Modo oscuro:</string>
 
     <string name="btnGuardarDataUser">Guardar cambios</string>
+
+    <string name="btnUltimaPizza">Ultima pizza pedida</string>
+    <string name="btnPedidosAtuGusto">¡A tu gusto!</string>
+    <string name="btnPedidosPredeterminadas">Pizzas de la casa</string>
+
+    <string name="btnRealizarPedido">Realizar pedido</string>
+
+
 </resources>

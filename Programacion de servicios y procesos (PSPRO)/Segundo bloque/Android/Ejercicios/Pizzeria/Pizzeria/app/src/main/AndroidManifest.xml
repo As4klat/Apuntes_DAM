@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pizzeria">
         <activity
+            android:name=".PedidosViews.PizzaInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PedidosViews.UltimoPedidoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PedidosViews.DeLaCasaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PedidosViews.AtuGustoActivity"
+            android:exported="false" />
+        <activity
             android:name=".PedidosViews.PedidosActivity"
             android:exported="false" />
         <activity

@@ -1,8 +1,9 @@
 package Clases;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Pizza {
+public class Pizza implements Serializable {
 
     private int id;
     private String nombre;
@@ -39,5 +40,16 @@ public class Pizza {
         this.ingredientes = ingredientes;
     }
 
+    public String ingredientesToString(){
+        StringBuilder cadena = new StringBuilder();
+        for (String ingrediente : ingredientes) {
+            if (ingrediente.equals(ingredientes[ingredientes.length-1])) {
+                cadena.append(ingrediente);
+            } else {
+                cadena.append(ingrediente).append(", ");
+            }
 
+        }
+        return cadena.toString();
+    }
 }

@@ -6,14 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".PedidosViews.PedidosActivity">
 
-    <TextView
-        android:id="@+id/textView3"
+    <Button
+        android:id="@+id/btnUltimaPizza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pedidos"
+        android:layout_marginTop="172dp"
+        android:onClick="onMenuPedidoBtnCliked"
+        android:text="@string/btnUltimaPizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPedidosAtuGusto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onMenuPedidoBtnCliked"
+        android:text="@string/btnPedidosAtuGusto"
+        app:layout_constraintBottom_toTopOf="@+id/btnPedidosPredeterminadas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUltimaPizza"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <Button
+        android:id="@+id/btnPedidosPredeterminadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:onClick="onMenuPedidoBtnCliked"
+        android:text="@string/btnPedidosPredeterminadas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

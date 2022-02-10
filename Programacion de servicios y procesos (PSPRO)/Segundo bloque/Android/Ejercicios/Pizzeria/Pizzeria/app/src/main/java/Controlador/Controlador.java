@@ -4,6 +4,9 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
+import java.util.List;
+
+import Clases.Pizza;
 import Clases.Usuario;
 import modelo.DAOPizzeria;
 
@@ -76,5 +79,9 @@ public class Controlador {
             LoginStatusUser.modUsuario(modUser);
         }
         return error;
+    }
+
+    public static List<Pizza> PizzasDeLaCasa(){
+        return DAOPizzeria.getInstance().listarPizzas();
     }
 }
