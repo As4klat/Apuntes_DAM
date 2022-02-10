@@ -25,7 +25,7 @@
     <string name="textNewPasswd">Contraseña Nueva:</string>
     <string name="textConfirmNewPasswd">Repita Contraseña nueva:</string>
 
-    <string name="textColorTheme">Color de fondo:</string>
+    <string name="textModoOscuro">Modo oscuro:</string>
 
     <string name="btnGuardarDataUser">Guardar cambios</string>
 </resources>

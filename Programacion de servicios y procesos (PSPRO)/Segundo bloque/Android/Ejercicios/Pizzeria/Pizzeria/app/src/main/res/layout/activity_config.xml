@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/textConfigTitleUserData"
         android:textColor="@color/material_dynamic_neutral20"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
@@ -21,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/bordes_redondo"
         android:orientation="vertical"
@@ -41,8 +42,8 @@
                 android:id="@+id/textNombreUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/textNombreUser"
                 android:labelFor="@id/inNombreConfig"
+                android:text="@string/textNombreUser"
                 android:textColor="@color/material_dynamic_neutral10" />
 
             <EditText
@@ -67,8 +68,8 @@
                 android:id="@+id/textApellidosUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/textApellidosUser"
                 android:labelFor="@id/inApellidosConfig"
+                android:text="@string/textApellidosUser"
                 android:textColor="@color/material_dynamic_neutral10" />
 
             <EditText
@@ -93,8 +94,8 @@
                 android:id="@+id/textEmailUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/textEmailUser"
                 android:labelFor="@id/inEmailConfig"
+                android:text="@string/textEmailUser"
                 android:textColor="@color/material_dynamic_neutral10" />
 
             <EditText
@@ -110,12 +111,109 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textConfigTitleSecurity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/textConfigTitleSecurity"
+        android:textColor="@color/material_dynamic_neutral20"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bordes_redondo"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:id="@+id/entradaNewContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textNewPasswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/inNewPasswd"
+                android:text="@string/textNewPasswd"
+                android:textColor="@color/material_dynamic_neutral10" />
+
+            <EditText
+                android:id="@+id/inNewPasswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/entradaConfirmNewContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textConfirmNewPasswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/inConfirmNewPasswd"
+                android:text="@string/textConfirmNewPasswd"
+                android:textColor="@color/material_dynamic_neutral10" />
+
+            <EditText
+                android:id="@+id/inConfirmNewPasswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sModeOscure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/textModoOscuro"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.56" />
+
     <Button
         android:id="@+id/btnSaveOptions"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
         android:text="@string/btnGuardarDataUser"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

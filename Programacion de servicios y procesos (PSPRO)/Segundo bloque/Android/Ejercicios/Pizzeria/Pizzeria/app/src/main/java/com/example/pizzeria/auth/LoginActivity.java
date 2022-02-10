@@ -43,6 +43,8 @@ public class LoginActivity extends AppCompatActivity {
                 LoginStatusUser.setUser(Controlador.tomarUsuario(textEmail.getText().toString()));
                 Intent i = new Intent(btnLogin.getContext(), HomeActivity.class);
                 startActivity(i);
+                textEmail.setText("");
+                textPasswd.setText("");
             }
         });
     }
