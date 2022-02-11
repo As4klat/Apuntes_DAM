@@ -34,6 +34,7 @@
     <string name="btnPedidosPredeterminadas">Pizzas de la casa</string>
 
     <string name="btnRealizarPedido">Realizar pedido</string>
-
-
+    <string name="textTitleView">Último pedido realizado</string>
+    <string name="btnVolverPedir">Volver a pedir</string>
+    <string name="done">done</string>
 </resources>

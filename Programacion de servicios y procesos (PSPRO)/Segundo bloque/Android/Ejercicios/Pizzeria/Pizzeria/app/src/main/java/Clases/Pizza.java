@@ -52,4 +52,16 @@ public class Pizza implements Serializable {
         }
         return cadena.toString();
     }
+    public String ingredientesToFormatCSV(){
+        StringBuilder cadena = new StringBuilder();
+        for (String ingrediente : ingredientes) {
+            if (ingrediente.equals(ingredientes[ingredientes.length-1])) {
+                cadena.append(ingrediente);
+            } else {
+                cadena.append(ingrediente).append(";");
+            }
+
+        }
+        return cadena.toString();
+    }
 }

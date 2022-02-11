@@ -23,10 +23,10 @@ public class PedidosActivity extends AppCompatActivity {
     public void onMenuPedidoBtnCliked(View v) {
         Intent i = null;
         switch (v.getId()){
-            case R.id.btnUltimaPizza:
+            case R.id.btnPedidosAtuGusto:
                 i = new Intent(this, AtuGustoActivity.class);
                 break;
-            case R.id.btnPedidosAtuGusto:
+            case R.id.btnUltimaPizza:
                 i = new Intent(this, UltimoPedidoActivity.class);
                 break;
             case R.id.btnPedidosPredeterminadas:
