@@ -1,0 +1,4 @@
+sharp
+env-cmd
+sendgrid/mail
+multer
