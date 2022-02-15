@@ -24,12 +24,13 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-        minlength: 7,
+        minlength: 8,
         trim: true,
     },
     cursoComprados: [{
         curso:{
-            type: mongoose.Schema.ObjectId, ref: 'curso',
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Curso'
         }
     }],
     tokens: [{
@@ -44,6 +45,12 @@ const userSchema = new mongoose.Schema({
     }
 })
 
+userSchema.virtual('curso', {
+    ref: 'Curso',
+    localField: '_id',
+    foreignField: 'owner'
+})
+
 userSchema.methods.toJSON = function () {
     const user = this
     const userObject = user.toObject()
@@ -56,7 +63,7 @@ userSchema.methods.toJSON = function () {
 
 userSchema.methods.generateAuthToken = async function () {
     const user = this
-    const token = jwt.sign({ _id: user._id.toString() }, 'thisismynewcourse')
+    const token = jwt.sign({ _id: user._id.toString() }, 'llevalatararaunvestidoblancollenodecascaveles')
 
     user.tokens = user.tokens.concat({ token })
     await user.save()

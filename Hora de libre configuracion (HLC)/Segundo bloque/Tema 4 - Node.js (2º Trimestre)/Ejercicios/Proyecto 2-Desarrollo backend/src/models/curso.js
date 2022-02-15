@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const Curso = mongoose.model('Curso', {
+const cursoSchema = new mongoose.Schema({
     nombre: {
         type: String,
         required: true,
@@ -12,9 +12,18 @@ const Curso = mongoose.model('Curso', {
         trim: true 
     },
     owner:{
-        type: mongoose.Schema.ObjectId, ref: 'User',
-        required: true
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'User'
     }
 })
+
+cursoSchema.virtual('user', {
+    ref: 'User',
+    localField: '_id',
+    foreignField: 'curso'
+})
+
+const Curso = mongoose.model('Curso', cursoSchema)
 
 module.exports = Curso
