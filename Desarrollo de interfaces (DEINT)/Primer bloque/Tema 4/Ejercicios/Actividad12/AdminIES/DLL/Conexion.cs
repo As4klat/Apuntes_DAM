@@ -10,7 +10,7 @@ namespace AdminIES.DLL
 {
     class Conexion
     {
-        private string cadenaConexion = "Data Source="+ Environment.MachineName + "; Initial Catalog=db.Sistema; Integrated Security = True";
+        private string cadenaConexion = "Data Source=" + Environment.MachineName + "; Initial Catalog=gw2gg; Integrated Security = True";
         SqlConnection sqlConnection;
 
         public SqlConnection EstablecerConexion()
@@ -31,12 +31,12 @@ namespace AdminIES.DLL
                 sqlConnection.Close();
                 return true;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return false;
             }
         }
-        
+
         public SqlDataAdapter EjecutarComandoRetornarDatos(string strComando)
         {
             SqlDataAdapter adaptador = new SqlDataAdapter(strComando, cadenaConexion);
