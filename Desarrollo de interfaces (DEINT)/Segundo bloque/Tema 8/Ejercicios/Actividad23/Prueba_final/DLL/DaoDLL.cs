@@ -14,7 +14,5 @@ namespace Prueba_final.DLL
             conexion = new Conexion();
         }
 
-
-
     }
 }

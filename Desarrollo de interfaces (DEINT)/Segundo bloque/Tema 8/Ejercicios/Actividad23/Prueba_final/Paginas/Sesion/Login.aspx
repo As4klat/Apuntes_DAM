@@ -13,9 +13,12 @@
                     <div class="input-group form-group mt-3">
                             <asp:TextBox ID="email" runat="server" CssClass="form-control" placeholder="Email"></asp:TextBox>
 
-                            <% if (!emailValidator.IsValid || !emailRequerido.IsValid)
+                            <% if (!emailValidator.IsValid)
                                 { %>
                             <asp:RegularExpressionValidator CssClass="text-danger" ID="emailValidator" runat="server" ErrorMessage="El email es invalido" ControlToValidate="email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
+                            <% } %>
+                            <% if (!emailRequerido.IsValid)
+                                { %>
                             <asp:RequiredFieldValidator CssClass="text-danger" ID="emailRequerido" runat="server" ErrorMessage="Campo obligatorio" ControlToValidate="email" />
                             <% } %>
                         </div>
