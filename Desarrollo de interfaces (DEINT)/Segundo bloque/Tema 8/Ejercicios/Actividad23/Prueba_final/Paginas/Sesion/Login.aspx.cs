@@ -12,8 +12,7 @@ namespace Prueba_final.Paginas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DaoDLL dao = new DaoDLL();
-
+            
         }
 
         protected void Iniciar_sesion(object sender, EventArgs e)

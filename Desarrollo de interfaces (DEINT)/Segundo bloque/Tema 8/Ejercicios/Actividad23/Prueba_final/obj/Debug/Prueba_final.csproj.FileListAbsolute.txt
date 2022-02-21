@@ -74,3 +74,5 @@ C:\Users\Alejandro\Desktop\Prueba_final\obj\Debug\Prueba_final.csproj.CoreCompil
 C:\Users\Alejandro\Desktop\Prueba_final\obj\Debug\Prueba_final.csproj.CopyComplete
 C:\Users\Alejandro\Desktop\Prueba_final\obj\Debug\Prueba_final.dll
 C:\Users\Alejandro\Desktop\Prueba_final\obj\Debug\Prueba_final.pdb
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 8\Ejercicios\Actividad23\Prueba_final\obj\Debug\Prueba_final.dll
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Tema 8\Ejercicios\Actividad23\Prueba_final\obj\Debug\Prueba_final.pdb
