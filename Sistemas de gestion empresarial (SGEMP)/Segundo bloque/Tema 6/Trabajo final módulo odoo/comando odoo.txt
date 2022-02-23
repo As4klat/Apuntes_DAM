@@ -1,0 +1,1 @@
+"C:\Aplicaciones\Odoo 15.0.20220207\python\python.exe" "C:\Program Files\odoo\server\odoo-bin" scaffold construcion "C:\Aplicaciones\odoo\server\odoo\addons"

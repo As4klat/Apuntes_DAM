@@ -1,0 +1,114 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="construcion.encargado_tree">
+      <field name="name">construcion.encargado.tree</field>
+      <field name="model">construcion.encargado</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre" />
+          <field name="telefono" />
+          <field name="email" />
+          <field name="parcelas" />
+          <field name="numero_parcelas" />
+        </tree>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="construcion.cliente_tree">
+      <field name="name">construcion.cliente.tree</field>
+      <field name="model">construcion.cliente</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre" />
+          <field name="telefono" />
+          <field name="email" />
+          <field name="interesado" />
+        </tree>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="construcion.parcela_tree">
+      <field name="name">construcion.parcela.tree</field>
+      <field name="model">construcion.parcela</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="codigo" />
+          <field name="tipo" />
+          <field name="size" />
+          <field name="encargado" />
+        </tree>
+      </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="construcion.encargado_form">
+      <field name="name">construcion.encargado.form</field>
+      <field name="model">construcion.encargado</field>
+      <field name="arch" type="xml">
+        <form>
+          <group colspan="2" col="2">
+            <field name="nombre" />
+            <field name="telefono" />
+            <field name="email" />
+            <field name="parcelas" />
+          </group>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="construcion.cliente_form">
+      <field name="name">construcion.cliente.form</field>
+      <field name="model">construcion.cliente</field>
+      <field name="arch" type="xml">
+        <form>
+          <group colspan="2" col="2">
+            <field name="nombre" />
+            <field name="telefono" />
+            <field name="email" />
+            <field name="interesado" />
+          </group>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="construcion.parcela_form">
+      <field name="name">construcion.parcela.form</field>
+      <field name="model">construcion.parcela</field>
+      <field name="arch" type="xml">
+        <form>
+          <group colspan="2" col="2">
+            <field name="codigo" />
+            <field name="tipo" />
+            <field name="size" />
+            <field name="encargado" />
+          </group>
+        </form>
+      </field>
+    </record>
+
+    
+    <record model="ir.actions.act_window" id="construcion.encargado_action_window">
+      <field name="name">construcion.encargado.action_window</field>
+      <field name="res_model">construcion.encargado</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="construcion.cliente_action_window">
+      <field name="name">construcion.cliente.action_window</field>
+      <field name="res_model">construcion.cliente</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="construcion.parcela_action_window">
+      <field name="name">construcion.parcela.action_window</field>
+      <field name="res_model">construcion.parcela</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+
+  <menuitem name="Contrución" id="construcion.menu_root" groups="construcion_admin"/>
+
+  <menuitem name="Encargados" id="construcion.encargado_menu" parent="construcion.menu_root" 
+  action="construcion.encargado_action_window"/>
+  <menuitem name="Clientes" id="construcion.cliente_menu" parent="construcion.menu_root" 
+  action="construcion.cliente_action_window"/>
+  <menuitem name="Parcelas" id="construcion.parcela_menu" parent="construcion.menu_root" 
+  action="construcion.parcela_action_window"/>
+</odoo>

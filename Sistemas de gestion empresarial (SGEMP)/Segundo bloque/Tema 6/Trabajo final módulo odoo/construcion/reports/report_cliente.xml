@@ -1,0 +1,35 @@
+<odoo>
+    <data>
+        <report 
+        id="construcion.report_cliente"
+        model="construcion.cliente"
+        string="Infroma de cliente"
+        name="construcion.report_cliente_view"
+        file="construcion.report_cliente_view"
+        report_type="qweb-pdf"
+        />
+        <template id="report_cliente_view">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="cliente">
+                    <t t-call="web.external_layout">
+                        <div>
+                            <h2 t-field="cliente.nombre"/>
+                            <div>
+                                <strong>Email:</strong>
+                                <span t-field="cliente.email"/>
+                            </div>
+                            <div>
+                                <strong>Telefono:</strong>
+                                <span t-field="cliente.telefono"/>
+                            </div>
+                            <div>
+                                <strong>Interesado:</strong>
+                                <span t-field="cliente.interesado"/>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

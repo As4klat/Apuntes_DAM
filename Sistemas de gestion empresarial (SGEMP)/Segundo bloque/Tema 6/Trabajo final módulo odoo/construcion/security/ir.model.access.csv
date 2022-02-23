@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+parcela_admin,parcela admin,model_construcion_parcela,construcion_admin,1,1,1,1
+cliente_admin,cliente admin,model_construcion_cliente,construcion_admin,1,1,1,1
+encargado_admin,encargado admin,model_construcion_encargado,construcion_admin,1,1,1,1
+
+parcela_ges,parcela ges,model_construcion_parcela,construcion_gestion,1,0,0,0
+cliente_ges,cliente ges,model_construcion_cliente,construcion_gestion,1,0,0,0
+encargado_ges,encargado ges,model_construcion_encargado,construcion_gestion,1,0,0,0

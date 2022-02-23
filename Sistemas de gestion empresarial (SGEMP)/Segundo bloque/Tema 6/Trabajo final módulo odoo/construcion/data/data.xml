@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="cliente1" model="contrucion.cliente">
+            <field name="nombre">Antonio</field>
+            <field name="telefono">813750817084</field>
+            <field name="email">Antonio@gmail.com</field>
+        </record>
+        <record id="cliente2" model="contrucion.cliente">
+            <field name="nombre">Maria</field>
+            <field name="telefono">13512515</field>
+            <field name="email">Maria@gmail.com</field>
+        </record>
+        <record id="cliente3" model="contrucion.cliente">
+            <field name="nombre">Jose</field>
+            <field name="telefono">1554124</field>
+            <field name="email">Jose@gmail.com</field>
+        </record>
+        <record id="cliente4" model="contrucion.cliente">
+            <field name="nombre">Manuel</field>
+            <field name="telefono">91378591</field>
+            <field name="email">Manuel@gmail.com</field>
+        </record>
+    </data>
+</odoo>

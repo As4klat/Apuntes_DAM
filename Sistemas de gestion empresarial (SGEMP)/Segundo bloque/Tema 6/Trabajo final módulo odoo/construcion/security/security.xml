@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record id="construcion_admin" model="res.groups">
+            <field name="name">Contrución / administrador</field>
+        </record>
+
+        <record id="construcion_gestion" model="res.groups">
+            <field name="name">Contrución / Visualizar</field>
+        </record>
+    </data>
+</odoo>
