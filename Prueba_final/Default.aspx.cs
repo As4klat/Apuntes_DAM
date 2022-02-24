@@ -14,7 +14,7 @@ namespace Prueba_final
         {
             if (!Controladores.LoginStatus.Logeado())
             {
-                Response.Redirect("./Paginas/Sesion/Login");
+                Response.Redirect("./Paginas/Sesion/Login", true);
             }
         }
     }

@@ -74,3 +74,5 @@ C:\Users\Alejandro\Desktop\Ejercicio2 web form\obj\Debug\Ejercicio2 web form.csp
 C:\Users\Alejandro\Desktop\Ejercicio2 web form\obj\Debug\Ejercicio2 web form.csproj.CopyComplete
 C:\Users\Alejandro\Desktop\Ejercicio2 web form\obj\Debug\Ejercicio2 web form.dll
 C:\Users\Alejandro\Desktop\Ejercicio2 web form\obj\Debug\Ejercicio2 web form.pdb
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Examen\Ejercicio2 web form\obj\Debug\Ejercicio2 web form.dll
+C:\Users\Alejandro\Desktop\Estudios\Apuntes_DAM\Desarrollo de interfaces (DEINT)\Segundo bloque\Examen\Ejercicio2 web form\obj\Debug\Ejercicio2 web form.pdb

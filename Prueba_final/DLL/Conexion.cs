@@ -31,6 +31,7 @@ namespace Prueba_final.DLL
         {
             IDictionary<string, object> usuario = new Dictionary<string, object>();
             usuario.Add("status","ok");
+            usuario.Add("id", "");
             usuario.Add("nombre", "");
             usuario.Add("email", "");
             usuario.Add("password", "");
@@ -46,12 +47,13 @@ namespace Prueba_final.DLL
             {
                 while (reader.Read())
                 {
-                    usuario["nombre"]= reader.GetSqlValue(0);
-                    usuario["email"] = reader.GetSqlValue(1);
-                    usuario["password"] = reader.GetSqlValue(2);
-                    usuario["fecha_creado"] = reader.GetSqlValue(3);
-                    usuario["fecha_borrado"] = reader.GetSqlValue(4);
-                    usuario["api_key"] = reader.GetSqlValue(5);
+                    usuario["id"] = reader.GetSqlValue(0);
+                    usuario["nombre"]= reader.GetSqlValue(1);
+                    usuario["email"] = reader.GetSqlValue(2);
+                    usuario["password"] = reader.GetSqlValue(3);
+                    usuario["fecha_creado"] = reader.GetSqlValue(4);
+                    usuario["fecha_borrado"] = reader.GetSqlValue(5);
+                    usuario["api_key"] = reader.GetSqlValue(6);
                 }
             }
             else

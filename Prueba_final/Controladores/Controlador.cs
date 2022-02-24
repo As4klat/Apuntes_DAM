@@ -3,6 +3,7 @@ using Prueba_final.Clases;
 using Prueba_final.DLL;
 using System;
 using System.Collections;
+using System.Linq;
 
 namespace Prueba_final.Controladores
 {
@@ -12,7 +13,7 @@ namespace Prueba_final.Controladores
 
         public static void Registrarse(string email, string password)
         {
-            Usuario usuario = new Usuario(email, password);
+            Usuario usuario = new Usuario(email, Encriptar(password));
             IDictionary estado = dao.AgregarUsuario(usuario);
             if (!estado["status"].ToString().Equals("ok"))
             {
@@ -23,11 +24,12 @@ namespace Prueba_final.Controladores
 
         public static void IniciarSesion(string email, string password)
         {
-            IDictionary estado = dao.DevolverUsuario(email,password);
+            IDictionary estado = dao.DevolverUsuario(email, Encriptar(password));
             if (!estado["status"].ToString().Equals("ok"))
             {
                 throw new Exception(estado["status"].ToString());
             }
+
             string nombre;
             if (estado["nombre"].ToString().Equals("Null"))
             {
@@ -59,9 +61,10 @@ namespace Prueba_final.Controladores
             }
 
             LoginStatus.InsertarUsuario(new Usuario(
+                    Convert.ToInt32(estado["id"].ToString()),
                     nombre,
                     estado["email"].ToString(),
-                    estado["password"].ToString(),
+                    DesEncriptar(estado["password"].ToString()),
                     estado["fecha_creado"].ToString(),
                     fecha_borrado,
                     api_key
@@ -70,6 +73,25 @@ namespace Prueba_final.Controladores
 
         public static void CerrarSesion()
         {
+            LoginStatus.InsertarUsuario(null);
+        }
+
+        private static string Encriptar(string password)
+        {
+            string result = string.Empty;
+            byte[] encryted =
+            System.Text.Encoding.Unicode.GetBytes(password);
+            result = Convert.ToBase64String(encryted);
+            return result;
+        }
+
+        public static string DesEncriptar(string password)
+        {
+            string result = string.Empty;
+            byte[] decryted = Convert.FromBase64String(password);
+            System.Text.Encoding.Unicode.GetString(decryted, 0, decryted.ToArray().Length);
+            result = System.Text.Encoding.Unicode.GetString(decryted);
+            return result;
         }
 
     }

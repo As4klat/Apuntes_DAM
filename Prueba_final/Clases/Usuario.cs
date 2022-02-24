@@ -7,6 +7,7 @@ namespace Prueba_final.Clases
 {
     public class Usuario
     {
+        private int id;
         private string nombre;
         private string email;
         private string password;
@@ -16,6 +17,7 @@ namespace Prueba_final.Clases
 
         public Usuario(string email, string password)
         {
+            Id = 0;
             Nombre = null;
             Email = email;
             Password = password;
@@ -24,8 +26,9 @@ namespace Prueba_final.Clases
             Apikey = null;
         }
 
-        public Usuario(string nombre, string email, string password, string fecha_creado, string fecha_borrado, string apikey)
+        public Usuario(int id, string nombre, string email, string password, string fecha_creado, string fecha_borrado, string apikey)
         {
+            Id = id;
             Nombre = nombre;
             Email = email;
             Password = password;
@@ -34,6 +37,7 @@ namespace Prueba_final.Clases
             Apikey = apikey;
         }
 
+        public int Id { get => id; set => id = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Email { get => email; set => email = value; }
         public string Password { get => password; set => password = value; }
