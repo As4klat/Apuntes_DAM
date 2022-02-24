@@ -55,5 +55,26 @@ namespace Prueba_final.DLL
                 $"WHERE email = '{email}' AND password = '{password}';");
         }
 
+        public IDictionary ActualizarUsuario(Usuario usuario)
+        {
+            try
+            {
+                conexion.EjecutarComandoSinRetornarDatos($"UPDATE Usuarios SET " +
+                    $"email = '{usuario.Email}'," +
+                    $"password = '{usuario.Password}'," +
+                    $"api_key = '{usuario.Apikey}'" +
+                    $"WHERE id = {usuario.Id};");
+                estado["status"] = "ok";
+                estado["mensaje"] = "Actualización satifactorio.";
+                return (IDictionary)estado;
+            }
+            catch (SqlException ex)
+            {
+                estado["status"] = "error";
+                estado["mensaje"] = ex.Message;
+                return (IDictionary)estado;
+            }
+        }
+
     }
 }

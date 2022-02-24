@@ -34,9 +34,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" runat="server" href="~/About">Sobre la api</a>
                             </li>
-                            <%if (_Logeado) { %> 
+                            <%if (_Logeado)
+                            { %>
                             <li class="nav-item">
-                                <a class="nav-link" runat="server" href="~/Cuenta">Cuenta</a>
+                                <div class="dropdown">
+                                    <a class=" nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Cuenta</a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="/Cuenta">Configuración</a></li>
+                                        <li><asp:Button ID="Desconectarse" OnClick="Desconectarse_Click" CssClass="dropdown-item" runat="server" Text="Desconectarse"/></li>
+                                    </ul>
+                                </div>
                             </li>
                             <%} %>
                         </ul>

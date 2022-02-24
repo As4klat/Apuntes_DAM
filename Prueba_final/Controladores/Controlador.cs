@@ -76,6 +76,17 @@ namespace Prueba_final.Controladores
             LoginStatus.InsertarUsuario(null);
         }
 
+        public static void ActualizarUsuario(Usuario usuario)
+        {
+            usuario.Password = Encriptar(usuario.Password);
+            IDictionary estado = dao.ActualizarUsuario(usuario);
+            if (!estado["status"].ToString().Equals("ok"))
+            {
+                throw new Exception(estado["mensaje"].ToString());
+            }
+            LoginStatus.InsertarUsuario(usuario);
+        }
+
         private static string Encriptar(string password)
         {
             string result = string.Empty;

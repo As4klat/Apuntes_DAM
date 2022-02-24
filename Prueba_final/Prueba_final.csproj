@@ -162,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Clases\DataUser.cs" />
+    <Compile Include="Clases\Gw2Api.cs" />
+    <Compile Include="Clases\HttpClient.cs" />
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Controladores\LoginStatus.cs" />
     <Compile Include="Controladores\Controlador.cs" />

@@ -12,5 +12,11 @@ namespace Prueba_final
         {
             _Logeado = LoginStatus.Logeado();
         }
+
+        protected void Desconectarse_Click(object sender, EventArgs e)
+        {
+            Controlador.CerrarSesion();
+            Response.Redirect("Default");
+        }
     }
 }
