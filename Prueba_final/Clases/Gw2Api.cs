@@ -33,22 +33,26 @@ namespace Prueba_final.Clases
                 var json = reader.ReadToEnd();
                 dataUser = JsonConvert.DeserializeObject<DataUser>(json);
             }
+            
+            
         }
 
         public static DataUser api()
         {
-            apiUsuario();
-            string url = $"https://api.guildwars2.com/v2/worlds/{dataUser.World}?lang=es";
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            Stream stream = response.GetResponseStream();
-            using (StreamReader reader = new StreamReader(stream))
-            {
-                var json = reader.ReadToEnd();
-                World world = JsonConvert.DeserializeObject<World>(json);
-                dataUser.World = world.Name;
+                apiUsuario();
+                string url = $"https://api.guildwars2.com/v2/worlds/{dataUser.World}?lang=es";
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                Stream stream = response.GetResponseStream();
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    var json = reader.ReadToEnd();
+                    World world = JsonConvert.DeserializeObject<World>(json);
+                    dataUser.World = world.Name;
                 return dataUser;
-            }
+                }
+            
+            
         }
     }
 }

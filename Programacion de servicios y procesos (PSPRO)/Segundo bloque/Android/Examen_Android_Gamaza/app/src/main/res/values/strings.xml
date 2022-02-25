@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Examen_Android_Gamaza</string>
+    <string name="btnEntrada">Introducir / Modificar</string>
+    <string name="btnConsulta">Consultas</string>
+    <string name="btnTest">Test ejercicios</string>
+
+    <string name="textPalabraNueva">Palabra</string>
+    <string name="btnIntroducir">Introducir</string>
+    <string name="btnModificar">Modificar</string>
+    <string name="textEditPalabraIngles">Palabra en ingles:</string>
+    <string name="textEditPalabraEspanol">Palabra en español:</string>
+    <string name="editBusqueda">Palabra en español</string>
+    <string name="btnBuscar">Buscar</string>
+</resources>

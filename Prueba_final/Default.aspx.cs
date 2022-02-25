@@ -16,12 +16,15 @@ namespace Prueba_final
                 Response.Redirect("./Paginas/Sesion/Login", true);
             }
             dataUser = Gw2Api.api();
-
-            nombreJugador.Text = dataUser.Name;
-            tiempoJuego.Text += CalcularTiempo(dataUser.Age);
-            servidorOrigen.Text += dataUser.World;
-            nivelFractales.Text += dataUser.Fractal_level.ToString();
-            nivelMcM.Text += dataUser.Wvw_rank.ToString();
+            if (dataUser !=null)
+            {
+                nombreJugador.Text = dataUser.Name;
+                tiempoJuego.Text += CalcularTiempo(dataUser.Age);
+                servidorOrigen.Text += dataUser.World;
+                nivelFractales.Text += dataUser.Fractal_level.ToString();
+                nivelMcM.Text += dataUser.Wvw_rank.ToString();
+            }
+            
         }
 
         private string CalcularTiempo(int tsegundos)
