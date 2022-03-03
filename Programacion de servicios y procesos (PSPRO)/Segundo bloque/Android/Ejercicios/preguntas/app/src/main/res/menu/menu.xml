@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:title="@string/inicio_string" />
+        <item
+            android:id="@+id/nav_comenzarJuego"
+            android:title="@string/comenzarJuego_string" />
+        <item
+            android:id="@+id/nav_config"
+            android:title="@string/config_string" />
+    </group>
+
+    <item android:title="@string/grupoLogin_string">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="@string/login_string" />
+                <item
+                    android:id="@+id/nav_register"
+                    android:title="@string/register_string" />
+                <item
+                    android:id="@+id/nav_personal"
+                    android:title="@string/personal_string" />
+                <item
+                    android:id="@+id/nav_desconectarse"
+                    android:title="@string/desconectar_string" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

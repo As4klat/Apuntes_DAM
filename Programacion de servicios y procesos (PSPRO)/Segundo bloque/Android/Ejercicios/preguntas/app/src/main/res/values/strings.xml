@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Preguntas</string>
+    <string name="navigation_drawer_open">Nav abierto</string>
+    <string name="navigation_drawer_close">Nav cerrado</string>
+    <string name="copyright_string">© Alejandro Gamaza - Preguntas</string>
+    <string name="login_string">Iniciar sesión</string>
+    <string name="register_string">Registrarse</string>
+    <string name="desconectar_string">Desconectarse</string>
+    <string name="grupoLogin_string">Cuenta</string>
+    <string name="inicio_string">Inicio</string>
+    <string name="config_string">Configuración</string>
+    <string name="personal_string">Personalización</string>
+    <string name="comenzarJuego_string">Comenzar juego</string>
+    <string name="preguntaRegistrar">¿No tienes cuenta? Pulsa</string>
+    <string name="btnPageRegister">aquí.</string>
+    <string name="inEmail">Email</string>
+    <string name="inPasswd">Contraseña</string>
+    <string name="inConfirmPasswd">Repita Contraseña</string>
+    <string name="textRegistro">Crear cuenta</string>
+    <string name="textConfigTitleUserData">Datos del usuario</string>
+    <string name="textNombreUser">Nombre:</string>
+    <string name="textApellidosUser">Apellidos:</string>
+    <string name="textEmailUser">Correo actual:</string>
+    <string name="textConfigTitleSecurity">Seguridad</string>
+    <string name="textOldPasswd">Contraseña actual:</string>
+    <string name="textNewPasswd">Contraseña Nueva:</string>
+    <string name="textConfirmNewPasswd">Repita Contraseña nueva:</string>
+    <string name="btnGuardarDataUser">Guardar cambios</string>
+    <string name="titleInicio">Juego de preguntas</string>
+    <string name="objetivoInicio">Objetivo:</string>
+
+</resources>

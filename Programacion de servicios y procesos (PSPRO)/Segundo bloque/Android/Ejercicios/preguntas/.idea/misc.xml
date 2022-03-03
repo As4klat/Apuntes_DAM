@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/drawable-v24/bordes_redondo.xml" value="0.264" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/alerta_confirma_contrasena.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/comenzarjuego_fragment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/config_fragment.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/crear_pregunta_fragment.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/editar_pregunta_fragment.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/header.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/inicio_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/item_editar_pregunta_fragment.xml" value="0.21557971014492755" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/item_pregunta.xml" value="0.21557971014492755" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/login_fragment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/menu.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/personal_fragment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/layout/register_fragment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Alejandro/Desktop/Estudios/Apuntes_DAM/Programacion de servicios y procesos (PSPRO)/Segundo bloque/Android/Ejercicios/preguntas/app/src/main/res/menu/menu.xml" value="0.2630208333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

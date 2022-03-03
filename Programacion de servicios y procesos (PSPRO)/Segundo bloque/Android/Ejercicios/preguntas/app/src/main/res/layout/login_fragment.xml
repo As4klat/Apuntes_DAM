@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:gravity="center"
+tools:context=".MainActivity">
+
+<EditText
+    android:id="@+id/inPasswd"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="24dp"
+    android:ems="10"
+    android:hint="@string/inPasswd"
+    android:importantForAutofill="no"
+    android:inputType="textPassword"
+    android:minHeight="48dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/inEmail" />
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="21dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    android:text="@string/preguntaRegistrar"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/inPasswd" />
+
+<TextView
+    android:id="@+id/btnPageRegister"
+    android:layout_width="wrap_content"
+    android:layout_height="21dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="8dp"
+    android:text="@string/btnPageRegister"
+    android:textColor="?attr/colorPrimary"
+    android:textStyle="bold"
+    android:onClick="loginToRegister"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toEndOf="@+id/textView"
+    app:layout_constraintTop_toBottomOf="@+id/inPasswd"
+    tools:ignore="TouchTargetSizeCheck" />
+
+<EditText
+    android:id="@+id/inEmail"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="220dp"
+    android:layout_marginEnd="24dp"
+    android:ems="10"
+    android:hint="@string/inEmail"
+    android:importantForAutofill="no"
+    android:inputType="textEmailAddress"
+    android:minHeight="48dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/btnLogin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="48dp"
+    android:text="@string/login_string"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/inPasswd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
