@@ -1,7 +1,0 @@
-{
-  "name": "Bus Jerez",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue"
-}
